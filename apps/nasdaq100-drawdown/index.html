@@ -81,33 +81,22 @@
 <body>
   <div class="shell">
     <header>
-      <div class="brand"><span class="brand-mark">NDX</span> DRAW<span style="color:#8b9690">DOWN</span></div>
+      <div class="brand">長期上昇銘柄のドローダウン</div>
       <div class="header-meta"><span class="demo-badge">Yahoo Finance</span><span><i class="pulse"></i>米国市場 終値ベース</span></div>
     </header>
 
     <main>
-      <section class="hero" style="display:block;padding:28px 0 12px">
-        <div><div class="eyebrow">NASDAQ-100</div><h1 style="font-size:32px">長期上昇銘柄のドローダウン</h1></div>
-        <p class="hero-copy" style="margin:8px 0 0;max-width:none">5年・3年の成長がプラス基調の銘柄を中心に、一時的な下落を探します。</p>
-      </section>
-
-      <section class="stats" aria-label="市場サマリー">
-        <div class="stat"><div class="stat-label">長期上昇銘柄の下落率中央値</div><div class="stat-value" id="median">—</div><div class="stat-sub">最高値終値から</div></div>
-        <div class="stat"><div class="stat-label">20%以上下落</div><div class="stat-value" id="over20">—</div><div class="stat-sub">調整局面より深い銘柄</div></div>
-        <div class="stat"><div class="stat-label">最も深い下落</div><div class="stat-value" id="deepest">—</div><div class="stat-sub" id="deepestName">—</div></div>
-        <div class="stat"><div class="stat-label">長期上昇判定</div><div class="stat-value" id="qualityCount">—</div><div class="stat-sub">5年年率8%以上・3年プラス・上昇年3回以上</div></div>
-      </section>
-
-      <div class="toolbar">
+      <p class="hero-copy" style="margin:20px 0 16px;max-width:none">長期で上昇してきたNASDAQ100構成銘柄について、現在の下落をその銘柄自身の過去と比較します。</p>
+<div class="toolbar">
         <label class="search"><input id="search" type="search" placeholder="ティッカー・企業名で検索" aria-label="銘柄検索"></label>
-        <select id="sort" aria-label="並べ替え"><option value="dd">下落率が深い順</option><option value="ticker">ティッカー順</option><option value="ath">最高値が新しい順</option><option value="max">過去最大下落順</option><option value="trend">5年成長率順</option><option value="maxratio">現在DDが10年最大DDに近い順</option></select>
+        <select id="sort" aria-label="並べ替え"><option value="maxratio" selected>現在DDが10年最大DDに近い順</option><option value="dd">現在の下落率が深い順</option><option value="ticker">ティッカー順</option><option value="ath">最高値が新しい順</option><option value="max">10年最大DDが深い順</option><option value="trend">年平均成長率（5年）順</option></select>
       </div>
       <div class="filter-row" aria-label="下落率フィルター">
         <button class="chip active" data-filter="quality">長期上昇</button><button class="chip" data-filter="all">すべて</button><button class="chip" data-filter="10">10%以上</button><button class="chip" data-filter="20">20%以上</button><button class="chip" data-filter="30">30%以上</button>
       </div>
 
       <section class="panel table-panel"><div class="table-wrap"><table>
-        <thead><tr><th>銘柄</th><th>現在値</th><th>10年最高値</th><th>現在の下落率</th><th>最高値日</th><th>10年最大DD</th><th>最大DD比</th><th>5年年率</th><th>状態</th></tr></thead>
+        <thead><tr><th>銘柄</th><th>現在値</th><th>10年最高値</th><th>現在の下落率</th><th>最高値日</th><th>10年最大DD</th><th>最大DD比</th><th>年平均成長率（5年）</th><th>状態</th></tr></thead>
         <tbody id="stockRows"></tbody>
       </table></div></section>
       <section class="mobile-cards" id="stockCards"></section>
@@ -137,7 +126,8 @@
   let selected='NVDA',filter='quality',period='5Y';
   const colors={green:'#1d8a5b',yellow:'#dfb82c',orange:'#f18e32',red:'#e5483f'};
   const tone=d=>d>=30?'red':d>=20?'orange':d>=10?'yellow':'green';
-  const label=d=>d>=30?'深い下落':d>=20?'弱気圏':d>=10?'調整局面':'最高値圏';
+  const stateLabel=s=>s.dd<10?'小幅':s.p>=75?'過去よりかなり深い':s.p>=50?'過去より深い':'通常範囲';
+  const stateTone=s=>s.dd<10?'green':s.p>=75?'red':s.p>=50?'orange':'yellow';
   const yen=n=>'$'+n.toFixed(2);
   const pointAt=(records,time)=>records.find(r=>Date.parse(r[0])>=time);
   const cagr=(records,years)=>{const end=records.at(-1),cut=Date.parse(end[0])-years*365.25*864e5,start=pointAt(records,cut);if(!start||Date.parse(start[0])-cut>60*864e5)return NaN;return (Math.pow(end[1]/start[1],1/years)-1)*100};
@@ -153,8 +143,8 @@
   }
   function renderList(){
     const list=visible();
-    document.querySelector('#stockRows').innerHTML=list.map(s=>`<tr data-id="${s.ticker}" class="${selected===s.ticker?'selected':''}"><td><div class="company"><span class="ticker-icon">${s.ticker.slice(0,2)}</span><span><div class="ticker">${s.ticker}</div><div class="name">${s.name}</div></span></div></td><td><b>${yen(s.price)}</b></td><td>${yen(s.ath)}</td><td><div class="dd" style="color:${colors[tone(s.dd)]}">−${s.dd.toFixed(1)}% <small>${s.days}日</small></div><div class="bar"><i style="width:${Math.min(s.dd*2,100)}%;background:${colors[tone(s.dd)]}"></i></div></td><td>${s.date}</td><td>−${s.max.toFixed(1)}%</td><td><b>${s.maxRatio.toFixed(0)}%</b></td><td><b style="color:${s.cagr5>=0?'#1d8a5b':'#e5483f'}">${Number.isFinite(s.cagr5)?s.cagr5.toFixed(1)+'%':'—'}</b></td><td><span class="status s-${tone(s.dd)}">${label(s.dd)}</span></td></tr>`).join('');
-    document.querySelector('#stockCards').innerHTML=list.map(s=>`<article class="stock-card" data-id="${s.ticker}"><div class="company"><span class="ticker-icon">${s.ticker.slice(0,2)}</span><span><div class="ticker">${s.ticker}</div><div class="name">${s.name}</div></span></div><div style="text-align:right"><div class="dd" style="color:${colors[tone(s.dd)]}">−${s.dd.toFixed(1)}%</div><span class="status s-${tone(s.dd)}">${label(s.dd)}</span></div></article>`).join('')||'<p>該当する銘柄はありません。</p>';
+    document.querySelector('#stockRows').innerHTML=list.map(s=>`<tr data-id="${s.ticker}" class="${selected===s.ticker?'selected':''}"><td><div class="company"><span class="ticker-icon">${s.ticker.slice(0,2)}</span><span><div class="ticker">${s.ticker}</div><div class="name">${s.name}</div></span></div></td><td><b>${yen(s.price)}</b></td><td>${yen(s.ath)}</td><td><div class="dd" style="color:${colors[stateTone(s)]}">−${s.dd.toFixed(1)}% <small>${s.days}日</small></div><div class="bar"><i style="width:${Math.min(s.dd*2,100)}%;background:${colors[stateTone(s)]}"></i></div></td><td>${s.date}</td><td>−${s.max.toFixed(1)}%</td><td><b>${s.maxRatio.toFixed(0)}%</b></td><td><b style="color:${s.cagr5>=0?'#1d8a5b':'#e5483f'}">${Number.isFinite(s.cagr5)?s.cagr5.toFixed(1)+'%':'—'}</b></td><td><span class="status s-${stateTone(s)}">${stateLabel(s)}</span></td></tr>`).join('');
+    document.querySelector('#stockCards').innerHTML=list.map(s=>`<article class="stock-card" data-id="${s.ticker}"><div class="company"><span class="ticker-icon">${s.ticker.slice(0,2)}</span><span><div class="ticker">${s.ticker}</div><div class="name">${s.name}</div></span></div><div style="text-align:right"><div class="dd" style="color:${colors[stateTone(s)]}">−${s.dd.toFixed(1)}%</div><span class="status s-${stateTone(s)}">${stateLabel(s)}</span></div></article>`).join('')||'<p>該当する銘柄はありません。</p>';
     document.querySelectorAll('[data-id]').forEach(el=>el.onclick=()=>{selected=el.dataset.id;renderList();renderDetail();document.querySelector('#detail').classList.add('open');document.querySelector('#modalBackdrop').classList.add('open');document.body.style.overflow='hidden'});
   }
   function drawChart(s){
@@ -180,7 +170,7 @@
   const closeModal=()=>{document.querySelector('#detail').classList.remove('open');document.querySelector('#modalBackdrop').classList.remove('open');document.body.style.overflow=''};document.querySelector('#modalClose').onclick=closeModal;document.querySelector('#modalBackdrop').onclick=closeModal;addEventListener('keydown',e=>{if(e.key==='Escape')closeModal()});
   document.querySelectorAll('.periods button').forEach(b=>b.onclick=()=>{const closeModal=()=>{document.querySelector('#detail').classList.remove('open');document.querySelector('#modalBackdrop').classList.remove('open');document.body.style.overflow=''};document.querySelector('#modalClose').onclick=closeModal;document.querySelector('#modalBackdrop').onclick=closeModal;addEventListener('keydown',e=>{if(e.key==='Escape')closeModal()});
   document.querySelectorAll('.periods button').forEach(x=>x.classList.remove('active'));b.classList.add('active');period=b.dataset.period;renderDetail()});
-  addEventListener('resize',()=>stocks.length&&renderDetail()); fetch('./data/summary.json').then(r=>r.json()).then(p=>{stocks=p.stocks.map(s=>({ticker:s.symbol,name:s.name,price:s.price,ath:s.peak,dd:Math.abs(s.drawdown),date:s.peakDate,max:Math.abs(s.maxDrawdown),p:episodePercentile(s.records,s.drawdown),days:Math.max(0,Math.round((Date.parse(s.date)-Date.parse(s.peakDate))/864e5)),records:s.records,episodeDepths:episodes(s.records),cagr5:cagr(s.records,5),cagr3:cagr(s.records,3),upYears:upYears(s.records),maxRatio:Math.abs(s.drawdown/s.maxDrawdown)*100,quality:Number.isFinite(cagr(s.records,5))&&cagr(s.records,5)>=8&&cagr(s.records,3)>=0&&upYears(s.records)>=3}));const quality=stocks.filter(s=>s.quality),qualitySorted=[...quality].sort((a,b)=>a.dd-b.dd);document.querySelector('#median').textContent=qualitySorted[Math.floor(qualitySorted.length/2)].dd.toFixed(1)+'%';document.querySelector('#over20').textContent=quality.filter(s=>s.dd>=20).length+' / '+quality.length;document.querySelector('#qualityCount').textContent=quality.length+' / '+stocks.length;const deep=[...quality].sort((a,b)=>b.dd-a.dd)[0];document.querySelector('#deepest').textContent='−'+deep.dd.toFixed(1)+'%';document.querySelector('#deepestName').textContent=deep.ticker+' · '+deep.name;selected=stocks.find(s=>s.ticker==='NVDA')?'NVDA':stocks[0].ticker;document.querySelector('.demo-badge').textContent='更新 '+new Date(p.generatedAt).toLocaleDateString('ja-JP');renderList();renderDetail()}).catch(e=>alert('データを取得できません: '+e.message));
+  addEventListener('resize',()=>stocks.length&&renderDetail()); fetch('./data/summary.json').then(r=>r.json()).then(p=>{stocks=p.stocks.map(s=>({ticker:s.symbol,name:s.name,price:s.price,ath:s.peak,dd:Math.abs(s.drawdown),date:s.peakDate,max:Math.abs(s.maxDrawdown),p:episodePercentile(s.records,s.drawdown),days:Math.max(0,Math.round((Date.parse(s.date)-Date.parse(s.peakDate))/864e5)),records:s.records,episodeDepths:episodes(s.records),cagr5:cagr(s.records,5),cagr3:cagr(s.records,3),upYears:upYears(s.records),maxRatio:Math.abs(s.drawdown/s.maxDrawdown)*100,quality:Number.isFinite(cagr(s.records,5))&&cagr(s.records,5)>=8&&cagr(s.records,3)>=0&&upYears(s.records)>=3}));const quality=stocks.filter(s=>s.quality),qualitySorted=[...quality].sort((a,b)=>a.dd-b.dd);selected=stocks.find(s=>s.ticker==='NVDA')?'NVDA':stocks[0].ticker;document.querySelector('.demo-badge').textContent='更新 '+new Date(p.generatedAt).toLocaleDateString('ja-JP');renderList();renderDetail()}).catch(e=>alert('データを取得できません: '+e.message));
   </script>
 </body>
 </html>
