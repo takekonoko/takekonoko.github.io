@@ -1,0 +1,679 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>株価チャート（ドローダウン） - たけこのこ</title>
+<meta name="description" content="主要指数の期間別ドローダウン／ランアップを比較するツール。下落・上昇の幅をチャートで可視化します。">
+<link rel="canonical" href="https://takekonoko.com/apps/ddchart/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="株価チャート（ドローダウン）">
+<meta property="og:description" content="主要指数の期間別ドローダウン／ランアップを比較するツール。">
+<meta property="og:url" content="https://takekonoko.com/apps/ddchart/">
+<meta property="og:image" content="https://takekonoko.com/images/ddchart.png">
+<meta name="twitter:card" content="summary">
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+
+<style>
+:root{
+  --bg:#f6f7fb;
+  --card:#fff;
+  --line:#dfe3ec;
+  --text:#1f2937;
+  --muted:#6b7280;
+  --accent:#2563eb;
+  --accent-bg:#e8f0ff;
+  --danger:#b91c1c;
+}
+*{box-sizing:border-box}
+html,body{
+  margin:0;
+  padding:0;
+  background:var(--bg);
+  color:var(--text);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Hiragino Sans","Yu Gothic UI","Yu Gothic",sans-serif;
+  overflow-x:hidden;
+}
+.wrap{
+  max-width:1440px;
+  margin:0 auto;
+  padding:16px;
+}
+.hero{
+  display:flex;
+  gap:12px;
+  align-items:flex-start;
+  justify-content:space-between;
+  flex-wrap:wrap;
+  margin-bottom:14px;
+}
+h1{
+  font-size:clamp(24px,3vw,34px);
+  line-height:1.15;
+  margin:0;
+}
+.desc{
+  color:var(--text);
+  font-size:14px;
+  line-height:1.7;
+  margin-top:10px;
+}
+.sub{
+  color:var(--muted);
+  font-size:14px;
+  margin-top:8px;
+  line-height:1.6;
+}
+.grid{display:block}
+.card{
+  background:var(--card);
+  border:1px solid var(--line);
+  border-radius:18px;
+  box-shadow:0 8px 28px rgba(17,24,39,.05);
+}
+.main-card{padding:14px}
+
+.toolbar{
+  display:flex;
+  flex-wrap:wrap;
+  gap:10px;
+  align-items:center;
+  margin-bottom:12px;
+}
+.group{
+  display:flex;
+  flex-wrap:wrap;
+  gap:8px;
+  align-items:center;
+}
+.duration-group{min-width:0}
+.label{
+  font-size:13px;
+  color:var(--muted);
+  margin-right:2px;
+}
+.btn,.action-btn,.fund-chip{
+  border:1px solid var(--line);
+  background:#fff;
+  color:var(--text);
+  padding:10px 13px;
+  border-radius:999px;
+  cursor:pointer;
+  font-size:14px;
+  line-height:1;
+  transition:.15s ease;
+  user-select:none;
+}
+.btn:hover,.action-btn:hover,.fund-chip:hover{
+  transform:translateY(-1px);
+}
+.btn.active,.fund-chip.active{
+  background:var(--accent-bg);
+  border-color:#b8cdfd;
+  color:#1144a6;
+  font-weight:700;
+}
+.canvas-wrap{
+  position:relative;
+  height:min(72vh,760px);
+  min-height:340px;
+}
+.status{
+  padding:10px 12px;
+  border-radius:12px;
+  background:#fff7ed;
+  border:1px solid #fed7aa;
+  color:#9a3412;
+  font-size:14px;
+  margin-bottom:12px;
+}
+.error{
+  padding:12px 14px;
+  border-radius:14px;
+  background:#fef2f2;
+  border:1px solid #fecaca;
+  color:var(--danger);
+  margin-bottom:12px;
+}
+.action-stack{
+  display:flex;
+  flex-wrap:wrap;
+  gap:8px;
+  align-items:center;
+}
+.icon-btn{
+  width:42px;
+  height:42px;
+  padding:0;
+  border-radius:999px;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+}
+.icon-btn svg{
+  width:19px;
+  height:19px;
+  display:block;
+}
+.reset-btn{
+  padding:10px 13px;
+}
+.empty-state{
+  position:absolute;
+  inset:0;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  color:var(--muted);
+  font-size:14px;
+  line-height:1.8;
+  pointer-events:none;
+  padding:24px;
+}
+.loading-wrap{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  flex-direction:column;
+  gap:16px;
+  padding:60px 16px;
+  color:var(--muted);
+  font-size:15px;
+}
+.spinner{
+  width:36px;
+  height:36px;
+  border:3px solid var(--line);
+  border-top-color:var(--accent);
+  border-radius:50%;
+  animation:spin .8s linear infinite;
+}
+@keyframes spin{to{transform:rotate(360deg)}}
+@media (max-width: 640px){
+  .wrap{padding:12px}
+  .main-card{padding:12px}
+  .canvas-wrap{height:52vh;min-height:300px}
+  .btn,.action-btn,.fund-chip{
+    padding:10px 12px;
+    font-size:13px;
+  }
+  .toolbar{gap:8px}
+  .group{width:100%}
+  .duration-group{flex-wrap:nowrap;overflow-x:auto;padding-bottom:4px}
+  .duration-group .btn{flex:0 0 auto}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="hero">
+    <div>
+      <h1>期間別ドローダウン・ランアップ比較チャート</h1>
+      <div class="desc">
+        選択した連続期間のドローダウンとランアップを、指数ごとに比較できるチャートです。<br>
+        ドローダウンは期間中の高値からの下落率、ランアップは期間中の安値からの上昇率を示します。
+      </div>
+      <div class="sub" id="dataInfo"></div>
+    </div>
+  </div>
+
+  <div id="loadingWrap" class="loading-wrap">
+    <div class="spinner"></div>
+    <div>データを読み込み中...</div>
+  </div>
+
+  <div id="errorWrap" class="error" style="display:none;"></div>
+
+  <div id="chartWrap" style="display:none;">
+    <div class="grid">
+      <section class="card main-card">
+        <div class="toolbar">
+          <div class="group" id="fundChipsWrap">
+            <span class="label">指数:</span>
+            <div id="fundChips" class="group"></div>
+          </div>
+
+          <div class="group">
+            <span class="label">指標:</span>
+            <button class="btn metric-btn active" data-metric="drawdown" type="button">ドローダウン</button>
+            <button class="btn metric-btn" data-metric="runup" type="button">ランアップ</button>
+          </div>
+
+          <div class="group duration-group">
+            <span class="label">期間:</span>
+            <button class="btn preset" data-preset="1" type="button">1年</button>
+            <button class="btn preset" data-preset="2" type="button">2年</button>
+            <button class="btn preset" data-preset="3" type="button">3年</button>
+            <button class="btn preset" data-preset="4" type="button">4年</button>
+            <button class="btn preset" data-preset="5" type="button">5年</button>
+            <button class="btn preset" data-preset="6" type="button">6年</button>
+            <button class="btn preset" data-preset="7" type="button">7年</button>
+            <button class="btn preset" data-preset="8" type="button">8年</button>
+            <button class="btn preset" data-preset="9" type="button">9年</button>
+            <button class="btn preset" data-preset="10" type="button">10年</button>
+          </div>
+
+
+          <div class="group action-stack" style="margin-left:auto;">
+            <button class="action-btn reset-btn" id="resetBtn" type="button">リセット</button>
+
+            <button class="action-btn icon-btn" id="shareBtn" type="button" aria-label="シェア" title="シェア">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="18" cy="5" r="3"></circle>
+                <circle cx="6" cy="12" r="3"></circle>
+                <circle cx="18" cy="19" r="3"></circle>
+                <path d="M8.6 10.7l6.8-4.1"></path>
+                <path d="M8.6 13.3l6.8 4.1"></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <div id="statusBox" class="status" style="display:none;"></div>
+
+        <div class="canvas-wrap">
+          <canvas id="ddChart"></canvas>
+          <div id="emptyState" class="empty-state" style="display:none;">
+            指数を選択するとチャートを表示します。
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+</div>
+
+<!-- SEOフッター -->
+<div style="
+text-align:center;
+margin-top:60px;
+padding:18px 16px;
+font-size:14px;
+color:#374151;
+background:#f3f4f6;
+border-radius:12px;
+line-height:1.8;
+">
+
+<div style="font-weight:600;margin-bottom:4px;">
+ドローダウン・ランアップ比較ツール
+</div>
+
+<div style="font-size:13px;color:#6b7280;">
+S&P500・NYダウ・NASDAQ100・オルカン・日経225・TOPIXの
+期間別ドローダウンとランアップを比較できる投資分析ツール
+</div>
+
+<div style="margin-top:6px;">
+by
+<a href="https://takekonoko.com/"
+style="font-weight:600;color:#2563eb;text-decoration:none;">
+takekonoko.com
+</a>
+</div>
+
+</div>
+
+<script>
+const DATA_BASE_URL = './data';
+
+const FUND_IDS = ['sp500', 'dow', 'nasdaq100', 'allcountry', 'nikkei225', 'topix'];
+const fundsMeta = {
+  sp500:      { label: 'S&P500' },
+  dow:        { label: 'NYダウ' },
+  nasdaq100:  { label: 'NASDAQ100' },
+  allcountry: { label: 'オルカン' },
+  nikkei225:  { label: '日経225' },
+  topix:      { label: 'TOPIX目安' },
+};
+
+const allRawData = {};
+
+async function loadAllData() {
+  const results = await Promise.allSettled(
+    FUND_IDS.map(async id => {
+      const res = await fetch(`${DATA_BASE_URL}/${id}.json`);
+      if (!res.ok) throw new Error(`HTTP ${res.status}`);
+      allRawData[id] = await res.json();
+    })
+  );
+  return results.filter(r => r.status === 'rejected').map((r, i) => FUND_IDS[i]);
+}
+
+const chartEl = document.getElementById('ddChart');
+const fundChipsEl = document.getElementById('fundChips');
+const statusBox = document.getElementById('statusBox');
+const shareBtn = document.getElementById('shareBtn');
+const resetBtn = document.getElementById('resetBtn');
+const emptyState = document.getElementById('emptyState');
+const metricButtons = document.querySelectorAll('.metric-btn');
+const loadingWrap = document.getElementById('loadingWrap');
+const errorWrap = document.getElementById('errorWrap');
+const chartWrap = document.getElementById('chartWrap');
+const dataInfo = document.getElementById('dataInfo');
+
+const maxFunds = 3;
+const metricMeta = {
+  drawdown: {
+    label: 'ドローダウン',
+    short: 'DD',
+    axisTitle: 'ドローダウン (%)',
+    shareFile: 'drawdown-chart.png',
+    shareTitle: 'ドローダウンチャート',
+    shareText: 'ドローダウン比較チャートを共有します。',
+    suggestedMax: 0,
+  },
+  runup: {
+    label: 'ランアップ',
+    short: 'RU',
+    axisTitle: 'ランアップ (%)',
+    shareFile: 'runup-chart.png',
+    shareTitle: 'ランアップチャート',
+    shareText: 'ランアップ比較チャートを共有します。',
+    suggestedMin: 0,
+  },
+};
+let selectedMetric = 'drawdown';
+
+const groupedByFund = {};
+const yearsByFund = {};
+
+function enrichRecords(records) {
+  let runningMin = null, runningMax = null;
+  return records.map(row => {
+    const price = Number(row.price);
+    if (!Number.isFinite(price)) return row;
+    runningMin = runningMin === null ? price : Math.min(runningMin, price);
+    runningMax = runningMax === null ? price : Math.max(runningMax, price);
+    return {
+      ...row,
+      running_min: Number.isFinite(Number(row.running_min)) ? Number(row.running_min) : Number(runningMin.toFixed(4)),
+      running_max: Number.isFinite(Number(row.running_max)) ? Number(row.running_max) : Number(runningMax.toFixed(4)),
+      drawdown: Number.isFinite(Number(row.drawdown)) ? Number(row.drawdown) : Number((((price / runningMax) - 1) * 100).toFixed(4)),
+      runup: Number.isFinite(Number(row.runup)) ? Number(row.runup) : Number((((price / runningMin) - 1) * 100).toFixed(4)),
+    };
+  });
+}
+
+function buildGrouped() {
+  for (const [fundId, payload] of Object.entries(allRawData)) {
+    const grouped = {};
+    for (const row of (payload.records || [])) {
+      const y = String(row.year);
+      if (!grouped[y]) grouped[y] = [];
+      grouped[y].push(row);
+    }
+    for (const y of Object.keys(grouped)) {
+      grouped[y].sort((a, b) => Number(a.business_day) - Number(b.business_day));
+      grouped[y] = enrichRecords(grouped[y]);
+    }
+    groupedByFund[fundId] = grouped;
+    yearsByFund[fundId] = Object.keys(grouped).sort((a, b) => Number(b) - Number(a));
+  }
+}
+
+const urlParams = new URLSearchParams(location.search);
+const initialFund = Object.keys(fundsMeta).includes(urlParams.get('fund') ?? '') ? urlParams.get('fund') : 'sp500';
+
+let selectedFunds = [];
+let selectedYears = [];
+let selectedDuration = 2;
+
+function flash(msg) {
+  statusBox.textContent = msg;
+  statusBox.style.display = 'block';
+  clearTimeout(flash.timer);
+  flash.timer = setTimeout(() => { statusBox.style.display = 'none'; }, 2600);
+}
+
+function getAvailableYears() {
+  if (!selectedFunds.length) return [];
+  const set = new Set();
+  for (const fundId of selectedFunds) {
+    (yearsByFund[fundId] || []).forEach(y => set.add(y));
+  }
+  return Array.from(set).sort((a, b) => Number(b) - Number(a));
+}
+
+function refreshSelectedYears() {
+  selectedYears = getAvailableYears().slice(0, selectedDuration);
+}
+
+function toggleFund(fundId) {
+  if (selectedFunds.includes(fundId)) {
+    selectedFunds = selectedFunds.filter(id => id !== fundId);
+  } else {
+    if (selectedFunds.length >= maxFunds) { flash('指数の同時比較は最大3つまでです。'); return; }
+    selectedFunds = [...selectedFunds, fundId];
+  }
+  refreshSelectedYears();
+  renderAll();
+}
+
+function choosePreset(n) {
+  if (!selectedFunds.length) { flash('先に指数を選択してください。'); return; }
+  selectedDuration = n;
+  refreshSelectedYears();
+  renderAll();
+}
+
+
+function colorAt(i) {
+  const colors = ['#2563eb','#f59e0b','#10b981','#ef4444','#8b5cf6','#14b8a6','#ec4899','#84cc16','#f97316','#06b6d4'];
+  return colors[i % colors.length];
+}
+
+function getMetricValue(row) {
+  return Number(row[selectedMetric]);
+}
+
+function getContinuousRows(fundId) {
+  const years = [...selectedYears].sort((a, b) => Number(a) - Number(b));
+  const sourceRows = years.flatMap(y => (groupedByFund[fundId] || {})[y] || []);
+  let runningMin = null;
+  let runningMax = null;
+  return sourceRows.map(row => {
+    const price = Number(row.price);
+    runningMin = runningMin === null ? price : Math.min(runningMin, price);
+    runningMax = runningMax === null ? price : Math.max(runningMax, price);
+    return {
+      ...row,
+      running_min: runningMin,
+      running_max: runningMax,
+      drawdown: ((price / runningMax) - 1) * 100,
+      runup: ((price / runningMin) - 1) * 100,
+    };
+  });
+}
+
+function selectedPeriodLabel() {
+  const years = [...selectedYears].sort((a, b) => Number(a) - Number(b));
+  if (!years.length) return '';
+  return years.length === 1 ? years[0] : `${years[0]}–${years[years.length - 1]}`;
+}
+
+function buildDatasets() {
+  if (!selectedFunds.length || !selectedYears.length) return [];
+  const period = selectedPeriodLabel();
+  return selectedFunds.map((fundId, index) => {
+    const rows = getContinuousRows(fundId);
+    return {
+      label: `${fundsMeta[fundId].label} / ${period}`,
+      fundId,
+      data: rows.map(r => ({ x: Date.parse(`${r.date}T00:00:00Z`), y: getMetricValue(r), date: r.date })),
+      borderColor: colorAt(index),
+      backgroundColor: colorAt(index),
+      pointRadius: 0,
+      pointHoverRadius: 3,
+      borderWidth: 2,
+      tension: 0.15,
+    };
+  }).filter(dataset => dataset.data.length);
+}
+
+function renderFundChips() {
+  fundChipsEl.innerHTML = '';
+  for (const [fundId, meta] of Object.entries(fundsMeta)) {
+    if (!groupedByFund[fundId]) continue;
+    const btn = document.createElement('button');
+    btn.className = 'fund-chip' + (selectedFunds.includes(fundId) ? ' active' : '');
+    btn.textContent = meta.label;
+    btn.type = 'button';
+    btn.addEventListener('click', () => toggleFund(fundId));
+    fundChipsEl.appendChild(btn);
+  }
+}
+
+function renderDurationButtons() {
+  document.querySelectorAll('.preset').forEach(btn => {
+    btn.classList.toggle('active', Number(btn.dataset.preset) === selectedDuration);
+  });
+}
+function renderMetricButtons() {
+  metricButtons.forEach(btn => btn.classList.toggle('active', btn.dataset.metric === selectedMetric));
+}
+
+let chart;
+
+function renderChart() {
+  const datasets = buildDatasets();
+  if (chart) { chart.destroy(); chart = null; }
+  const hasVisibleData = datasets.length > 0;
+  chartEl.style.display = hasVisibleData ? 'block' : 'none';
+  emptyState.style.display = hasVisibleData ? 'none' : 'flex';
+  if (!hasVisibleData) return;
+  const xValues = datasets.flatMap(dataset => dataset.data.map(point => point.x));
+  const xMin = Math.min(...xValues);
+  const xMax = Math.max(...xValues);
+  chart = new Chart(chartEl, {
+    type: 'line',
+    data: { datasets },
+    options: {
+      maintainAspectRatio: false,
+      interaction: { mode: 'nearest', intersect: false },
+      parsing: false,
+      plugins: {
+        legend: { position: 'bottom' },
+        tooltip: {
+          callbacks: {
+            title(items) {
+              if (!items.length) return '';
+              const ds = items[0].dataset;
+              return `${fundsMeta[ds.fundId].label} / ${items[0].raw.date}`;
+            },
+            label(ctx) {
+              return ` ${metricMeta[selectedMetric].short} ${Number(ctx.raw.y).toFixed(1)}%`;
+            },
+          },
+        },
+      },
+      scales: {
+        x: {
+          type: 'linear',
+          bounds: 'data',
+          min: xMin,
+          max: xMax,
+          title: { display: true, text: '日付' },
+          ticks: {
+            maxTicksLimit: 8,
+            callback(value) {
+              return new Date(Number(value)).toLocaleDateString('ja-JP', { year: 'numeric', month: 'short' });
+            },
+          },
+        },
+        y: {
+          title: { display: true, text: metricMeta[selectedMetric].axisTitle },
+          suggestedMax: metricMeta[selectedMetric].suggestedMax,
+          suggestedMin: metricMeta[selectedMetric].suggestedMin,
+          ticks: { callback: (value) => `${value}%` },
+        },
+      },
+    },
+  });
+}
+
+function renderAll() {
+  selectedFunds.sort((a, b) => Object.keys(fundsMeta).indexOf(a) - Object.keys(fundsMeta).indexOf(b));
+  selectedYears.sort((a, b) => Number(b) - Number(a));
+  renderMetricButtons();
+  renderFundChips();
+  renderDurationButtons();
+  renderChart();
+}
+
+metricButtons.forEach(btn => {
+  btn.addEventListener('click', () => { selectedMetric = btn.dataset.metric || 'drawdown'; renderAll(); });
+});
+document.querySelectorAll('.preset').forEach(btn => {
+  btn.addEventListener('click', () => choosePreset(Number(btn.dataset.preset)));
+});
+resetBtn.addEventListener('click', () => {
+  selectedFunds = groupedByFund.sp500 ? ['sp500'] : [];
+  selectedDuration = 2;
+  selectedMetric = 'drawdown';
+  refreshSelectedYears();
+  renderAll();
+});
+
+async function shareChart() {
+  if (!chart) { flash('共有するチャートがありません。'); return; }
+  const blob = await new Promise(resolve => chart.canvas.toBlob(resolve, 'image/png'));
+  if (!blob) { flash('画像の生成に失敗しました。'); return; }
+  const file = new File([blob], metricMeta[selectedMetric].shareFile, { type: 'image/png' });
+  const title = metricMeta[selectedMetric].shareTitle;
+  const text = metricMeta[selectedMetric].shareText;
+  try {
+    if (navigator.canShare && navigator.canShare({ files: [file] })) {
+      await navigator.share({ title, text, files: [file] }); return;
+    }
+    if (navigator.share) { await navigator.share({ title, text, url: location.href }); return; }
+    const objectUrl = URL.createObjectURL(blob);
+    const link = document.createElement('a');
+    link.href = objectUrl; link.download = metricMeta[selectedMetric].shareFile; link.click();
+    setTimeout(() => URL.revokeObjectURL(objectUrl), 1000);
+    flash('シェア非対応のため画像保存に切り替えました。');
+  } catch (e) {
+    if (e && e.name === 'AbortError') return;
+    flash('シェアできなかったため、別手段に切り替えてください。');
+  }
+}
+shareBtn.addEventListener('click', shareChart);
+
+(async () => {
+  const failedIds = await loadAllData();
+  loadingWrap.style.display = 'none';
+
+  if (Object.keys(allRawData).length === 0) {
+    errorWrap.textContent = 'データの読み込みに失敗しました。しばらく待ってから再読み込みしてください。';
+    errorWrap.style.display = 'block';
+    return;
+  }
+
+  buildGrouped();
+
+  const loadedFunds = Object.keys(allRawData);
+  const latestGenerated = loadedFunds.reduce((acc, id) => {
+    const g = allRawData[id]?.generated_at ?? '';
+    return g > acc ? g : acc;
+  }, '');
+  if (latestGenerated) {
+    dataInfo.textContent = '更新: ' + new Date(latestGenerated).toLocaleString('ja-JP');
+  }
+
+  if (failedIds.length > 0) {
+    errorWrap.textContent = `読み込み失敗: ${failedIds.join(', ')}`;
+    errorWrap.style.display = 'block';
+  }
+
+  chartWrap.style.display = 'block';
+
+  selectedFunds = groupedByFund[initialFund] ? [initialFund] : (loadedFunds.length ? [loadedFunds[0]] : []);
+  refreshSelectedYears();
+  renderAll();
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>たけこのこ</title>
+  <meta name="description" content="たけこのこが作ったWebツール・iOSアプリの一覧です。株価チャート（ドローダウン）、一覧・図鑑作成などを公開しています。">
+  <link rel="canonical" href="https://takekonoko.com/">
+
+  <!-- Open Graph / Twitter -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="たけこのこ">
+  <meta property="og:description" content="たけこのこが作ったWebツール・iOSアプリの一覧です。">
+  <meta property="og:url" content="https://takekonoko.com/">
+  <meta property="og:image" content="https://takekonoko.com/logo.png">
+  <meta property="og:site_name" content="たけこのこ">
+  <meta name="twitter:card" content="summary">
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-1ZTETB06G5"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-1ZTETB06G5');
+  </script>
+
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container">
+      <a href="#" class="site-name">
+        <img src="/logo.png" alt="" class="site-logo">
+        たけこのこ
+      </a>
+      <button class="nav-toggle" aria-expanded="false" aria-label="メニュー">
+        <span></span><span></span><span></span>
+      </button>
+      <nav id="site-nav">
+        <a href="#webapps">Webアプリ</a>
+        <a href="#ios">iOSアプリ</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <section id="webapps" class="section">
+      <p class="section-title">Web アプリ</p>
+      <div class="card-grid" id="webapps-grid"></div>
+      <noscript>
+        <ul>
+          <li><a href="./apps/ddchart/">株価チャート（ドローダウン）</a> — 投資信託の年別ドローダウン／ランアップを比較するツール。</li>
+          <li><a href="./apps/cardmaker/">一覧・図鑑作成</a> — 画像・テキストを組み合わせてカード画像やPDFを作成。</li>
+        </ul>
+      </noscript>
+    </section>
+
+    <section id="ios" class="section">
+      <p class="section-title">iOS アプリ</p>
+      <div class="card-grid" id="ios-grid"></div>
+      <noscript>
+        <ul>
+          <li><a href="https://apps.apple.com/jp/app/id6503641615">営業日カレンダー</a></li>
+          <li><a href="https://apps.apple.com/jp/app/id6449638390">おにタイマー</a></li>
+          <li><a href="https://apps.apple.com/app/id6448663499">カヌレタワー</a></li>
+          <li><a href="https://apps.apple.com/app/id6447089713">プラスボール</a></li>
+        </ul>
+      </noscript>
+    </section>
+
+    <section id="about" class="section">
+      <p class="section-title">About</p>
+      <p class="about-text">その時の気分で、つくりたいものをつくっています。</p>
+    </section>
+
+    <section id="contact" class="section">
+      <p class="section-title">Contact</p>
+      <div class="contact-links">
+        <a class="contact-link" href="mailto:takeko.dev@gmail.com">メール</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <a href="./privacy.html">プライバシーポリシー</a>
+      <span>© たけこのこ</span>
+    </div>
+  </footer>
+
+  <script>
+    fetch('./data/apps.json')
+      .then(r => r.json())
+      .then(data => {
+        document.getElementById('webapps-grid').innerHTML = data.webapps.map(app => `
+          <a class="card" href="${app.href}">
+            <picture>
+              <source srcset="./images/${app.image}.webp" type="image/webp">
+              <img class="card-icon" src="./images/${app.image}.png" alt="${app.title}">
+            </picture>
+            ${app.tag ? `<span class="card-tag">${app.tag}</span>` : ''}
+            <h3>${app.title}</h3>
+            <p>${app.description}</p>
+          </a>`).join('');
+
+        document.getElementById('ios-grid').innerHTML = data.ios.map(app => `
+          <a class="card" href="${app.href}" target="_blank" rel="noopener">
+            <picture>
+              <source srcset="./images/${app.image}.webp" type="image/webp">
+              <img class="card-icon" src="./images/${app.image}.png" alt="${app.title}">
+            </picture>
+            <h3>${app.title}</h3>
+            <p>App Store で見る</p>
+          </a>`).join('');
+      });
+  </script>
+
+  <script>
+    const toggle = document.querySelector('.nav-toggle');
+    const nav = document.getElementById('site-nav');
+    toggle.addEventListener('click', () => {
+      const open = toggle.getAttribute('aria-expanded') === 'true';
+      toggle.setAttribute('aria-expanded', !open);
+      nav.classList.toggle('is-open', !open);
+    });
+    nav.querySelectorAll('a').forEach(a => {
+      a.addEventListener('click', () => {
+        toggle.setAttribute('aria-expanded', 'false');
+        nav.classList.remove('is-open');
+      });
+    });
+  </script>
+</body>
+</html>
