@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>NASDAQ100 個別銘柄ドローダウン</title>
+  <meta name="description" content="NASDAQ100構成銘柄の最高値からの下落率を比較するダッシュボード">
+  <style>
+    :root{
+      --ink:#17211b;--muted:#69736c;--line:#dfe4df;--paper:#f6f7f3;--card:#fff;
+      --acid:#d9ff43;--red:#e5483f;--orange:#f18e32;--yellow:#dfb82c;--green:#1d8a5b;
+      --shadow:0 18px 55px rgba(23,33,27,.08);--radius:18px;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:var(--paper);color:var(--ink);font-family:Inter,"Noto Sans JP","Yu Gothic UI",system-ui,sans-serif;font-variant-numeric:tabular-nums}
+    button,input,select{font:inherit;color:inherit}
+    button{cursor:pointer}
+    .shell{max-width:1440px;margin:auto;padding:0 28px 64px}
+    header{height:78px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line)}
+    .brand{display:flex;align-items:center;gap:12px;font-weight:900;letter-spacing:-.04em;font-size:22px}
+    .brand-mark{width:40px;height:40px;background:var(--ink);color:var(--acid);display:grid;place-items:center;border-radius:12px;font-size:15px;letter-spacing:-.05em}
+    .header-meta{display:flex;align-items:center;gap:18px;color:var(--muted);font-size:12px}
+    .demo-badge{background:#fff3d1;color:#775b00;border:1px solid #ead389;padding:7px 10px;border-radius:999px;font-weight:700}
+    .pulse{display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--green);margin-right:7px;box-shadow:0 0 0 4px rgba(29,138,91,.1)}
+    .hero{padding:48px 0 28px;display:grid;grid-template-columns:1.5fr .7fr;gap:30px;align-items:end}
+    .eyebrow{font-size:12px;font-weight:800;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);margin-bottom:12px}
+    h1{font-size:clamp(38px,5vw,72px);line-height:.98;letter-spacing:-.065em;margin:0;max-width:850px}
+    h1 span{position:relative;white-space:nowrap}
+    h1 span:after{content:"";position:absolute;height:12px;background:var(--acid);left:-3px;right:-3px;bottom:6px;z-index:-1;transform:rotate(-1deg)}
+    .hero-copy{color:var(--muted);font-size:14px;line-height:1.8;max-width:400px;margin:0 0 3px auto}
+    .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:22px 0 16px}
+    .stat{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:20px;box-shadow:0 8px 30px rgba(23,33,27,.035)}
+    .stat-label{font-size:12px;color:var(--muted);font-weight:700;margin-bottom:12px}
+    .stat-value{font-size:32px;font-weight:900;letter-spacing:-.05em}
+    .stat-sub{font-size:11px;color:var(--muted);margin-top:5px}
+    .toolbar{display:flex;gap:10px;align-items:center;margin:26px 0 12px}
+    .search{flex:1;position:relative}
+    .search input,.toolbar select{width:100%;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px 14px;outline:none}
+    .search input:focus,.toolbar select:focus{border-color:#88948c;box-shadow:0 0 0 3px rgba(23,33,27,.06)}
+    .toolbar select{width:190px}
+    .filter-row{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:16px}
+    .chip{border:1px solid var(--line);background:transparent;border-radius:999px;padding:7px 12px;font-size:12px;font-weight:700}
+    .chip.active{background:var(--ink);border-color:var(--ink);color:white}
+    .panel{background:var(--card);border:1px solid var(--line);border-radius:22px;overflow:hidden;box-shadow:var(--shadow)}
+    table{border-collapse:collapse;width:100%}
+    th{text-align:left;color:var(--muted);font-size:10px;letter-spacing:.08em;text-transform:uppercase;padding:15px 18px;border-bottom:1px solid var(--line);white-space:nowrap}
+    td{padding:16px 18px;border-bottom:1px solid #edf0ed;font-size:13px}
+    tbody tr{transition:.18s;background:#fff}
+    tbody tr:hover,tbody tr.selected{background:#f4f6ed}
+    tbody tr{cursor:pointer}
+    .company{display:flex;align-items:center;gap:12px;min-width:190px}
+    .ticker-icon{width:38px;height:38px;border-radius:10px;background:var(--ink);color:white;display:grid;place-items:center;font-size:11px;font-weight:900}
+    .ticker{font-weight:900;font-size:14px}.name{color:var(--muted);font-size:11px;margin-top:3px}
+    .dd{font-size:20px;font-weight:900;letter-spacing:-.04em}.dd small{font-size:11px;color:var(--muted);font-weight:600;margin-left:4px}
+    .bar{height:6px;background:#edf0ed;border-radius:10px;width:120px;overflow:hidden;margin-top:6px}.bar i{display:block;height:100%;border-radius:10px}
+    .status{padding:6px 9px;border-radius:8px;font-size:10px;font-weight:900;white-space:nowrap}
+    .s-red{background:#ffe5e2;color:#ad271f}.s-orange{background:#ffeddc;color:#a34c00}.s-yellow{background:#fff6cf;color:#7b6300}.s-green{background:#ddf5e9;color:#14633f}
+    .detail{margin-top:18px;padding:24px;display:grid;grid-template-columns:1.45fr .85fr;gap:24px}
+    .detail-head{display:flex;align-items:flex-start;justify-content:space-between;margin-bottom:20px;gap:16px}
+    .detail h2{font-size:27px;letter-spacing:-.04em;margin:0}.detail h2 small{display:block;color:var(--muted);font-size:12px;font-weight:500;letter-spacing:0;margin-top:5px}
+    .periods{display:flex;gap:4px;background:#f0f2ee;padding:4px;border-radius:10px}
+    .periods button{border:0;background:transparent;border-radius:7px;font-size:11px;padding:7px 9px;font-weight:700}
+    .periods button.active{background:#fff;box-shadow:0 2px 8px rgba(0,0,0,.08)}
+    .chart-wrap{height:290px;position:relative}
+    canvas{width:100%;height:100%;display:block}
+    .legend{display:flex;gap:16px;color:var(--muted);font-size:10px;margin-top:10px}.legend i{display:inline-block;width:16px;height:3px;vertical-align:middle;margin-right:6px}
+    .side-title{font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);font-weight:800;margin-bottom:12px}
+    .now-card{background:var(--ink);color:white;border-radius:16px;padding:20px;margin-bottom:18px;position:relative;overflow:hidden}
+    .now-card:after{content:"";position:absolute;width:100px;height:100px;border-radius:50%;background:var(--acid);right:-55px;top:-55px;opacity:.9}
+    .now-label{color:#aeb8b1;font-size:11px}.now-number{font-size:46px;font-weight:900;letter-spacing:-.06em;margin:4px 0}.now-text{font-size:12px;color:#ccd3ce;line-height:1.6}
+    .range{margin:15px 0}.range-top{display:flex;justify-content:space-between;font-size:11px;margin-bottom:7px}.range-top b{font-size:12px}
+    .range-line{height:8px;background:#edf0ed;border-radius:10px;overflow:hidden}.range-line i{display:block;height:100%;background:var(--ink);border-radius:10px}
+    .scenario{display:grid;grid-template-columns:1fr auto;gap:5px 12px;padding:12px 0;border-top:1px solid var(--line);font-size:12px}.scenario span{color:var(--muted)}.scenario strong{font-size:14px}.scenario small{grid-column:1/3;color:var(--muted)}
+    .note{font-size:11px;line-height:1.7;color:var(--muted);border-left:3px solid var(--acid);padding-left:10px;margin-top:16px}
+    footer{display:flex;justify-content:space-between;gap:30px;border-top:1px solid var(--line);margin-top:40px;padding-top:22px;color:var(--muted);font-size:10px;line-height:1.7}
+    .mobile-cards{display:none}
+    @media(max-width:900px){.hero{grid-template-columns:1fr}.hero-copy{margin:0}.stats{grid-template-columns:repeat(2,1fr)}.detail{grid-template-columns:1fr}.table-wrap{overflow:auto}.header-meta span:not(.demo-badge){display:none}}
+    @media(max-width:600px){.shell{padding:0 15px 40px}header{height:66px}.hero{padding:34px 0 18px}h1{font-size:43px}.stats{gap:8px}.stat{padding:15px}.stat-value{font-size:25px}.toolbar{display:grid;grid-template-columns:1fr 130px}.toolbar select{width:100%}.panel.table-panel{display:none}.mobile-cards{display:grid;gap:9px}.stock-card{background:white;border:1px solid var(--line);border-radius:14px;padding:14px;display:grid;grid-template-columns:1fr auto;gap:12px}.stock-card .company{min-width:0}.detail{padding:16px}.detail-head{display:block}.periods{margin-top:12px;width:max-content}.chart-wrap{height:230px}footer{display:block}.hero-copy{font-size:13px}}
+  </style>
+</head>
+<body>
+  <div class="shell">
+    <header>
+      <div class="brand"><span class="brand-mark">NDX</span> DRAW<span style="color:#8b9690">DOWN</span></div>
+      <div class="header-meta"><span class="demo-badge">Yahoo Finance</span><span><i class="pulse"></i>米国市場 終値ベース</span><span>2026.08.07</span></div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div><div class="eyebrow">NASDAQ-100 STOCK MONITOR</div><h1>最高値から、<br><span>いま何％下か。</span></h1></div>
+        <p class="hero-copy">現在の下落率を、過去の下落局面と同じものさしで比較。予測ではなく、現在地を冷静に把握するためのダッシュボードです。</p>
+      </section>
+
+      <section class="stats" aria-label="市場サマリー">
+        <div class="stat"><div class="stat-label">7銘柄の下落率中央値</div><div class="stat-value" id="median">18.6%</div><div class="stat-sub">最高値終値から</div></div>
+        <div class="stat"><div class="stat-label">20%以上下落</div><div class="stat-value" id="over20">3 / 7</div><div class="stat-sub">調整局面より深い銘柄</div></div>
+        <div class="stat"><div class="stat-label">最も深い下落</div><div class="stat-value" id="deepest">−34.8%</div><div class="stat-sub" id="deepestName">TSLA · Tesla</div></div>
+        <div class="stat"><div class="stat-label">最高値からの平均日数</div><div class="stat-value">214日</div><div class="stat-sub">デモ値</div></div>
+      </section>
+
+      <div class="toolbar">
+        <label class="search"><input id="search" type="search" placeholder="ティッカー・企業名で検索" aria-label="銘柄検索"></label>
+        <select id="sort" aria-label="並べ替え"><option value="dd">下落率が深い順</option><option value="ticker">ティッカー順</option><option value="ath">最高値が新しい順</option><option value="max">過去最大下落順</option></select>
+      </div>
+      <div class="filter-row" aria-label="下落率フィルター">
+        <button class="chip active" data-filter="all">すべて 7</button><button class="chip" data-filter="10">10%以上</button><button class="chip" data-filter="20">20%以上</button><button class="chip" data-filter="30">30%以上</button>
+      </div>
+
+      <section class="panel table-panel"><div class="table-wrap"><table>
+        <thead><tr><th>銘柄</th><th>現在値</th><th>最高値終値</th><th>現在の下落率</th><th>最高値日</th><th>過去最大</th><th>過去比較</th><th>状態</th></tr></thead>
+        <tbody id="stockRows"></tbody>
+      </table></div></section>
+      <section class="mobile-cards" id="stockCards"></section>
+
+      <section class="panel detail" id="detail">
+        <div>
+          <div class="detail-head"><h2 id="detailTitle">NVDA <small>NVIDIA</small></h2><div class="periods"><button data-period="1Y">1年</button><button data-period="5Y" class="active">5年</button><button data-period="MAX">最大</button></div></div>
+          <div class="chart-wrap"><canvas id="chart" aria-label="最高値からの下落率チャート"></canvas></div>
+          <div class="legend"><span><i style="background:#17211b"></i>ドローダウン</span><span><i style="background:#d9ff43"></i>現在</span><span><i style="background:#e5483f"></i>−20%ライン</span></div>
+        </div>
+        <aside>
+          <div class="side-title">現在地</div>
+          <div class="now-card"><div class="now-label">最高値終値から</div><div class="now-number" id="nowNumber">−18.6%</div><div class="now-text" id="nowText">過去の10%以上の下落局面のうち、深い方から42%の位置です。</div></div>
+          <div class="range"><div class="range-top"><span>過去の下落局面での位置</span><b id="percentileText">42 percentile</b></div><div class="range-line"><i id="percentileBar" style="width:42%"></i></div></div>
+          <div class="side-title" style="margin-top:24px">過去を参考にした水準</div>
+          <div id="scenarios"></div>
+          <p class="note">下落率は株式分割調整済みの日次終値から計算する想定です。過去の値動きは、将来の下落幅や回復を保証しません。</p>
+        </aside>
+      </section>
+    </main>
+
+    <footer><span>NASDAQ100 Drawdown Monitor<br>非公式の分析UIサンプルです。</span><span>Yahoo Financeの調整後終値を利用しています。指数構成や価格の完全性を保証しません。<br>投資判断・売買推奨を目的としたものではありません。</span></footer>
+  </div>
+
+  <script>
+  let stocks=[];
+  let selected='NVDA',filter='all',period='5Y';
+  const colors={green:'#1d8a5b',yellow:'#dfb82c',orange:'#f18e32',red:'#e5483f'};
+  const tone=d=>d>=30?'red':d>=20?'orange':d>=10?'yellow':'green';
+  const label=d=>d>=30?'深い下落':d>=20?'弱気圏':d>=10?'調整局面':'最高値圏';
+  const yen=n=>'$'+n.toFixed(2);
+  function visible(){
+    const q=document.querySelector('#search').value.toLowerCase();
+    const min=filter==='all'?0:Number(filter);
+    const key=document.querySelector('#sort').value;
+    return stocks.filter(s=>s.dd>=min&&(s.ticker.toLowerCase().includes(q)||s.name.toLowerCase().includes(q))).sort((a,b)=>key==='ticker'?a.ticker.localeCompare(b.ticker):key==='ath'?b.date.localeCompare(a.date):key==='max'?b.max-a.max:b.dd-a.dd);
+  }
+  function renderList(){
+    const list=visible();
+    document.querySelector('#stockRows').innerHTML=list.map(s=>`<tr data-id="${s.ticker}" class="${selected===s.ticker?'selected':''}"><td><div class="company"><span class="ticker-icon">${s.ticker.slice(0,2)}</span><span><div class="ticker">${s.ticker}</div><div class="name">${s.name}</div></span></div></td><td><b>${yen(s.price)}</b></td><td>${yen(s.ath)}</td><td><div class="dd" style="color:${colors[tone(s.dd)]}">−${s.dd.toFixed(1)}% <small>${s.days}日</small></div><div class="bar"><i style="width:${Math.min(s.dd*2,100)}%;background:${colors[tone(s.dd)]}"></i></div></td><td>${s.date}</td><td>−${s.max.toFixed(1)}%</td><td><b>${s.p}%ile</b></td><td><span class="status s-${tone(s.dd)}">${label(s.dd)}</span></td></tr>`).join('');
+    document.querySelector('#stockCards').innerHTML=list.map(s=>`<article class="stock-card" data-id="${s.ticker}"><div class="company"><span class="ticker-icon">${s.ticker.slice(0,2)}</span><span><div class="ticker">${s.ticker}</div><div class="name">${s.name}</div></span></div><div style="text-align:right"><div class="dd" style="color:${colors[tone(s.dd)]}">−${s.dd.toFixed(1)}%</div><span class="status s-${tone(s.dd)}">${label(s.dd)}</span></div></article>`).join('')||'<p>該当する銘柄はありません。</p>';
+    document.querySelectorAll('[data-id]').forEach(el=>el.onclick=()=>{selected=el.dataset.id;renderList();renderDetail();document.querySelector('#detail').scrollIntoView({behavior:'smooth',block:'start'})});
+  }
+  function drawChart(s){
+    const c=document.querySelector('#chart'),ctx=c.getContext('2d'),r=c.getBoundingClientRect(),dpr=devicePixelRatio||1;c.width=r.width*dpr;c.height=r.height*dpr;ctx.scale(dpr,dpr);
+    const W=r.width,H=r.height,pad={l:38,r:10,t:12,b:26};ctx.clearRect(0,0,W,H);
+    const cutoff=period==='1Y'?Date.now()-366*864e5:period==='5Y'?Date.now()-5*366*864e5:0;
+    const rows=s.records.filter(r=>Date.parse(r[0])>=cutoff),data=rows.map(r=>r[2]),points=data.length;
+    const maxY=Math.max(40,Math.ceil(Math.abs(Math.min(...data))/20)*20);
+    ctx.font='10px system-ui';ctx.fillStyle='#89928c';ctx.textAlign='right';ctx.textBaseline='middle';
+    [0,-20,-40,-60,-80,-100].filter(v=>-v<=maxY).forEach(v=>{const y=pad.t+(-v/maxY)*(H-pad.t-pad.b);ctx.beginPath();ctx.strokeStyle=v===-20?'rgba(229,72,63,.55)':'#e5e9e5';ctx.setLineDash(v===-20?[5,5]:[]);ctx.moveTo(pad.l,y);ctx.lineTo(W-pad.r,y);ctx.stroke();ctx.fillText(v+'%',pad.l-7,y)});ctx.setLineDash([]);
+    const x=i=>pad.l+i/(points-1)*(W-pad.l-pad.r),y=v=>pad.t+(-v/maxY)*(H-pad.t-pad.b);
+    ctx.beginPath();data.forEach((v,i)=>i?ctx.lineTo(x(i),y(v)):ctx.moveTo(x(i),y(v)));ctx.lineTo(x(points-1),y(0));ctx.lineTo(x(0),y(0));ctx.closePath();const grad=ctx.createLinearGradient(0,pad.t,0,H-pad.b);grad.addColorStop(0,'rgba(23,33,27,.04)');grad.addColorStop(1,'rgba(23,33,27,.22)');ctx.fillStyle=grad;ctx.fill();
+    ctx.beginPath();data.forEach((v,i)=>i?ctx.lineTo(x(i),y(v)):ctx.moveTo(x(i),y(v)));ctx.strokeStyle='#17211b';ctx.lineWidth=2.2;ctx.stroke();
+    ctx.beginPath();ctx.arc(x(points-1),y(-s.dd),5,0,Math.PI*2);ctx.fillStyle='#d9ff43';ctx.fill();ctx.lineWidth=3;ctx.strokeStyle='#17211b';ctx.stroke();
+    ctx.textAlign='left';ctx.textBaseline='top';ctx.fillStyle='#89928c';ctx.fillText(period==='1Y'?'1年前':period==='5Y'?'5年前':'上場',pad.l,H-17);ctx.textAlign='right';ctx.fillText('現在',W-pad.r,H-17);
+  }
+  function renderDetail(){
+    const s=stocks.find(x=>x.ticker===selected);document.querySelector('#detailTitle').innerHTML=`${s.ticker} <small>${s.name}</small>`;document.querySelector('#nowNumber').textContent=`−${s.dd.toFixed(1)}%`;document.querySelector('#nowText').textContent=`過去の10%以上の下落局面のうち、深い方から${s.p}%の位置です。`;document.querySelector('#percentileText').textContent=`${s.p} percentile`;document.querySelector('#percentileBar').style.width=s.p+'%';
+    const med=Math.min(s.max*.33,28),q75=Math.min(s.max*.52,46),price=x=>s.ath*(1-x/100);document.querySelector('#scenarios').innerHTML=`<div class="scenario"><span>過去中央値</span><strong>−${med.toFixed(1)}%</strong><small>最高値基準の価格 ${yen(price(med))}</small></div><div class="scenario"><span>過去75%水準</span><strong>−${q75.toFixed(1)}%</strong><small>最高値基準の価格 ${yen(price(q75))}</small></div><div class="scenario"><span>過去最大</span><strong>−${s.max.toFixed(1)}%</strong><small>上場後に経験した最大下落</small></div>`;requestAnimationFrame(()=>drawChart(s));
+  }
+  document.querySelector('#search').addEventListener('input',renderList);document.querySelector('#sort').addEventListener('change',renderList);
+  document.querySelectorAll('.chip').forEach(b=>b.onclick=()=>{document.querySelectorAll('.chip').forEach(x=>x.classList.remove('active'));b.classList.add('active');filter=b.dataset.filter;renderList()});
+  document.querySelectorAll('.periods button').forEach(b=>b.onclick=()=>{document.querySelectorAll('.periods button').forEach(x=>x.classList.remove('active'));b.classList.add('active');period=b.dataset.period;renderDetail()});
+  addEventListener('resize',()=>stocks.length&&renderDetail()); fetch('./data/summary.json').then(r=>r.json()).then(p=>{stocks=p.stocks.map(s=>({ticker:s.symbol,name:s.name,price:s.price,ath:s.peak,dd:Math.abs(s.drawdown),date:s.peakDate,max:Math.abs(s.maxDrawdown),p:Math.round(s.records.filter(r=>Math.abs(r[2])<=Math.abs(s.drawdown)).length/s.records.length*100),days:Math.max(0,Math.round((Date.parse(s.date)-Date.parse(s.peakDate))/864e5)),records:s.records}));selected=stocks.find(s=>s.ticker==='NVDA')?'NVDA':stocks[0].ticker;document.querySelector('.demo-badge').textContent='更新 '+new Date(p.generatedAt).toLocaleDateString('ja-JP');renderList();renderDetail()}).catch(e=>alert('データを取得できません: '+e.message));
+  </script>
+</body>
+</html>
