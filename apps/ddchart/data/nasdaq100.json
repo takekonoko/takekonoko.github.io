@@ -2,7 +2,7 @@
   "fund": "NASDAQ 100",
   "symbol": "^NDX",
   "source": "Yahoo Finance chart API (close)",
-  "generated_at": "2026-08-12T18:04:33.198Z",
+  "generated_at": "2026-08-12T18:17:31.027Z",
   "count": 6692,
   "records": [
     {
@@ -66917,13 +66917,13 @@
     },
     {
       "date": "2026-08-12",
-      "price": 29797.8516,
+      "price": 29797.707,
       "year": 2026,
       "business_day": 153,
       "running_min": 22953.3809,
       "running_max": 30660.5996,
-      "drawdown": -2.8139,
-      "runup": 29.819
+      "drawdown": -2.8143,
+      "runup": 29.8184
     }
   ]
 }
