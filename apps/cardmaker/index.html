@@ -26,7 +26,7 @@
   --accent:#ffb84d; --card-bg:#fff; --label-bg:rgba(10,10,10,.7);
 }
 *{box-sizing:border-box;font-family:"Noto Sans JP",sans-serif}
-body{margin:0;background:var(--dark-bg);color:var(--text);display:flex;flex-direction:column;height:100vh}
+body{margin:0;background:var(--dark-bg);color:var(--text);display:flex;flex-direction:column;min-height:100vh}
 
 /* Header */
 header{
@@ -69,7 +69,7 @@ header .spacer{flex:1}
 .menu .icon{width:18px;display:inline-block;text-align:center;margin-right:6px}
 
 /* Layout panes */
-main{flex:1;display:flex;overflow:hidden}
+main{display:flex;overflow:hidden;height:calc(100vh - 55px);min-height:620px}
 aside{flex:3;max-width:520px;overflow:auto;padding:14px;background:var(--panel-bg);border-right:1px solid #333}
 section{flex:7;display:flex;justify-content:center;align-items:flex-start;overflow:auto;padding:20px 12px}
 
@@ -105,6 +105,11 @@ select{background:#1a1a1a}
 .switch input:checked + .slider:before{transform:translateX(22px)}
 .hidden{display:none!important}
 .note{font-size:12px;color:var(--muted)}
+
+/* Guide */
+.guide{width:min(980px,calc(100% - 32px));margin:48px auto;padding:32px;background:#202020;border:1px solid #3a3a3a;border-radius:18px;color:var(--text)}
+.guide h2{font-size:24px;margin:0 0 14px}.guide h3{font-size:16px;color:#ffe0a3;margin:28px 0 8px}.guide p,.guide li{font-size:14px;line-height:1.9;color:#bbb}.guide p{margin:0 0 12px}.guide ul,.guide ol{padding-left:1.4rem}.guide-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:18px 0}.guide-box{padding:16px;background:#282828;border:1px solid #414141;border-radius:12px}.guide-box h3{margin:0 0 6px}.site-links{display:flex;gap:16px;flex-wrap:wrap;margin-top:26px;padding-top:18px;border-top:1px solid #414141}.site-links a{color:var(--accent);font-size:13px;text-decoration:none}
+@media(max-width:700px){main{height:auto;min-height:0;display:block}aside{max-width:none;border-right:0}main>section{min-height:65vh}.guide{padding:22px}.guide-grid{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
@@ -198,6 +203,36 @@ select{background:#1a1a1a}
     </div>
   </section>
 </main>
+<article class="guide" aria-labelledby="card-guide-title">
+  <h2 id="card-guide-title">画像とテキストから一覧表・図鑑を作る</h2>
+  <p>複数の画像に名称と説明を付け、A4サイズの一覧へまとめるためのブラウザツールです。生き物の図鑑、商品一覧、メニュー、コレクション整理など、同じ形式のカードを一度に並べたいときに使えます。</p>
+
+  <div class="guide-grid">
+    <div class="guide-box"><h3>レイアウトを自動調整</h3><p>項目数と用紙の縦横に合わせて、カードの列数と行数を自動で決めます。余白とカード背景の明るさも変更できます。</p></div>
+    <div class="guide-box"><h3>PDF・画像で保存</h3><p>現在のページをPNGまたはJPEGで保存できます。PDFは1ページ目、2ページ目、両方から選べます。</p></div>
+    <div class="guide-box"><h3>背景とロゴ</h3><p>背景画像の薄さを調整し、任意のロゴ画像を配置できます。ロゴは大きさと縦横位置を変更できます。</p></div>
+    <div class="guide-box"><h3>テーマを保存</h3><p>作業内容をJSON形式のテーマファイルとして保存し、後から読み込んで続きから編集できます。</p></div>
+  </div>
+
+  <h3>基本的な使い方</h3>
+  <ol>
+    <li>用紙の縦横、余白、項目数を選びます。</li>
+    <li>名称と説明を1行につき1項目ずつ入力します。</li>
+    <li>プレビュー内の各カードをクリックし、表示する画像を選びます。</li>
+    <li>必要に応じて背景画像やロゴを設定し、右上のダウンロードからPDFまたは画像を保存します。</li>
+  </ol>
+
+  <h3>画像と入力内容の扱い</h3>
+  <p>選択した画像、名称、説明は、一覧を作成するために利用者のブラウザ内で処理します。このサイト独自のサーバーへ素材をアップロードする機能はありません。テーマ保存を選んだ場合は、作業内容を利用者の端末へJSONファイルとしてダウンロードします。</p>
+
+  <h3>よくある質問</h3>
+  <div class="guide-grid">
+    <div class="guide-box"><h3>何項目まで並べられますか？</h3><p>1ページにつき最大50項目です。項目が多いほど各カードは小さくなるため、見やすさに応じてページを分けてください。</p></div>
+    <div class="guide-box"><h3>作業は自動保存されますか？</h3><p>自動保存は行いません。後で再編集する場合は「テーマ保存」でJSONファイルを保存してください。</p></div>
+  </div>
+
+  <nav class="site-links" aria-label="サイト情報"><a href="/">ツール一覧</a><a href="/about.html">運営者情報</a><a href="/privacy.html">プライバシーポリシー</a><a href="mailto:takeko.dev@gmail.com">お問い合わせ</a></nav>
+</article>
 
 <script>
 /* refs */

@@ -4,7 +4,17 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>NASDAQ100 長期上昇銘柄のドローダウン</title>
-  <meta name="description" content="NASDAQ100構成銘柄の最高値からの下落率を比較するダッシュボード">
+  <meta name="description" content="NASDAQ100構成銘柄の現在の下落率を、10年最大ドローダウンや過去の下落局面と比較する無料ツールです。">
+  <link rel="canonical" href="https://takekonoko.com/apps/nasdaq100-drawdown/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="NASDAQ100 長期上昇銘柄のドローダウン">
+  <meta property="og:description" content="NASDAQ100構成銘柄の現在の下落を、10年最大DDや過去の下落局面と比較します。">
+  <meta property="og:url" content="https://takekonoko.com/apps/nasdaq100-drawdown/">
+  <meta property="og:image" content="https://takekonoko.com/images/nasdaq100-drawdown.png">
+  <meta name="twitter:card" content="summary">
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <style>
     :root{
       --ink:#17211b;--muted:#69736c;--line:#dfe4df;--paper:#f6f7f3;--card:#fff;
@@ -74,14 +84,16 @@
     .note{font-size:11px;line-height:1.7;color:var(--muted);border-left:3px solid var(--acid);padding-left:10px;margin-top:16px}
     footer{display:flex;justify-content:space-between;gap:30px;border-top:1px solid var(--line);margin-top:40px;padding-top:22px;color:var(--muted);font-size:10px;line-height:1.7}
     .mobile-cards{display:none}
+    .guide{max-width:980px;margin:54px auto 0;padding:34px;background:#fff;border:1px solid var(--line);border-radius:22px;box-shadow:0 8px 30px rgba(23,33,27,.035)}
+    .guide h2{font-size:25px;margin:0 0 14px}.guide h3{font-size:16px;margin:28px 0 8px}.guide p,.guide li{font-size:13px;line-height:1.9;color:var(--muted)}.guide p{margin:0 0 12px}.guide ul,.guide ol{padding-left:1.3rem}.guide-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.guide-box{background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:16px}.guide-box h3{margin:0 0 6px}.site-links{display:flex;gap:16px;flex-wrap:wrap;margin-top:26px;padding-top:18px;border-top:1px solid var(--line)}.site-links a{color:var(--ink);font-size:12px;font-weight:700}
     @media(max-width:900px){.hero{grid-template-columns:1fr}.hero-copy{margin:0}.stats{grid-template-columns:repeat(2,1fr)}.detail{grid-template-columns:1fr}.table-wrap{overflow:auto}.header-meta span:not(.demo-badge){display:none}}
-    @media(max-width:600px){.shell{padding:0 15px 40px}header{height:66px}.hero{padding:34px 0 18px}h1{font-size:43px}.stats{gap:8px}.stat{padding:15px}.stat-value{font-size:25px}.toolbar{display:grid;grid-template-columns:1fr 130px}.toolbar select{width:100%}.panel.table-panel{display:none}.mobile-cards{display:grid;gap:9px}.stock-card{background:white;border:1px solid var(--line);border-radius:14px;padding:14px;display:grid;grid-template-columns:1fr auto;gap:12px}.stock-card .company{min-width:0}.detail{padding:16px}.detail-head{display:block}.periods{margin-top:12px;width:max-content}.chart-wrap{height:230px}footer{display:block}.hero-copy{font-size:13px}}
+    @media(max-width:600px){.guide{padding:22px}.guide-grid{grid-template-columns:1fr}.shell{padding:0 15px 40px}header{height:66px}.hero{padding:34px 0 18px}h1{font-size:43px}.stats{gap:8px}.stat{padding:15px}.stat-value{font-size:25px}.toolbar{display:grid;grid-template-columns:1fr 130px}.toolbar select{width:100%}.panel.table-panel{display:none}.mobile-cards{display:grid;gap:9px}.stock-card{background:white;border:1px solid var(--line);border-radius:14px;padding:14px;display:grid;grid-template-columns:1fr auto;gap:12px}.stock-card .company{min-width:0}.detail{padding:16px}.detail-head{display:block}.periods{margin-top:12px;width:max-content}.chart-wrap{height:230px}footer{display:block}.hero-copy{font-size:13px}}
   </style>
 </head>
 <body>
   <div class="shell">
     <header>
-      <div class="brand">長期上昇銘柄のドローダウン</div>
+      <h1 class="brand">長期上昇銘柄のドローダウン</h1>
       <div class="header-meta"><span class="demo-badge">Yahoo Finance</span><span><i class="pulse"></i>米国市場 終値ベース</span></div>
     </header>
 
@@ -116,9 +128,41 @@
           <p class="note">下落率は株式分割調整済みの日次終値から計算する想定です。過去の値動きは、将来の下落幅や回復を保証しません。</p>
         </aside>
       </section>
+
+      <section class="guide" aria-labelledby="nas-guide-title">
+        <h2 id="nas-guide-title">NASDAQ100銘柄の「現在の下落」を過去と比べる</h2>
+        <p>株価が最高値から下がったとき、下落率だけではその銘柄にとって大きな下落なのか判断しにくいため、各銘柄自身の過去と比較できるようにしました。NASDAQ100の構成銘柄を一覧にし、現在のドローダウン、過去約10年の最大ドローダウン、過去の下落局面における位置を同じ画面で確認できます。</p>
+
+        <div class="guide-grid">
+          <div class="guide-box"><h3>現在DD</h3><p>調整後終値の最高値から、最新の終値まで何％下落しているかを示します。最高値を更新すると0％に戻ります。</p></div>
+          <div class="guide-box"><h3>最大DD比</h3><p>現在DDが、その銘柄の過去約10年の最大DDに対して何％の深さまで来ているかを示します。100％に近いほど過去最大の下落に近い状態です。</p></div>
+          <div class="guide-box"><h3>過去の下落局面での位置</h3><p>完了した10％以上の下落局面を抽出し、現在の下落より浅かった局面の割合を表示します。75％なら、過去局面のおよそ4分の3より深い下落です。</p></div>
+          <div class="guide-box"><h3>長期上昇フィルター</h3><p>5年年平均成長率が8％以上、3年年平均成長率が0％以上、直近5区間のうち上昇した年が3回以上という条件で絞り込みます。</p></div>
+        </div>
+
+        <h3>使い方</h3>
+        <ol>
+          <li>初期表示では「長期上昇」条件に該当する銘柄が並びます。「すべて」で対象全体を確認できます。</li>
+          <li>検索欄へティッカーまたは企業名を入力し、下落率や最大DD比などで並べ替えます。</li>
+          <li>銘柄の行またはカードを選ぶと、1年・5年・最大期間のドローダウン推移と過去局面との比較を表示します。</li>
+        </ol>
+
+        <h3>計算とデータについて</h3>
+        <p>Yahoo Financeの株式分割等を調整した日次終値を利用し、最高値からの下落率を計算しています。最大DDは収録期間内で最も深かった値です。年平均成長率は、最新値と指定年前に近い値から複利ベースで算出します。NASDAQ100の構成や価格データは自動取得時点の情報であり、取得元とのずれや欠損が生じる場合があります。更新日はページ上部に表示しています。</p>
+
+        <h3>よくある質問</h3>
+        <div class="guide-grid">
+          <div class="guide-box"><h3>「長期上昇」は銘柄の推奨ですか？</h3><p>いいえ。過去データを一定条件で機械的に絞った表示です。企業の将来性や適正価格を評価するものではありません。</p></div>
+          <div class="guide-box"><h3>最大DD比が100％を超えることはありますか？</h3><p>最新の下落が収録期間の過去最大を更新した場合など、計算上100％を超えることがあります。</p></div>
+        </div>
+
+        <h3>免責事項</h3>
+        <p>本ツールは個人が運営する非公式の情報提供ツールです。表示内容の正確性・完全性を保証するものではなく、投資判断や売買推奨を目的としていません。</p>
+        <nav class="site-links" aria-label="サイト情報"><a href="/">ツール一覧</a><a href="/about.html">運営者情報</a><a href="/privacy.html">プライバシーポリシー</a><a href="mailto:takeko.dev@gmail.com">お問い合わせ</a></nav>
+      </section>
     </main>
 
-    <footer><span>NASDAQ100 Drawdown Monitor<br>非公式の分析ツールです。</span><span>Yahoo Financeの調整後終値を利用しています。指数構成や価格の完全性を保証しません。<br>投資判断・売買推奨を目的としたものではありません。</span></footer>
+    <footer><span>NASDAQ100 Drawdown Monitor<br>非公式の分析ツールです。</span><span>データや表示のご指摘は <a href="mailto:takeko.dev@gmail.com">takeko.dev@gmail.com</a> までお知らせください。</span></footer>
   </div>
 
   <script>

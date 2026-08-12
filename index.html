@@ -3,14 +3,14 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>たけこのこ</title>
-  <meta name="description" content="たけこのこが作ったWebツール・iOSアプリの一覧です。株価チャート（ドローダウン）、一覧・図鑑作成などを公開しています。">
+  <title>たけこのこ | 投資データ・制作Webツール</title>
+  <meta name="description" content="株価や指数の現在地を過去と比べる投資データツール、画像と文章から一覧を作る制作ツールを無料で公開しています。登録・インストール不要で使えます。">
   <link rel="canonical" href="https://takekonoko.com/">
 
   <!-- Open Graph / Twitter -->
   <meta property="og:type" content="website">
   <meta property="og:title" content="たけこのこ">
-  <meta property="og:description" content="たけこのこが作ったWebツール・iOSアプリの一覧です。">
+  <meta property="og:description" content="自分が必要だと思った小さなWebツールを、登録不要で公開しています。">
   <meta property="og:url" content="https://takekonoko.com/">
   <meta property="og:image" content="https://takekonoko.com/logo.png">
   <meta property="og:site_name" content="たけこのこ">
@@ -45,16 +45,22 @@
         <a href="#markets">投資ツール</a>
         <a href="#creative">制作ツール</a>
         <a href="#ios">iOSアプリ</a>
-        <a href="#about">About</a>
+        <a href="./about.html">About</a>
         <a href="#contact">Contact</a>
       </nav>
     </div>
   </header>
 
   <main class="container">
+    <section class="home-intro" aria-labelledby="home-title">
+      <p class="home-kicker">TAKEKONOKO WEB TOOLS</p>
+      <h1 id="home-title">必要になったものを、<br>すぐ使えるWebツールに。</h1>
+      <p>株価や指数の現在地を過去と比べる投資データツールを中心に、自分が実際に欲しいと思った道具を公開しています。登録やインストールは必要ありません。</p>
+    </section>
 
     <section id="markets" class="section">
       <p class="section-title">投資データツール</p>
+      <p class="section-lead">値動きを予測するのではなく、現在の下落や上昇が過去と比べてどの位置にあるかを確認するためのツールです。</p>
       <div class="card-grid" id="markets-grid"></div>
       <noscript>
         <ul>
@@ -66,6 +72,7 @@
 
     <section id="creative" class="section">
       <p class="section-title">制作ツール</p>
+      <p class="section-lead">画像とテキストをまとめ、一覧表や図鑑をブラウザ上で作成できます。</p>
       <div class="card-grid" id="creative-grid"></div>
       <noscript>
         <ul>
@@ -89,7 +96,7 @@
 
     <section id="about" class="section">
       <p class="section-title">About</p>
-      <p class="about-text">自分が必要だと思ったものを、すぐに使える小さなWebツールとしてつくり、公開しています。</p>
+      <p class="about-text">自分が必要だと思ったものを、すぐに使える小さなWebツールとしてつくり、公開しています。<a href="./about.html">このサイトと運営者について</a></p>
     </section>
 
     <section id="contact" class="section">
@@ -103,7 +110,7 @@
 
   <footer class="site-footer">
     <div class="container">
-      <a href="./privacy.html">プライバシーポリシー</a>
+      <div class="footer-links"><a href="./about.html">運営者情報</a><a href="./privacy.html">プライバシーポリシー</a></div>
       <span>© たけこのこ</span>
     </div>
   </footer>

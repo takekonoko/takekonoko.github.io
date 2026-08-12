@@ -193,6 +193,22 @@ h1{
   animation:spin .8s linear infinite;
 }
 @keyframes spin{to{transform:rotate(360deg)}}
+.guide{
+  max-width:980px;
+  margin:56px auto 0;
+  padding:0 16px;
+  color:var(--text);
+}
+.guide h2{font-size:24px;margin:0 0 14px}
+.guide h3{font-size:17px;margin:30px 0 8px}
+.guide p,.guide li{font-size:14px;line-height:1.9;color:#4b5563}
+.guide p{margin:0 0 12px}
+.guide ul,.guide ol{padding-left:1.4rem;margin:8px 0 16px}
+.guide-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin:18px 0}
+.guide-box{background:#fff;border:1px solid var(--line);border-radius:14px;padding:18px}
+.guide-box h3{margin:0 0 7px}
+.site-links{display:flex;gap:16px;flex-wrap:wrap;margin-top:28px;padding-top:18px;border-top:1px solid var(--line);font-size:13px}
+@media(max-width:640px){.guide-grid{grid-template-columns:1fr}.guide{margin-top:40px}.guide h2{font-size:21px}}
 @media (max-width: 640px){
   .wrap{padding:12px}
   .main-card{padding:12px}
@@ -286,37 +302,45 @@ h1{
   </div>
 </div>
 
-<!-- SEOフッター -->
-<div style="
-text-align:center;
-margin-top:60px;
-padding:18px 16px;
-font-size:14px;
-color:#374151;
-background:#f3f4f6;
-border-radius:12px;
-line-height:1.8;
-">
+<section class="guide" aria-labelledby="guide-title">
+  <h2 id="guide-title">このチャートで分かること</h2>
+  <p>S&amp;P500、NYダウ、NASDAQ100、オルカン、日経225、TOPIX目安について、同じ長さの期間を横に並べて比較するツールです。通常の時系列チャートでは離れた年の下落を重ねて見にくいため、各年を同じ起点から表示できる形にしました。</p>
 
-<div style="font-weight:600;margin-bottom:4px;">
-ドローダウン・ランアップ比較ツール
-</div>
+  <div class="guide-grid">
+    <div class="guide-box">
+      <h3>ドローダウン</h3>
+      <p>選択期間内で、それまでの最高値から何％下落しているかを表示します。最高値を更新した日は0％になり、下落が深いほど値はマイナス方向へ進みます。</p>
+    </div>
+    <div class="guide-box">
+      <h3>ランアップ</h3>
+      <p>選択期間内で、それまでの最安値から何％上昇しているかを表示します。安値を更新した日は0％になり、そこからの上昇幅を確認できます。</p>
+    </div>
+  </div>
 
-<div style="font-size:13px;color:#6b7280;">
-S&P500・NYダウ・NASDAQ100・オルカン・日経225・TOPIXの
-期間別ドローダウンとランアップを比較できる投資分析ツール
-</div>
+  <h3>使い方</h3>
+  <ol>
+    <li>比較したい指数を選びます。複数の指数を同時に表示できます。</li>
+    <li>「ドローダウン」または「ランアップ」を選択します。</li>
+    <li>1〜10年の期間を選ぶと、利用可能な連続期間がチャートに重なります。</li>
+    <li>凡例や線へ触れると、該当期間の値を確認できます。「リセット」で初期状態へ戻せます。</li>
+  </ol>
 
-<div style="margin-top:6px;">
-by
-<a href="https://takekonoko.com/"
-style="font-weight:600;color:#2563eb;text-decoration:none;">
-takekonoko.com
-</a>
-</div>
+  <h3>計算方法</h3>
+  <p>ドローダウンは「当日の価格 ÷ その期間内の当日までの最高値 − 1」、ランアップは「当日の価格 ÷ その期間内の当日までの最安値 − 1」を百分率にしています。期間ごとに最高値・最安値を計算し直すため、同じ日でも選択した期間によって値が変わる場合があります。</p>
 
-</div>
+  <h3>データと更新</h3>
+  <p>指数に連動する代表的な銘柄のYahoo Finance日次データを取得し、サイト側で計算した結果を表示しています。ページ上部にデータの最終日と更新時刻を表示します。休日や取得元の更新状況により、最新の市場営業日と一致しない場合があります。TOPIXとオルカンは連動商品の価格を使った目安です。</p>
 
+  <h3>よくある質問</h3>
+  <div class="guide-grid">
+    <div class="guide-box"><h3>価格チャートではないのですか？</h3><p>価格そのものではなく、その期間の高値または安値を基準にした変化率を表示しています。価格水準の異なる指数も同じ尺度で比較できます。</p></div>
+    <div class="guide-box"><h3>将来の下落幅を予測できますか？</h3><p>このツールは過去と現在の位置関係を確認するためのものです。予測値や売買シグナルは表示していません。</p></div>
+  </div>
+
+  <h3>免責事項</h3>
+  <p>本ツールは個人が運営する非公式の情報提供ツールです。データの正確性・完全性を保証するものではなく、投資判断や売買推奨を目的としていません。</p>
+  <nav class="site-links" aria-label="サイト情報"><a href="/">ツール一覧</a><a href="/about.html">運営者情報</a><a href="/privacy.html">プライバシーポリシー</a><a href="mailto:takeko.dev@gmail.com">お問い合わせ</a></nav>
+</section>
 <script>
 const DATA_BASE_URL = './data';
 
