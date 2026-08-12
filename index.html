@@ -53,9 +53,8 @@
 
   <main class="container">
     <section class="home-intro" aria-labelledby="home-title">
-      <p class="home-kicker">TAKEKONOKO WEB TOOLS</p>
-      <h1 id="home-title">必要になったものを、<br>すぐ使えるWebツールに。</h1>
-      <p>株価や指数の現在地を過去と比べる投資データツールを中心に、自分が実際に欲しいと思った道具を公開しています。登録やインストールは必要ありません。</p>
+      <h1 id="home-title">Webツール</h1>
+      <p>株価や指数の現在地を過去と比べる投資データツールを中心に、その時に自分が欲しいと思ったものをつくって公開しています。</p>
     </section>
 
     <section id="markets" class="section">
@@ -64,6 +63,7 @@
       <div class="card-grid" id="markets-grid"></div>
       <noscript>
         <ul>
+          <li><a href="./apps/market-sentiment/">市場センチメント</a> — Fear &amp; Greed、VIX、VVIX、SKEWなどを一画面で確認。</li>
           <li><a href="./apps/nasdaq100-drawdown/">NASDAQ100 長期上昇銘柄のドローダウン</a> — 長期上昇銘柄の現在DDを、10年最大DD比や過去の下落局面と比較。</li>
           <li><a href="./apps/ddchart/">指数ドローダウン比較</a> — S&P500・NASDAQ100・NYダウ・日経225などを1〜10年で比較。</li>
         </ul>
@@ -116,15 +116,12 @@
   </footer>
 
   <script>
-    fetch('./data/apps.json')
+    fetch('./data/apps.json', { cache: 'no-store' })
       .then(r => r.json())
       .then(data => {
         const renderCards = apps => apps.map(app => `
           <a class="card" href="${app.href}">
-            <picture>
-              <source srcset="./images/${app.image}.webp" type="image/webp">
-              <img class="card-icon" src="./images/${app.image}.png" alt="${app.title}">
-            </picture>
+            ${app.image ? `<picture><source srcset="./images/${app.image}.webp" type="image/webp"><img class="card-icon" src="./images/${app.image}.png" alt="${app.title}"></picture>` : `<span class="card-symbol" aria-hidden="true">${app.icon || '◐'}</span>`}
             ${app.tag ? `<span class="card-tag">${app.tag}</span>` : ''}
             <h3>${app.title}</h3>
             <p>${app.description}</p>
@@ -139,10 +136,7 @@
 
         document.getElementById('ios-grid').innerHTML = data.ios.map(app => `
           <a class="card" href="${app.href}" target="_blank" rel="noopener">
-            <picture>
-              <source srcset="./images/${app.image}.webp" type="image/webp">
-              <img class="card-icon" src="./images/${app.image}.png" alt="${app.title}">
-            </picture>
+            ${app.image ? `<picture><source srcset="./images/${app.image}.webp" type="image/webp"><img class="card-icon" src="./images/${app.image}.png" alt="${app.title}"></picture>` : `<span class="card-symbol" aria-hidden="true">${app.icon || '◐'}</span>`}
             <h3>${app.title}</h3>
             <p>App Store で見る</p>
           </a>`).join('');

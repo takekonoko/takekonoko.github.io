@@ -1,6 +1,14 @@
 {
     "webapps":  [
                     {
+                        "id":  "market-sentiment",
+                        "href":  "./apps/market-sentiment/",
+                        "icon":  "◐",
+                        "tag":  "投資・資産形成",
+                        "title":  "市場センチメント",
+                        "description":  "Fear \u0026 Greed、VIX、VVIX、SKEWなどを一画面で確認。"
+                    },
+                    {
                         "id":  "nasdaq100-drawdown",
                         "href":  "./apps/nasdaq100-drawdown/",
                         "image":  "nasdaq100-drawdown",
