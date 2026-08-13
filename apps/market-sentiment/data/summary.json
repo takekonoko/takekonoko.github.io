@@ -1,14 +1,5699 @@
 {
-  "generatedAt": "2026-08-12T23:12:06.364Z",
+  "generatedAt": "2026-08-13T00:07:18.850Z",
   "fearAndGreed": {
     "score": 62.14,
     "rating": "greed",
-    "timestamp": "2026-08-12T22:51:31+00:00",
+    "timestamp": "2026-08-12T23:51:41+00:00",
     "previousClose": 60.8,
     "previousWeek": 59.83,
     "previousMonth": 46.83,
     "previousYear": 62.26,
     "history": [
+      {
+        "date": "2021-02-01T00:00:00.000Z",
+        "score": 43.4,
+        "rating": "fear"
+      },
+      {
+        "date": "2021-02-02T00:00:00.000Z",
+        "score": 60.47,
+        "rating": "greed"
+      },
+      {
+        "date": "2021-02-03T00:00:00.000Z",
+        "score": 59.2,
+        "rating": "greed"
+      },
+      {
+        "date": "2021-02-04T00:00:00.000Z",
+        "score": 61.07,
+        "rating": "greed"
+      },
+      {
+        "date": "2021-02-05T00:00:00.000Z",
+        "score": 68,
+        "rating": "greed"
+      },
+      {
+        "date": "2021-02-08T00:00:00.000Z",
+        "score": 72.87,
+        "rating": "greed"
+      },
+      {
+        "date": "2021-02-09T00:00:00.000Z",
+        "score": 75.4,
+        "rating": "extreme greed"
+      },
+      {
+        "date": "2021-02-10T00:00:00.000Z",
+        "score": 75.27,
+        "rating": "extreme greed"
+      },
+      {
+        "date": "2021-02-11T00:00:00.000Z",
+        "score": 76,
+        "rating": "extreme greed"
+      },
+      {
+        "date": "2021-02-12T00:00:00.000Z",
+        "score": 77.67,
+        "rating": "extreme greed"
+      },
+      {
+        "date": "2021-02-16T00:00:00.000Z",
+        "score": 73.93,
+        "rating": "greed"
+      },
+      {
+        "date": "2021-02-17T00:00:00.000Z",
+        "score": 70.2,
+        "rating": "greed"
+      },
+      {
+        "date": "2021-02-18T00:00:00.000Z",
+        "score": 62.53,
+        "rating": "greed"
+      },
+      {
+        "date": "2021-02-19T00:00:00.000Z",
+        "score": 56.24,
+        "rating": "greed"
+      },
+      {
+        "date": "2021-02-22T00:00:00.000Z",
+        "score": 52.48,
+        "rating": "neutral"
+      },
+      {
+        "date": "2021-02-23T00:00:00.000Z",
+        "score": 50.56,
+        "rating": "neutral"
+      },
+      {
+        "date": "2021-02-24T00:00:00.000Z",
+        "score": 63.8,
+        "rating": "greed"
+      },
+      {
+        "date": "2021-02-25T00:00:00.000Z",
+        "score": 46.16,
+        "rating": "neutral"
+      },
+      {
+        "date": "2021-02-26T00:00:00.000Z",
+        "score": 53.52,
+        "rating": "neutral"
+      },
+      {
+        "date": "2021-03-01T00:00:00.000Z",
+        "score": 58.52,
+        "rating": "greed"
+      },
+      {
+        "date": "2021-03-02T00:00:00.000Z",
+        "score": 50.32,
+        "rating": "neutral"
+      },
+      {
+        "date": "2021-03-03T00:00:00.000Z",
+        "score": 43.84,
+        "rating": "fear"
+      },
+      {
+        "date": "2021-03-04T00:00:00.000Z",
+        "score": 37.8,
+        "rating": "fear"
+      },
+      {
+        "date": "2021-03-05T00:00:00.000Z",
+        "score": 41.52,
+        "rating": "fear"
+      },
+      {
+        "date": "2021-03-08T00:00:00.000Z",
+        "score": 39.08,
+        "rating": "fear"
+      },
+      {
+        "date": "2021-03-09T00:00:00.000Z",
+        "score": 43.36,
+        "rating": "fear"
+      },
+      {
+        "date": "2021-03-10T00:00:00.000Z",
+        "score": 45.56,
+        "rating": "neutral"
+      },
+      {
+        "date": "2021-03-11T00:00:00.000Z",
+        "score": 50.48,
+        "rating": "neutral"
+      },
+      {
+        "date": "2021-03-12T00:00:00.000Z",
+        "score": 53.72,
+        "rating": "neutral"
+      },
+      {
+        "date": "2021-03-15T00:00:00.000Z",
+        "score": 56.52,
+        "rating": "greed"
+      },
+      {
+        "date": "2021-03-16T00:00:00.000Z",
+        "score": 54.8,
+        "rating": "neutral"
+      },
+      {
+        "date": "2021-03-17T00:00:00.000Z",
+        "score": 57.87,
+        "rating": "greed"
+      },
+      {
+        "date": "2021-03-18T00:00:00.000Z",
+        "score": 52.33,
+        "rating": "neutral"
+      },
+      {
+        "date": "2021-03-19T00:00:00.000Z",
+        "score": 50.83,
+        "rating": "neutral"
+      },
+      {
+        "date": "2021-03-22T00:00:00.000Z",
+        "score": 50.7,
+        "rating": "neutral"
+      },
+      {
+        "date": "2021-03-23T00:00:00.000Z",
+        "score": 41.8,
+        "rating": "fear"
+      },
+      {
+        "date": "2021-03-24T00:00:00.000Z",
+        "score": 37.67,
+        "rating": "fear"
+      },
+      {
+        "date": "2021-03-25T00:00:00.000Z",
+        "score": 37.83,
+        "rating": "fear"
+      },
+      {
+        "date": "2021-03-26T00:00:00.000Z",
+        "score": 37.57,
+        "rating": "fear"
+      },
+      {
+        "date": "2021-03-29T00:00:00.000Z",
+        "score": 39.57,
+        "rating": "fear"
+      },
+      {
+        "date": "2021-03-30T00:00:00.000Z",
+        "score": 42.03,
+        "rating": "fear"
+      },
+      {
+        "date": "2021-03-31T00:00:00.000Z",
+        "score": 44.57,
+        "rating": "fear"
+      },
+      {
+        "date": "2021-04-01T00:00:00.000Z",
+        "score": 46.4,
+        "rating": "neutral"
+      },
+      {
+        "date": "2021-04-05T00:00:00.000Z",
+        "score": 54.57,
+        "rating": "neutral"
+      },
+      {
+        "date": "2021-04-06T00:00:00.000Z",
+        "score": 53.5,
+        "rating": "neutral"
+      },
+      {
+        "date": "2021-04-07T00:00:00.000Z",
+        "score": 52.53,
+        "rating": "neutral"
+      },
+      {
+        "date": "2021-04-08T00:00:00.000Z",
+        "score": 48.1,
+        "rating": "neutral"
+      },
+      {
+        "date": "2021-04-09T00:00:00.000Z",
+        "score": 47.5,
+        "rating": "neutral"
+      },
+      {
+        "date": "2021-04-12T00:00:00.000Z",
+        "score": 43.43,
+        "rating": "fear"
+      },
+      {
+        "date": "2021-04-13T00:00:00.000Z",
+        "score": 43.63,
+        "rating": "fear"
+      },
+      {
+        "date": "2021-04-14T00:00:00.000Z",
+        "score": 39.97,
+        "rating": "fear"
+      },
+      {
+        "date": "2021-04-15T00:00:00.000Z",
+        "score": 47.17,
+        "rating": "neutral"
+      },
+      {
+        "date": "2021-04-16T00:00:00.000Z",
+        "score": 51.3,
+        "rating": "neutral"
+      },
+      {
+        "date": "2021-04-19T00:00:00.000Z",
+        "score": 45.27,
+        "rating": "neutral"
+      },
+      {
+        "date": "2021-04-20T00:00:00.000Z",
+        "score": 42.87,
+        "rating": "fear"
+      },
+      {
+        "date": "2021-04-21T00:00:00.000Z",
+        "score": 49.63,
+        "rating": "neutral"
+      },
+      {
+        "date": "2021-04-22T00:00:00.000Z",
+        "score": 46.7,
+        "rating": "neutral"
+      },
+      {
+        "date": "2021-04-23T00:00:00.000Z",
+        "score": 47.7,
+        "rating": "neutral"
+      },
+      {
+        "date": "2021-04-26T00:00:00.000Z",
+        "score": 50.53,
+        "rating": "neutral"
+      },
+      {
+        "date": "2021-04-27T00:00:00.000Z",
+        "score": 54.8,
+        "rating": "neutral"
+      },
+      {
+        "date": "2021-04-28T00:00:00.000Z",
+        "score": 52.4,
+        "rating": "neutral"
+      },
+      {
+        "date": "2021-04-29T00:00:00.000Z",
+        "score": 56.17,
+        "rating": "greed"
+      },
+      {
+        "date": "2021-04-30T00:00:00.000Z",
+        "score": 46.53,
+        "rating": "neutral"
+      },
+      {
+        "date": "2021-05-03T00:00:00.000Z",
+        "score": 47.57,
+        "rating": "neutral"
+      },
+      {
+        "date": "2021-05-04T00:00:00.000Z",
+        "score": 43.47,
+        "rating": "fear"
+      },
+      {
+        "date": "2021-05-05T00:00:00.000Z",
+        "score": 43.03,
+        "rating": "fear"
+      },
+      {
+        "date": "2021-05-06T00:00:00.000Z",
+        "score": 43.93,
+        "rating": "fear"
+      },
+      {
+        "date": "2021-05-07T00:00:00.000Z",
+        "score": 48.17,
+        "rating": "neutral"
+      },
+      {
+        "date": "2021-05-10T00:00:00.000Z",
+        "score": 44.93,
+        "rating": "fear"
+      },
+      {
+        "date": "2021-05-11T00:00:00.000Z",
+        "score": 42.03,
+        "rating": "fear"
+      },
+      {
+        "date": "2021-05-12T00:00:00.000Z",
+        "score": 26.77,
+        "rating": "fear"
+      },
+      {
+        "date": "2021-05-13T00:00:00.000Z",
+        "score": 34.43,
+        "rating": "fear"
+      },
+      {
+        "date": "2021-05-14T00:00:00.000Z",
+        "score": 36,
+        "rating": "fear"
+      },
+      {
+        "date": "2021-05-17T00:00:00.000Z",
+        "score": 36.37,
+        "rating": "fear"
+      },
+      {
+        "date": "2021-05-18T00:00:00.000Z",
+        "score": 34.03,
+        "rating": "fear"
+      },
+      {
+        "date": "2021-05-19T00:00:00.000Z",
+        "score": 32.33,
+        "rating": "fear"
+      },
+      {
+        "date": "2021-05-20T00:00:00.000Z",
+        "score": 32.3,
+        "rating": "fear"
+      },
+      {
+        "date": "2021-05-21T00:00:00.000Z",
+        "score": 29.43,
+        "rating": "fear"
+      },
+      {
+        "date": "2021-05-24T00:00:00.000Z",
+        "score": 29.5,
+        "rating": "fear"
+      },
+      {
+        "date": "2021-05-25T00:00:00.000Z",
+        "score": 26.67,
+        "rating": "fear"
+      },
+      {
+        "date": "2021-05-26T00:00:00.000Z",
+        "score": 28.13,
+        "rating": "fear"
+      },
+      {
+        "date": "2021-05-27T00:00:00.000Z",
+        "score": 30.3,
+        "rating": "fear"
+      },
+      {
+        "date": "2021-05-28T00:00:00.000Z",
+        "score": 31.57,
+        "rating": "fear"
+      },
+      {
+        "date": "2021-06-01T00:00:00.000Z",
+        "score": 35.4,
+        "rating": "fear"
+      },
+      {
+        "date": "2021-06-02T00:00:00.000Z",
+        "score": 42.13,
+        "rating": "fear"
+      },
+      {
+        "date": "2021-06-03T00:00:00.000Z",
+        "score": 40.8,
+        "rating": "fear"
+      },
+      {
+        "date": "2021-06-04T00:00:00.000Z",
+        "score": 41.9,
+        "rating": "fear"
+      },
+      {
+        "date": "2021-06-07T00:00:00.000Z",
+        "score": 44.47,
+        "rating": "fear"
+      },
+      {
+        "date": "2021-06-08T00:00:00.000Z",
+        "score": 46.47,
+        "rating": "neutral"
+      },
+      {
+        "date": "2021-06-09T00:00:00.000Z",
+        "score": 48.53,
+        "rating": "neutral"
+      },
+      {
+        "date": "2021-06-10T00:00:00.000Z",
+        "score": 48.9,
+        "rating": "neutral"
+      },
+      {
+        "date": "2021-06-11T00:00:00.000Z",
+        "score": 51.23,
+        "rating": "neutral"
+      },
+      {
+        "date": "2021-06-14T00:00:00.000Z",
+        "score": 54.17,
+        "rating": "neutral"
+      },
+      {
+        "date": "2021-06-15T00:00:00.000Z",
+        "score": 52.67,
+        "rating": "neutral"
+      },
+      {
+        "date": "2021-06-16T00:00:00.000Z",
+        "score": 44.8,
+        "rating": "fear"
+      },
+      {
+        "date": "2021-06-17T00:00:00.000Z",
+        "score": 42.03,
+        "rating": "fear"
+      },
+      {
+        "date": "2021-06-18T00:00:00.000Z",
+        "score": 31.6,
+        "rating": "fear"
+      },
+      {
+        "date": "2021-06-21T00:00:00.000Z",
+        "score": 32.47,
+        "rating": "fear"
+      },
+      {
+        "date": "2021-06-22T00:00:00.000Z",
+        "score": 32.8,
+        "rating": "fear"
+      },
+      {
+        "date": "2021-06-23T00:00:00.000Z",
+        "score": 33.27,
+        "rating": "fear"
+      },
+      {
+        "date": "2021-06-24T00:00:00.000Z",
+        "score": 36.9,
+        "rating": "fear"
+      },
+      {
+        "date": "2021-06-25T00:00:00.000Z",
+        "score": 41.63,
+        "rating": "fear"
+      },
+      {
+        "date": "2021-06-28T00:00:00.000Z",
+        "score": 41.43,
+        "rating": "fear"
+      },
+      {
+        "date": "2021-06-29T00:00:00.000Z",
+        "score": 39.83,
+        "rating": "fear"
+      },
+      {
+        "date": "2021-06-30T00:00:00.000Z",
+        "score": 38,
+        "rating": "fear"
+      },
+      {
+        "date": "2021-07-01T00:00:00.000Z",
+        "score": 38.67,
+        "rating": "fear"
+      },
+      {
+        "date": "2021-07-02T00:00:00.000Z",
+        "score": 38.67,
+        "rating": "fear"
+      },
+      {
+        "date": "2021-07-06T00:00:00.000Z",
+        "score": 33.3,
+        "rating": "fear"
+      },
+      {
+        "date": "2021-07-07T00:00:00.000Z",
+        "score": 33.1,
+        "rating": "fear"
+      },
+      {
+        "date": "2021-07-08T00:00:00.000Z",
+        "score": 26.97,
+        "rating": "fear"
+      },
+      {
+        "date": "2021-07-09T00:00:00.000Z",
+        "score": 31,
+        "rating": "fear"
+      },
+      {
+        "date": "2021-07-12T00:00:00.000Z",
+        "score": 31.7,
+        "rating": "fear"
+      },
+      {
+        "date": "2021-07-13T00:00:00.000Z",
+        "score": 31.27,
+        "rating": "fear"
+      },
+      {
+        "date": "2021-07-14T00:00:00.000Z",
+        "score": 29.53,
+        "rating": "fear"
+      },
+      {
+        "date": "2021-07-15T00:00:00.000Z",
+        "score": 27.33,
+        "rating": "fear"
+      },
+      {
+        "date": "2021-07-16T00:00:00.000Z",
+        "score": 26.9,
+        "rating": "fear"
+      },
+      {
+        "date": "2021-07-19T00:00:00.000Z",
+        "score": 8.98,
+        "rating": "extreme fear"
+      },
+      {
+        "date": "2021-07-20T00:00:00.000Z",
+        "score": 20.07,
+        "rating": "extreme fear"
+      },
+      {
+        "date": "2021-07-21T00:00:00.000Z",
+        "score": 24.2,
+        "rating": "extreme fear"
+      },
+      {
+        "date": "2021-07-22T00:00:00.000Z",
+        "score": 24.33,
+        "rating": "extreme fear"
+      },
+      {
+        "date": "2021-07-23T00:00:00.000Z",
+        "score": 28.3,
+        "rating": "fear"
+      },
+      {
+        "date": "2021-07-26T00:00:00.000Z",
+        "score": 30.9,
+        "rating": "fear"
+      },
+      {
+        "date": "2021-07-27T00:00:00.000Z",
+        "score": 27.17,
+        "rating": "fear"
+      },
+      {
+        "date": "2021-07-28T00:00:00.000Z",
+        "score": 27.47,
+        "rating": "fear"
+      },
+      {
+        "date": "2021-07-29T00:00:00.000Z",
+        "score": 29.23,
+        "rating": "fear"
+      },
+      {
+        "date": "2021-07-30T00:00:00.000Z",
+        "score": 25.77,
+        "rating": "fear"
+      },
+      {
+        "date": "2021-08-02T00:00:00.000Z",
+        "score": 25.1,
+        "rating": "fear"
+      },
+      {
+        "date": "2021-08-03T00:00:00.000Z",
+        "score": 29.53,
+        "rating": "fear"
+      },
+      {
+        "date": "2021-08-04T00:00:00.000Z",
+        "score": 28.63,
+        "rating": "fear"
+      },
+      {
+        "date": "2021-08-05T00:00:00.000Z",
+        "score": 29.63,
+        "rating": "fear"
+      },
+      {
+        "date": "2021-08-06T00:00:00.000Z",
+        "score": 31.87,
+        "rating": "fear"
+      },
+      {
+        "date": "2021-08-09T00:00:00.000Z",
+        "score": 32.07,
+        "rating": "fear"
+      },
+      {
+        "date": "2021-08-10T00:00:00.000Z",
+        "score": 34.83,
+        "rating": "fear"
+      },
+      {
+        "date": "2021-08-11T00:00:00.000Z",
+        "score": 37.93,
+        "rating": "fear"
+      },
+      {
+        "date": "2021-08-12T00:00:00.000Z",
+        "score": 43.13,
+        "rating": "fear"
+      },
+      {
+        "date": "2021-08-13T00:00:00.000Z",
+        "score": 47.13,
+        "rating": "neutral"
+      },
+      {
+        "date": "2021-08-16T00:00:00.000Z",
+        "score": 44.87,
+        "rating": "fear"
+      },
+      {
+        "date": "2021-08-17T00:00:00.000Z",
+        "score": 31.7,
+        "rating": "fear"
+      },
+      {
+        "date": "2021-08-18T00:00:00.000Z",
+        "score": 18.2,
+        "rating": "extreme fear"
+      },
+      {
+        "date": "2021-08-19T00:00:00.000Z",
+        "score": 14.88,
+        "rating": "extreme fear"
+      },
+      {
+        "date": "2021-08-20T00:00:00.000Z",
+        "score": 23.87,
+        "rating": "extreme fear"
+      },
+      {
+        "date": "2021-08-23T00:00:00.000Z",
+        "score": 30.43,
+        "rating": "fear"
+      },
+      {
+        "date": "2021-08-24T00:00:00.000Z",
+        "score": 34.4,
+        "rating": "fear"
+      },
+      {
+        "date": "2021-08-25T00:00:00.000Z",
+        "score": 36.03,
+        "rating": "fear"
+      },
+      {
+        "date": "2021-08-26T00:00:00.000Z",
+        "score": 36.83,
+        "rating": "fear"
+      },
+      {
+        "date": "2021-08-27T00:00:00.000Z",
+        "score": 47.47,
+        "rating": "neutral"
+      },
+      {
+        "date": "2021-08-30T00:00:00.000Z",
+        "score": 47.87,
+        "rating": "neutral"
+      },
+      {
+        "date": "2021-08-31T00:00:00.000Z",
+        "score": 47.23,
+        "rating": "neutral"
+      },
+      {
+        "date": "2021-09-01T00:00:00.000Z",
+        "score": 43.13,
+        "rating": "fear"
+      },
+      {
+        "date": "2021-09-02T00:00:00.000Z",
+        "score": 44.17,
+        "rating": "fear"
+      },
+      {
+        "date": "2021-09-03T00:00:00.000Z",
+        "score": 44.07,
+        "rating": "fear"
+      },
+      {
+        "date": "2021-09-07T00:00:00.000Z",
+        "score": 41.7,
+        "rating": "fear"
+      },
+      {
+        "date": "2021-09-08T00:00:00.000Z",
+        "score": 38.57,
+        "rating": "fear"
+      },
+      {
+        "date": "2021-09-09T00:00:00.000Z",
+        "score": 33.8,
+        "rating": "fear"
+      },
+      {
+        "date": "2021-09-10T00:00:00.000Z",
+        "score": 20.6,
+        "rating": "extreme fear"
+      },
+      {
+        "date": "2021-09-13T00:00:00.000Z",
+        "score": 28.27,
+        "rating": "fear"
+      },
+      {
+        "date": "2021-09-14T00:00:00.000Z",
+        "score": 24.8,
+        "rating": "extreme fear"
+      },
+      {
+        "date": "2021-09-15T00:00:00.000Z",
+        "score": 31.2,
+        "rating": "fear"
+      },
+      {
+        "date": "2021-09-16T00:00:00.000Z",
+        "score": 31.5,
+        "rating": "fear"
+      },
+      {
+        "date": "2021-09-17T00:00:00.000Z",
+        "score": 17.93,
+        "rating": "extreme fear"
+      },
+      {
+        "date": "2021-09-20T00:00:00.000Z",
+        "score": 11.1,
+        "rating": "extreme fear"
+      },
+      {
+        "date": "2021-09-21T00:00:00.000Z",
+        "score": 11.45,
+        "rating": "extreme fear"
+      },
+      {
+        "date": "2021-09-22T00:00:00.000Z",
+        "score": 20.03,
+        "rating": "extreme fear"
+      },
+      {
+        "date": "2021-09-23T00:00:00.000Z",
+        "score": 24.5,
+        "rating": "extreme fear"
+      },
+      {
+        "date": "2021-09-24T00:00:00.000Z",
+        "score": 23.83,
+        "rating": "extreme fear"
+      },
+      {
+        "date": "2021-09-27T00:00:00.000Z",
+        "score": 24.77,
+        "rating": "extreme fear"
+      },
+      {
+        "date": "2021-09-28T00:00:00.000Z",
+        "score": 12.47,
+        "rating": "extreme fear"
+      },
+      {
+        "date": "2021-09-29T00:00:00.000Z",
+        "score": 12.48,
+        "rating": "extreme fear"
+      },
+      {
+        "date": "2021-09-30T00:00:00.000Z",
+        "score": 9.97,
+        "rating": "extreme fear"
+      },
+      {
+        "date": "2021-10-01T00:00:00.000Z",
+        "score": 18.33,
+        "rating": "extreme fear"
+      },
+      {
+        "date": "2021-10-04T00:00:00.000Z",
+        "score": 9.5,
+        "rating": "extreme fear"
+      },
+      {
+        "date": "2021-10-05T00:00:00.000Z",
+        "score": 18.77,
+        "rating": "extreme fear"
+      },
+      {
+        "date": "2021-10-06T00:00:00.000Z",
+        "score": 20.07,
+        "rating": "extreme fear"
+      },
+      {
+        "date": "2021-10-07T00:00:00.000Z",
+        "score": 24.6,
+        "rating": "extreme fear"
+      },
+      {
+        "date": "2021-10-08T00:00:00.000Z",
+        "score": 25.27,
+        "rating": "fear"
+      },
+      {
+        "date": "2021-10-11T00:00:00.000Z",
+        "score": 25.9,
+        "rating": "fear"
+      },
+      {
+        "date": "2021-10-12T00:00:00.000Z",
+        "score": 22.7,
+        "rating": "extreme fear"
+      },
+      {
+        "date": "2021-10-13T00:00:00.000Z",
+        "score": 24.1,
+        "rating": "extreme fear"
+      },
+      {
+        "date": "2021-10-14T00:00:00.000Z",
+        "score": 31.83,
+        "rating": "fear"
+      },
+      {
+        "date": "2021-10-15T00:00:00.000Z",
+        "score": 43.63,
+        "rating": "fear"
+      },
+      {
+        "date": "2021-10-18T00:00:00.000Z",
+        "score": 46.57,
+        "rating": "neutral"
+      },
+      {
+        "date": "2021-10-19T00:00:00.000Z",
+        "score": 53.4,
+        "rating": "neutral"
+      },
+      {
+        "date": "2021-10-20T00:00:00.000Z",
+        "score": 56.57,
+        "rating": "greed"
+      },
+      {
+        "date": "2021-10-21T00:00:00.000Z",
+        "score": 60.2,
+        "rating": "greed"
+      },
+      {
+        "date": "2021-10-22T00:00:00.000Z",
+        "score": 59.5,
+        "rating": "greed"
+      },
+      {
+        "date": "2021-10-25T00:00:00.000Z",
+        "score": 62.97,
+        "rating": "greed"
+      },
+      {
+        "date": "2021-10-26T00:00:00.000Z",
+        "score": 63.03,
+        "rating": "greed"
+      },
+      {
+        "date": "2021-10-27T00:00:00.000Z",
+        "score": 58.33,
+        "rating": "greed"
+      },
+      {
+        "date": "2021-10-28T00:00:00.000Z",
+        "score": 64.4,
+        "rating": "greed"
+      },
+      {
+        "date": "2021-10-29T00:00:00.000Z",
+        "score": 65.43,
+        "rating": "greed"
+      },
+      {
+        "date": "2021-11-01T00:00:00.000Z",
+        "score": 66.13,
+        "rating": "greed"
+      },
+      {
+        "date": "2021-11-02T00:00:00.000Z",
+        "score": 68.27,
+        "rating": "greed"
+      },
+      {
+        "date": "2021-11-03T00:00:00.000Z",
+        "score": 72.2,
+        "rating": "greed"
+      },
+      {
+        "date": "2021-11-04T00:00:00.000Z",
+        "score": 72.43,
+        "rating": "greed"
+      },
+      {
+        "date": "2021-11-05T00:00:00.000Z",
+        "score": 73.6,
+        "rating": "greed"
+      },
+      {
+        "date": "2021-11-08T00:00:00.000Z",
+        "score": 74.53,
+        "rating": "greed"
+      },
+      {
+        "date": "2021-11-09T00:00:00.000Z",
+        "score": 77.17,
+        "rating": "extreme greed"
+      },
+      {
+        "date": "2021-11-10T00:00:00.000Z",
+        "score": 73.09,
+        "rating": "greed"
+      },
+      {
+        "date": "2021-11-11T00:00:00.000Z",
+        "score": 72.23,
+        "rating": "greed"
+      },
+      {
+        "date": "2021-11-12T00:00:00.000Z",
+        "score": 74,
+        "rating": "greed"
+      },
+      {
+        "date": "2021-11-15T00:00:00.000Z",
+        "score": 71.63,
+        "rating": "greed"
+      },
+      {
+        "date": "2021-11-16T00:00:00.000Z",
+        "score": 72.49,
+        "rating": "greed"
+      },
+      {
+        "date": "2021-11-17T00:00:00.000Z",
+        "score": 69.2,
+        "rating": "greed"
+      },
+      {
+        "date": "2021-11-18T00:00:00.000Z",
+        "score": 70.14,
+        "rating": "greed"
+      },
+      {
+        "date": "2021-11-19T00:00:00.000Z",
+        "score": 62.77,
+        "rating": "greed"
+      },
+      {
+        "date": "2021-11-22T00:00:00.000Z",
+        "score": 60,
+        "rating": "greed"
+      },
+      {
+        "date": "2021-11-23T00:00:00.000Z",
+        "score": 60.37,
+        "rating": "greed"
+      },
+      {
+        "date": "2021-11-24T00:00:00.000Z",
+        "score": 56.94,
+        "rating": "greed"
+      },
+      {
+        "date": "2021-11-26T00:00:00.000Z",
+        "score": 31.26,
+        "rating": "fear"
+      },
+      {
+        "date": "2021-11-29T00:00:00.000Z",
+        "score": 38.11,
+        "rating": "fear"
+      },
+      {
+        "date": "2021-11-30T00:00:00.000Z",
+        "score": 24.77,
+        "rating": "extreme fear"
+      },
+      {
+        "date": "2021-12-01T00:00:00.000Z",
+        "score": 25.36,
+        "rating": "fear"
+      },
+      {
+        "date": "2021-12-02T00:00:00.000Z",
+        "score": 22.93,
+        "rating": "extreme fear"
+      },
+      {
+        "date": "2021-12-03T00:00:00.000Z",
+        "score": 20.16,
+        "rating": "extreme fear"
+      },
+      {
+        "date": "2021-12-06T00:00:00.000Z",
+        "score": 21.26,
+        "rating": "extreme fear"
+      },
+      {
+        "date": "2021-12-07T00:00:00.000Z",
+        "score": 37.89,
+        "rating": "fear"
+      },
+      {
+        "date": "2021-12-08T00:00:00.000Z",
+        "score": 41.31,
+        "rating": "fear"
+      },
+      {
+        "date": "2021-12-09T00:00:00.000Z",
+        "score": 36.86,
+        "rating": "fear"
+      },
+      {
+        "date": "2021-12-10T00:00:00.000Z",
+        "score": 42,
+        "rating": "fear"
+      },
+      {
+        "date": "2021-12-13T00:00:00.000Z",
+        "score": 35.4,
+        "rating": "fear"
+      },
+      {
+        "date": "2021-12-14T00:00:00.000Z",
+        "score": 31.54,
+        "rating": "fear"
+      },
+      {
+        "date": "2021-12-15T00:00:00.000Z",
+        "score": 37.8,
+        "rating": "fear"
+      },
+      {
+        "date": "2021-12-16T00:00:00.000Z",
+        "score": 33.57,
+        "rating": "fear"
+      },
+      {
+        "date": "2021-12-17T00:00:00.000Z",
+        "score": 32.51,
+        "rating": "fear"
+      },
+      {
+        "date": "2021-12-20T00:00:00.000Z",
+        "score": 29.43,
+        "rating": "fear"
+      },
+      {
+        "date": "2021-12-21T00:00:00.000Z",
+        "score": 34.03,
+        "rating": "fear"
+      },
+      {
+        "date": "2021-12-22T00:00:00.000Z",
+        "score": 39.54,
+        "rating": "fear"
+      },
+      {
+        "date": "2021-12-23T00:00:00.000Z",
+        "score": 50.49,
+        "rating": "neutral"
+      },
+      {
+        "date": "2021-12-27T00:00:00.000Z",
+        "score": 56.4,
+        "rating": "greed"
+      },
+      {
+        "date": "2021-12-28T00:00:00.000Z",
+        "score": 62.97,
+        "rating": "greed"
+      },
+      {
+        "date": "2021-12-29T00:00:00.000Z",
+        "score": 64.03,
+        "rating": "greed"
+      },
+      {
+        "date": "2021-12-30T00:00:00.000Z",
+        "score": 63.97,
+        "rating": "greed"
+      },
+      {
+        "date": "2021-12-31T00:00:00.000Z",
+        "score": 62.54,
+        "rating": "greed"
+      },
+      {
+        "date": "2022-01-03T00:00:00.000Z",
+        "score": 65.23,
+        "rating": "greed"
+      },
+      {
+        "date": "2022-01-04T00:00:00.000Z",
+        "score": 64.26,
+        "rating": "greed"
+      },
+      {
+        "date": "2022-01-05T00:00:00.000Z",
+        "score": 51.03,
+        "rating": "neutral"
+      },
+      {
+        "date": "2022-01-06T00:00:00.000Z",
+        "score": 52.14,
+        "rating": "neutral"
+      },
+      {
+        "date": "2022-01-07T00:00:00.000Z",
+        "score": 49.26,
+        "rating": "neutral"
+      },
+      {
+        "date": "2022-01-10T00:00:00.000Z",
+        "score": 51.14,
+        "rating": "neutral"
+      },
+      {
+        "date": "2022-01-11T00:00:00.000Z",
+        "score": 56.11,
+        "rating": "greed"
+      },
+      {
+        "date": "2022-01-12T00:00:00.000Z",
+        "score": 55.94,
+        "rating": "greed"
+      },
+      {
+        "date": "2022-01-13T00:00:00.000Z",
+        "score": 52.17,
+        "rating": "neutral"
+      },
+      {
+        "date": "2022-01-14T00:00:00.000Z",
+        "score": 55.8,
+        "rating": "greed"
+      },
+      {
+        "date": "2022-01-18T00:00:00.000Z",
+        "score": 53.71,
+        "rating": "neutral"
+      },
+      {
+        "date": "2022-01-19T00:00:00.000Z",
+        "score": 44.83,
+        "rating": "fear"
+      },
+      {
+        "date": "2022-01-20T00:00:00.000Z",
+        "score": 39.14,
+        "rating": "fear"
+      },
+      {
+        "date": "2022-01-21T00:00:00.000Z",
+        "score": 26.73,
+        "rating": "fear"
+      },
+      {
+        "date": "2022-01-24T00:00:00.000Z",
+        "score": 23.13,
+        "rating": "extreme fear"
+      },
+      {
+        "date": "2022-01-25T00:00:00.000Z",
+        "score": 20.89,
+        "rating": "extreme fear"
+      },
+      {
+        "date": "2022-01-26T00:00:00.000Z",
+        "score": 19.51,
+        "rating": "extreme fear"
+      },
+      {
+        "date": "2022-01-27T00:00:00.000Z",
+        "score": 18.6,
+        "rating": "extreme fear"
+      },
+      {
+        "date": "2022-01-28T00:00:00.000Z",
+        "score": 23.86,
+        "rating": "extreme fear"
+      },
+      {
+        "date": "2022-01-31T00:00:00.000Z",
+        "score": 29.2,
+        "rating": "fear"
+      },
+      {
+        "date": "2022-02-01T00:00:00.000Z",
+        "score": 30.8,
+        "rating": "fear"
+      },
+      {
+        "date": "2022-02-02T00:00:00.000Z",
+        "score": 28.8,
+        "rating": "fear"
+      },
+      {
+        "date": "2022-02-03T00:00:00.000Z",
+        "score": 26.06,
+        "rating": "fear"
+      },
+      {
+        "date": "2022-02-04T00:00:00.000Z",
+        "score": 27.6,
+        "rating": "fear"
+      },
+      {
+        "date": "2022-02-07T00:00:00.000Z",
+        "score": 27.91,
+        "rating": "fear"
+      },
+      {
+        "date": "2022-02-08T00:00:00.000Z",
+        "score": 28.94,
+        "rating": "fear"
+      },
+      {
+        "date": "2022-02-09T00:00:00.000Z",
+        "score": 32.66,
+        "rating": "fear"
+      },
+      {
+        "date": "2022-02-10T00:00:00.000Z",
+        "score": 33.6,
+        "rating": "fear"
+      },
+      {
+        "date": "2022-02-11T00:00:00.000Z",
+        "score": 28.49,
+        "rating": "fear"
+      },
+      {
+        "date": "2022-02-14T00:00:00.000Z",
+        "score": 25.69,
+        "rating": "fear"
+      },
+      {
+        "date": "2022-02-15T00:00:00.000Z",
+        "score": 29.97,
+        "rating": "fear"
+      },
+      {
+        "date": "2022-02-16T00:00:00.000Z",
+        "score": 32.09,
+        "rating": "fear"
+      },
+      {
+        "date": "2022-02-17T00:00:00.000Z",
+        "score": 32.46,
+        "rating": "fear"
+      },
+      {
+        "date": "2022-02-18T00:00:00.000Z",
+        "score": 29.51,
+        "rating": "fear"
+      },
+      {
+        "date": "2022-02-22T00:00:00.000Z",
+        "score": 28.77,
+        "rating": "fear"
+      },
+      {
+        "date": "2022-02-23T00:00:00.000Z",
+        "score": 18.81,
+        "rating": "extreme fear"
+      },
+      {
+        "date": "2022-02-24T00:00:00.000Z",
+        "score": 21.23,
+        "rating": "extreme fear"
+      },
+      {
+        "date": "2022-02-25T00:00:00.000Z",
+        "score": 28.14,
+        "rating": "fear"
+      },
+      {
+        "date": "2022-02-28T00:00:00.000Z",
+        "score": 25.47,
+        "rating": "fear"
+      },
+      {
+        "date": "2022-03-01T00:00:00.000Z",
+        "score": 22.97,
+        "rating": "extreme fear"
+      },
+      {
+        "date": "2022-03-02T00:00:00.000Z",
+        "score": 17.83,
+        "rating": "extreme fear"
+      },
+      {
+        "date": "2022-03-03T00:00:00.000Z",
+        "score": 21.73,
+        "rating": "extreme fear"
+      },
+      {
+        "date": "2022-03-04T00:00:00.000Z",
+        "score": 18.17,
+        "rating": "extreme fear"
+      },
+      {
+        "date": "2022-03-07T00:00:00.000Z",
+        "score": 16.9,
+        "rating": "extreme fear"
+      },
+      {
+        "date": "2022-03-08T00:00:00.000Z",
+        "score": 16.67,
+        "rating": "extreme fear"
+      },
+      {
+        "date": "2022-03-09T00:00:00.000Z",
+        "score": 18.03,
+        "rating": "extreme fear"
+      },
+      {
+        "date": "2022-03-10T00:00:00.000Z",
+        "score": 17.96,
+        "rating": "extreme fear"
+      },
+      {
+        "date": "2022-03-11T00:00:00.000Z",
+        "score": 19.06,
+        "rating": "extreme fear"
+      },
+      {
+        "date": "2022-03-14T00:00:00.000Z",
+        "score": 17.5,
+        "rating": "extreme fear"
+      },
+      {
+        "date": "2022-03-15T00:00:00.000Z",
+        "score": 21.86,
+        "rating": "extreme fear"
+      },
+      {
+        "date": "2022-03-16T00:00:00.000Z",
+        "score": 25.26,
+        "rating": "fear"
+      },
+      {
+        "date": "2022-03-17T00:00:00.000Z",
+        "score": 33.63,
+        "rating": "fear"
+      },
+      {
+        "date": "2022-03-18T00:00:00.000Z",
+        "score": 38.43,
+        "rating": "fear"
+      },
+      {
+        "date": "2022-03-21T00:00:00.000Z",
+        "score": 40.97,
+        "rating": "fear"
+      },
+      {
+        "date": "2022-03-22T00:00:00.000Z",
+        "score": 44.54,
+        "rating": "fear"
+      },
+      {
+        "date": "2022-03-23T00:00:00.000Z",
+        "score": 45.2,
+        "rating": "neutral"
+      },
+      {
+        "date": "2022-03-24T00:00:00.000Z",
+        "score": 46.91,
+        "rating": "neutral"
+      },
+      {
+        "date": "2022-03-25T00:00:00.000Z",
+        "score": 49.37,
+        "rating": "neutral"
+      },
+      {
+        "date": "2022-03-28T00:00:00.000Z",
+        "score": 51.26,
+        "rating": "neutral"
+      },
+      {
+        "date": "2022-03-29T00:00:00.000Z",
+        "score": 52.71,
+        "rating": "neutral"
+      },
+      {
+        "date": "2022-03-30T00:00:00.000Z",
+        "score": 52.8,
+        "rating": "neutral"
+      },
+      {
+        "date": "2022-03-31T00:00:00.000Z",
+        "score": 59.2,
+        "rating": "greed"
+      },
+      {
+        "date": "2022-04-01T00:00:00.000Z",
+        "score": 59.8,
+        "rating": "greed"
+      },
+      {
+        "date": "2022-04-04T00:00:00.000Z",
+        "score": 61.66,
+        "rating": "greed"
+      },
+      {
+        "date": "2022-04-05T00:00:00.000Z",
+        "score": 47.91,
+        "rating": "neutral"
+      },
+      {
+        "date": "2022-04-06T00:00:00.000Z",
+        "score": 46.4,
+        "rating": "neutral"
+      },
+      {
+        "date": "2022-04-07T00:00:00.000Z",
+        "score": 46.83,
+        "rating": "neutral"
+      },
+      {
+        "date": "2022-04-08T00:00:00.000Z",
+        "score": 46.09,
+        "rating": "neutral"
+      },
+      {
+        "date": "2022-04-11T00:00:00.000Z",
+        "score": 43.4,
+        "rating": "fear"
+      },
+      {
+        "date": "2022-04-12T00:00:00.000Z",
+        "score": 42.06,
+        "rating": "fear"
+      },
+      {
+        "date": "2022-04-13T00:00:00.000Z",
+        "score": 41.8,
+        "rating": "fear"
+      },
+      {
+        "date": "2022-04-14T00:00:00.000Z",
+        "score": 39.86,
+        "rating": "fear"
+      },
+      {
+        "date": "2022-04-18T00:00:00.000Z",
+        "score": 37.6,
+        "rating": "fear"
+      },
+      {
+        "date": "2022-04-19T00:00:00.000Z",
+        "score": 39.63,
+        "rating": "fear"
+      },
+      {
+        "date": "2022-04-20T00:00:00.000Z",
+        "score": 43.31,
+        "rating": "fear"
+      },
+      {
+        "date": "2022-04-21T00:00:00.000Z",
+        "score": 38.94,
+        "rating": "fear"
+      },
+      {
+        "date": "2022-04-22T00:00:00.000Z",
+        "score": 31.63,
+        "rating": "fear"
+      },
+      {
+        "date": "2022-04-25T00:00:00.000Z",
+        "score": 29.97,
+        "rating": "fear"
+      },
+      {
+        "date": "2022-04-26T00:00:00.000Z",
+        "score": 17.9,
+        "rating": "extreme fear"
+      },
+      {
+        "date": "2022-04-27T00:00:00.000Z",
+        "score": 16.27,
+        "rating": "extreme fear"
+      },
+      {
+        "date": "2022-04-28T00:00:00.000Z",
+        "score": 24.26,
+        "rating": "extreme fear"
+      },
+      {
+        "date": "2022-04-29T00:00:00.000Z",
+        "score": 14.33,
+        "rating": "extreme fear"
+      },
+      {
+        "date": "2022-05-02T00:00:00.000Z",
+        "score": 13.27,
+        "rating": "extreme fear"
+      },
+      {
+        "date": "2022-05-03T00:00:00.000Z",
+        "score": 30.49,
+        "rating": "fear"
+      },
+      {
+        "date": "2022-05-04T00:00:00.000Z",
+        "score": 22.4,
+        "rating": "extreme fear"
+      },
+      {
+        "date": "2022-05-05T00:00:00.000Z",
+        "score": 13.13,
+        "rating": "extreme fear"
+      },
+      {
+        "date": "2022-05-06T00:00:00.000Z",
+        "score": 12.24,
+        "rating": "extreme fear"
+      },
+      {
+        "date": "2022-05-09T00:00:00.000Z",
+        "score": 8.19,
+        "rating": "extreme fear"
+      },
+      {
+        "date": "2022-05-10T00:00:00.000Z",
+        "score": 7.4,
+        "rating": "extreme fear"
+      },
+      {
+        "date": "2022-05-11T00:00:00.000Z",
+        "score": 4.03,
+        "rating": "extreme fear"
+      },
+      {
+        "date": "2022-05-12T00:00:00.000Z",
+        "score": 3.2,
+        "rating": "extreme fear"
+      },
+      {
+        "date": "2022-05-13T00:00:00.000Z",
+        "score": 11.29,
+        "rating": "extreme fear"
+      },
+      {
+        "date": "2022-05-16T00:00:00.000Z",
+        "score": 11.74,
+        "rating": "extreme fear"
+      },
+      {
+        "date": "2022-05-17T00:00:00.000Z",
+        "score": 15.2,
+        "rating": "extreme fear"
+      },
+      {
+        "date": "2022-05-18T00:00:00.000Z",
+        "score": 6.6,
+        "rating": "extreme fear"
+      },
+      {
+        "date": "2022-05-19T00:00:00.000Z",
+        "score": 13.71,
+        "rating": "extreme fear"
+      },
+      {
+        "date": "2022-05-20T00:00:00.000Z",
+        "score": 12.66,
+        "rating": "extreme fear"
+      },
+      {
+        "date": "2022-05-23T00:00:00.000Z",
+        "score": 17.89,
+        "rating": "extreme fear"
+      },
+      {
+        "date": "2022-05-24T00:00:00.000Z",
+        "score": 16,
+        "rating": "extreme fear"
+      },
+      {
+        "date": "2022-05-25T00:00:00.000Z",
+        "score": 17.57,
+        "rating": "extreme fear"
+      },
+      {
+        "date": "2022-05-26T00:00:00.000Z",
+        "score": 24.11,
+        "rating": "extreme fear"
+      },
+      {
+        "date": "2022-05-27T00:00:00.000Z",
+        "score": 29.54,
+        "rating": "fear"
+      },
+      {
+        "date": "2022-05-31T00:00:00.000Z",
+        "score": 40.06,
+        "rating": "fear"
+      },
+      {
+        "date": "2022-06-01T00:00:00.000Z",
+        "score": 40.6,
+        "rating": "fear"
+      },
+      {
+        "date": "2022-06-02T00:00:00.000Z",
+        "score": 44.83,
+        "rating": "fear"
+      },
+      {
+        "date": "2022-06-03T00:00:00.000Z",
+        "score": 35.46,
+        "rating": "fear"
+      },
+      {
+        "date": "2022-06-06T00:00:00.000Z",
+        "score": 42.8,
+        "rating": "fear"
+      },
+      {
+        "date": "2022-06-07T00:00:00.000Z",
+        "score": 45.63,
+        "rating": "neutral"
+      },
+      {
+        "date": "2022-06-08T00:00:00.000Z",
+        "score": 48.11,
+        "rating": "neutral"
+      },
+      {
+        "date": "2022-06-09T00:00:00.000Z",
+        "score": 47.06,
+        "rating": "neutral"
+      },
+      {
+        "date": "2022-06-10T00:00:00.000Z",
+        "score": 40,
+        "rating": "fear"
+      },
+      {
+        "date": "2022-06-13T00:00:00.000Z",
+        "score": 25.09,
+        "rating": "fear"
+      },
+      {
+        "date": "2022-06-14T00:00:00.000Z",
+        "score": 20.53,
+        "rating": "extreme fear"
+      },
+      {
+        "date": "2022-06-15T00:00:00.000Z",
+        "score": 29.26,
+        "rating": "fear"
+      },
+      {
+        "date": "2022-06-16T00:00:00.000Z",
+        "score": 17.7,
+        "rating": "extreme fear"
+      },
+      {
+        "date": "2022-06-17T00:00:00.000Z",
+        "score": 16.93,
+        "rating": "extreme fear"
+      },
+      {
+        "date": "2022-06-21T00:00:00.000Z",
+        "score": 19.73,
+        "rating": "extreme fear"
+      },
+      {
+        "date": "2022-06-22T00:00:00.000Z",
+        "score": 26.89,
+        "rating": "fear"
+      },
+      {
+        "date": "2022-06-23T00:00:00.000Z",
+        "score": 26.74,
+        "rating": "fear"
+      },
+      {
+        "date": "2022-06-24T00:00:00.000Z",
+        "score": 30.86,
+        "rating": "fear"
+      },
+      {
+        "date": "2022-06-27T00:00:00.000Z",
+        "score": 30.77,
+        "rating": "fear"
+      },
+      {
+        "date": "2022-06-28T00:00:00.000Z",
+        "score": 28.14,
+        "rating": "fear"
+      },
+      {
+        "date": "2022-06-29T00:00:00.000Z",
+        "score": 26.54,
+        "rating": "fear"
+      },
+      {
+        "date": "2022-06-30T00:00:00.000Z",
+        "score": 24.37,
+        "rating": "extreme fear"
+      },
+      {
+        "date": "2022-07-01T00:00:00.000Z",
+        "score": 24.57,
+        "rating": "extreme fear"
+      },
+      {
+        "date": "2022-07-05T00:00:00.000Z",
+        "score": 22.17,
+        "rating": "extreme fear"
+      },
+      {
+        "date": "2022-07-06T00:00:00.000Z",
+        "score": 22.83,
+        "rating": "extreme fear"
+      },
+      {
+        "date": "2022-07-07T00:00:00.000Z",
+        "score": 27.6,
+        "rating": "fear"
+      },
+      {
+        "date": "2022-07-08T00:00:00.000Z",
+        "score": 31.34,
+        "rating": "fear"
+      },
+      {
+        "date": "2022-07-11T00:00:00.000Z",
+        "score": 30.37,
+        "rating": "fear"
+      },
+      {
+        "date": "2022-07-12T00:00:00.000Z",
+        "score": 30.31,
+        "rating": "fear"
+      },
+      {
+        "date": "2022-07-13T00:00:00.000Z",
+        "score": 27.29,
+        "rating": "fear"
+      },
+      {
+        "date": "2022-07-14T00:00:00.000Z",
+        "score": 26.51,
+        "rating": "fear"
+      },
+      {
+        "date": "2022-07-15T00:00:00.000Z",
+        "score": 33.29,
+        "rating": "fear"
+      },
+      {
+        "date": "2022-07-18T00:00:00.000Z",
+        "score": 35.89,
+        "rating": "fear"
+      },
+      {
+        "date": "2022-07-19T00:00:00.000Z",
+        "score": 39.31,
+        "rating": "fear"
+      },
+      {
+        "date": "2022-07-20T00:00:00.000Z",
+        "score": 44.09,
+        "rating": "fear"
+      },
+      {
+        "date": "2022-07-21T00:00:00.000Z",
+        "score": 48.2,
+        "rating": "neutral"
+      },
+      {
+        "date": "2022-07-22T00:00:00.000Z",
+        "score": 42.43,
+        "rating": "fear"
+      },
+      {
+        "date": "2022-07-25T00:00:00.000Z",
+        "score": 42.2,
+        "rating": "fear"
+      },
+      {
+        "date": "2022-07-26T00:00:00.000Z",
+        "score": 42,
+        "rating": "fear"
+      },
+      {
+        "date": "2022-07-27T00:00:00.000Z",
+        "score": 46.63,
+        "rating": "neutral"
+      },
+      {
+        "date": "2022-07-28T00:00:00.000Z",
+        "score": 48.49,
+        "rating": "neutral"
+      },
+      {
+        "date": "2022-07-29T00:00:00.000Z",
+        "score": 52.4,
+        "rating": "neutral"
+      },
+      {
+        "date": "2022-08-01T00:00:00.000Z",
+        "score": 59.09,
+        "rating": "greed"
+      },
+      {
+        "date": "2022-08-02T00:00:00.000Z",
+        "score": 57.37,
+        "rating": "greed"
+      },
+      {
+        "date": "2022-08-03T00:00:00.000Z",
+        "score": 60.26,
+        "rating": "greed"
+      },
+      {
+        "date": "2022-08-04T00:00:00.000Z",
+        "score": 61.51,
+        "rating": "greed"
+      },
+      {
+        "date": "2022-08-05T00:00:00.000Z",
+        "score": 63.31,
+        "rating": "greed"
+      },
+      {
+        "date": "2022-08-08T00:00:00.000Z",
+        "score": 64.74,
+        "rating": "greed"
+      },
+      {
+        "date": "2022-08-09T00:00:00.000Z",
+        "score": 64.46,
+        "rating": "greed"
+      },
+      {
+        "date": "2022-08-10T00:00:00.000Z",
+        "score": 65.11,
+        "rating": "greed"
+      },
+      {
+        "date": "2022-08-11T00:00:00.000Z",
+        "score": 65.83,
+        "rating": "greed"
+      },
+      {
+        "date": "2022-08-12T00:00:00.000Z",
+        "score": 68.03,
+        "rating": "greed"
+      },
+      {
+        "date": "2022-08-15T00:00:00.000Z",
+        "score": 66.83,
+        "rating": "greed"
+      },
+      {
+        "date": "2022-08-16T00:00:00.000Z",
+        "score": 67.94,
+        "rating": "greed"
+      },
+      {
+        "date": "2022-08-17T00:00:00.000Z",
+        "score": 67.14,
+        "rating": "greed"
+      },
+      {
+        "date": "2022-08-18T00:00:00.000Z",
+        "score": 66.37,
+        "rating": "greed"
+      },
+      {
+        "date": "2022-08-19T00:00:00.000Z",
+        "score": 63.71,
+        "rating": "greed"
+      },
+      {
+        "date": "2022-08-22T00:00:00.000Z",
+        "score": 60.31,
+        "rating": "greed"
+      },
+      {
+        "date": "2022-08-23T00:00:00.000Z",
+        "score": 57.43,
+        "rating": "greed"
+      },
+      {
+        "date": "2022-08-24T00:00:00.000Z",
+        "score": 57.51,
+        "rating": "greed"
+      },
+      {
+        "date": "2022-08-25T00:00:00.000Z",
+        "score": 58.26,
+        "rating": "greed"
+      },
+      {
+        "date": "2022-08-26T00:00:00.000Z",
+        "score": 55.74,
+        "rating": "greed"
+      },
+      {
+        "date": "2022-08-29T00:00:00.000Z",
+        "score": 54.29,
+        "rating": "neutral"
+      },
+      {
+        "date": "2022-08-30T00:00:00.000Z",
+        "score": 49.8,
+        "rating": "neutral"
+      },
+      {
+        "date": "2022-08-31T00:00:00.000Z",
+        "score": 52.09,
+        "rating": "neutral"
+      },
+      {
+        "date": "2022-09-01T00:00:00.000Z",
+        "score": 49.37,
+        "rating": "neutral"
+      },
+      {
+        "date": "2022-09-02T00:00:00.000Z",
+        "score": 42.46,
+        "rating": "fear"
+      },
+      {
+        "date": "2022-09-06T00:00:00.000Z",
+        "score": 40.63,
+        "rating": "fear"
+      },
+      {
+        "date": "2022-09-07T00:00:00.000Z",
+        "score": 39.63,
+        "rating": "fear"
+      },
+      {
+        "date": "2022-09-08T00:00:00.000Z",
+        "score": 40.37,
+        "rating": "fear"
+      },
+      {
+        "date": "2022-09-09T00:00:00.000Z",
+        "score": 43.8,
+        "rating": "fear"
+      },
+      {
+        "date": "2022-09-12T00:00:00.000Z",
+        "score": 47.6,
+        "rating": "neutral"
+      },
+      {
+        "date": "2022-09-13T00:00:00.000Z",
+        "score": 36.63,
+        "rating": "fear"
+      },
+      {
+        "date": "2022-09-14T00:00:00.000Z",
+        "score": 41.89,
+        "rating": "fear"
+      },
+      {
+        "date": "2022-09-15T00:00:00.000Z",
+        "score": 40.66,
+        "rating": "fear"
+      },
+      {
+        "date": "2022-09-16T00:00:00.000Z",
+        "score": 35.29,
+        "rating": "fear"
+      },
+      {
+        "date": "2022-09-19T00:00:00.000Z",
+        "score": 36.31,
+        "rating": "fear"
+      },
+      {
+        "date": "2022-09-20T00:00:00.000Z",
+        "score": 36.11,
+        "rating": "fear"
+      },
+      {
+        "date": "2022-09-21T00:00:00.000Z",
+        "score": 27.21,
+        "rating": "fear"
+      },
+      {
+        "date": "2022-09-22T00:00:00.000Z",
+        "score": 24.49,
+        "rating": "extreme fear"
+      },
+      {
+        "date": "2022-09-23T00:00:00.000Z",
+        "score": 21.69,
+        "rating": "extreme fear"
+      },
+      {
+        "date": "2022-09-26T00:00:00.000Z",
+        "score": 17.63,
+        "rating": "extreme fear"
+      },
+      {
+        "date": "2022-09-27T00:00:00.000Z",
+        "score": 16.51,
+        "rating": "extreme fear"
+      },
+      {
+        "date": "2022-09-28T00:00:00.000Z",
+        "score": 17.03,
+        "rating": "extreme fear"
+      },
+      {
+        "date": "2022-09-29T00:00:00.000Z",
+        "score": 13.26,
+        "rating": "extreme fear"
+      },
+      {
+        "date": "2022-09-30T00:00:00.000Z",
+        "score": 16.46,
+        "rating": "extreme fear"
+      },
+      {
+        "date": "2022-10-03T00:00:00.000Z",
+        "score": 20.39,
+        "rating": "extreme fear"
+      },
+      {
+        "date": "2022-10-04T00:00:00.000Z",
+        "score": 27.89,
+        "rating": "fear"
+      },
+      {
+        "date": "2022-10-05T00:00:00.000Z",
+        "score": 29.71,
+        "rating": "fear"
+      },
+      {
+        "date": "2022-10-06T00:00:00.000Z",
+        "score": 23.14,
+        "rating": "extreme fear"
+      },
+      {
+        "date": "2022-10-07T00:00:00.000Z",
+        "score": 19.67,
+        "rating": "extreme fear"
+      },
+      {
+        "date": "2022-10-10T00:00:00.000Z",
+        "score": 19.4,
+        "rating": "extreme fear"
+      },
+      {
+        "date": "2022-10-11T00:00:00.000Z",
+        "score": 16.89,
+        "rating": "extreme fear"
+      },
+      {
+        "date": "2022-10-12T00:00:00.000Z",
+        "score": 15.94,
+        "rating": "extreme fear"
+      },
+      {
+        "date": "2022-10-13T00:00:00.000Z",
+        "score": 19.37,
+        "rating": "extreme fear"
+      },
+      {
+        "date": "2022-10-14T00:00:00.000Z",
+        "score": 16.46,
+        "rating": "extreme fear"
+      },
+      {
+        "date": "2022-10-17T00:00:00.000Z",
+        "score": 23.4,
+        "rating": "extreme fear"
+      },
+      {
+        "date": "2022-10-18T00:00:00.000Z",
+        "score": 28.8,
+        "rating": "fear"
+      },
+      {
+        "date": "2022-10-19T00:00:00.000Z",
+        "score": 29.43,
+        "rating": "fear"
+      },
+      {
+        "date": "2022-10-20T00:00:00.000Z",
+        "score": 39.09,
+        "rating": "fear"
+      },
+      {
+        "date": "2022-10-21T00:00:00.000Z",
+        "score": 43.74,
+        "rating": "fear"
+      },
+      {
+        "date": "2022-10-24T00:00:00.000Z",
+        "score": 47.23,
+        "rating": "neutral"
+      },
+      {
+        "date": "2022-10-25T00:00:00.000Z",
+        "score": 51.37,
+        "rating": "neutral"
+      },
+      {
+        "date": "2022-10-26T00:00:00.000Z",
+        "score": 53.8,
+        "rating": "neutral"
+      },
+      {
+        "date": "2022-10-27T00:00:00.000Z",
+        "score": 54.57,
+        "rating": "neutral"
+      },
+      {
+        "date": "2022-10-28T00:00:00.000Z",
+        "score": 57.11,
+        "rating": "greed"
+      },
+      {
+        "date": "2022-10-31T00:00:00.000Z",
+        "score": 64.06,
+        "rating": "greed"
+      },
+      {
+        "date": "2022-11-01T00:00:00.000Z",
+        "score": 63.51,
+        "rating": "greed"
+      },
+      {
+        "date": "2022-11-02T00:00:00.000Z",
+        "score": 55.29,
+        "rating": "greed"
+      },
+      {
+        "date": "2022-11-03T00:00:00.000Z",
+        "score": 55.51,
+        "rating": "greed"
+      },
+      {
+        "date": "2022-11-04T00:00:00.000Z",
+        "score": 56.51,
+        "rating": "greed"
+      },
+      {
+        "date": "2022-11-07T00:00:00.000Z",
+        "score": 59.66,
+        "rating": "greed"
+      },
+      {
+        "date": "2022-11-08T00:00:00.000Z",
+        "score": 57.94,
+        "rating": "greed"
+      },
+      {
+        "date": "2022-11-09T00:00:00.000Z",
+        "score": 54,
+        "rating": "neutral"
+      },
+      {
+        "date": "2022-11-10T00:00:00.000Z",
+        "score": 60.34,
+        "rating": "greed"
+      },
+      {
+        "date": "2022-11-11T00:00:00.000Z",
+        "score": 63.74,
+        "rating": "greed"
+      },
+      {
+        "date": "2022-11-14T00:00:00.000Z",
+        "score": 62.69,
+        "rating": "greed"
+      },
+      {
+        "date": "2022-11-15T00:00:00.000Z",
+        "score": 66.91,
+        "rating": "greed"
+      },
+      {
+        "date": "2022-11-16T00:00:00.000Z",
+        "score": 65.09,
+        "rating": "greed"
+      },
+      {
+        "date": "2022-11-17T00:00:00.000Z",
+        "score": 61.49,
+        "rating": "greed"
+      },
+      {
+        "date": "2022-11-18T00:00:00.000Z",
+        "score": 60.34,
+        "rating": "greed"
+      },
+      {
+        "date": "2022-11-21T00:00:00.000Z",
+        "score": 60.97,
+        "rating": "greed"
+      },
+      {
+        "date": "2022-11-22T00:00:00.000Z",
+        "score": 60.8,
+        "rating": "greed"
+      },
+      {
+        "date": "2022-11-23T00:00:00.000Z",
+        "score": 64.26,
+        "rating": "greed"
+      },
+      {
+        "date": "2022-11-25T00:00:00.000Z",
+        "score": 63.09,
+        "rating": "greed"
+      },
+      {
+        "date": "2022-11-28T00:00:00.000Z",
+        "score": 59.74,
+        "rating": "greed"
+      },
+      {
+        "date": "2022-11-29T00:00:00.000Z",
+        "score": 58.17,
+        "rating": "greed"
+      },
+      {
+        "date": "2022-11-30T00:00:00.000Z",
+        "score": 73.97,
+        "rating": "greed"
+      },
+      {
+        "date": "2022-12-01T00:00:00.000Z",
+        "score": 75.6,
+        "rating": "extreme greed"
+      },
+      {
+        "date": "2022-12-02T00:00:00.000Z",
+        "score": 68.14,
+        "rating": "greed"
+      },
+      {
+        "date": "2022-12-05T00:00:00.000Z",
+        "score": 65.09,
+        "rating": "greed"
+      },
+      {
+        "date": "2022-12-06T00:00:00.000Z",
+        "score": 61.83,
+        "rating": "greed"
+      },
+      {
+        "date": "2022-12-07T00:00:00.000Z",
+        "score": 58.43,
+        "rating": "greed"
+      },
+      {
+        "date": "2022-12-08T00:00:00.000Z",
+        "score": 55.69,
+        "rating": "greed"
+      },
+      {
+        "date": "2022-12-09T00:00:00.000Z",
+        "score": 52.09,
+        "rating": "neutral"
+      },
+      {
+        "date": "2022-12-12T00:00:00.000Z",
+        "score": 57.2,
+        "rating": "greed"
+      },
+      {
+        "date": "2022-12-13T00:00:00.000Z",
+        "score": 59.17,
+        "rating": "greed"
+      },
+      {
+        "date": "2022-12-14T00:00:00.000Z",
+        "score": 60.94,
+        "rating": "greed"
+      },
+      {
+        "date": "2022-12-15T00:00:00.000Z",
+        "score": 60.14,
+        "rating": "greed"
+      },
+      {
+        "date": "2022-12-16T00:00:00.000Z",
+        "score": 44.14,
+        "rating": "fear"
+      },
+      {
+        "date": "2022-12-19T00:00:00.000Z",
+        "score": 39.97,
+        "rating": "fear"
+      },
+      {
+        "date": "2022-12-20T00:00:00.000Z",
+        "score": 38.31,
+        "rating": "fear"
+      },
+      {
+        "date": "2022-12-21T00:00:00.000Z",
+        "score": 38.54,
+        "rating": "fear"
+      },
+      {
+        "date": "2022-12-22T00:00:00.000Z",
+        "score": 37,
+        "rating": "fear"
+      },
+      {
+        "date": "2022-12-23T00:00:00.000Z",
+        "score": 39.51,
+        "rating": "fear"
+      },
+      {
+        "date": "2022-12-27T00:00:00.000Z",
+        "score": 39.94,
+        "rating": "fear"
+      },
+      {
+        "date": "2022-12-28T00:00:00.000Z",
+        "score": 35.51,
+        "rating": "fear"
+      },
+      {
+        "date": "2022-12-29T00:00:00.000Z",
+        "score": 37.14,
+        "rating": "fear"
+      },
+      {
+        "date": "2022-12-30T00:00:00.000Z",
+        "score": 36.51,
+        "rating": "fear"
+      },
+      {
+        "date": "2023-01-03T00:00:00.000Z",
+        "score": 36.6,
+        "rating": "fear"
+      },
+      {
+        "date": "2023-01-04T00:00:00.000Z",
+        "score": 39.86,
+        "rating": "fear"
+      },
+      {
+        "date": "2023-01-05T00:00:00.000Z",
+        "score": 44.17,
+        "rating": "fear"
+      },
+      {
+        "date": "2023-01-06T00:00:00.000Z",
+        "score": 45.71,
+        "rating": "neutral"
+      },
+      {
+        "date": "2023-01-09T00:00:00.000Z",
+        "score": 47.2,
+        "rating": "neutral"
+      },
+      {
+        "date": "2023-01-10T00:00:00.000Z",
+        "score": 49.66,
+        "rating": "neutral"
+      },
+      {
+        "date": "2023-01-11T00:00:00.000Z",
+        "score": 54.23,
+        "rating": "neutral"
+      },
+      {
+        "date": "2023-01-12T00:00:00.000Z",
+        "score": 56.69,
+        "rating": "greed"
+      },
+      {
+        "date": "2023-01-13T00:00:00.000Z",
+        "score": 61.31,
+        "rating": "greed"
+      },
+      {
+        "date": "2023-01-17T00:00:00.000Z",
+        "score": 64.14,
+        "rating": "greed"
+      },
+      {
+        "date": "2023-01-18T00:00:00.000Z",
+        "score": 58.43,
+        "rating": "greed"
+      },
+      {
+        "date": "2023-01-19T00:00:00.000Z",
+        "score": 55.43,
+        "rating": "greed"
+      },
+      {
+        "date": "2023-01-20T00:00:00.000Z",
+        "score": 58.54,
+        "rating": "greed"
+      },
+      {
+        "date": "2023-01-23T00:00:00.000Z",
+        "score": 63.6,
+        "rating": "greed"
+      },
+      {
+        "date": "2023-01-24T00:00:00.000Z",
+        "score": 63,
+        "rating": "greed"
+      },
+      {
+        "date": "2023-01-25T00:00:00.000Z",
+        "score": 63.89,
+        "rating": "greed"
+      },
+      {
+        "date": "2023-01-26T00:00:00.000Z",
+        "score": 68.03,
+        "rating": "greed"
+      },
+      {
+        "date": "2023-01-27T00:00:00.000Z",
+        "score": 69.2,
+        "rating": "greed"
+      },
+      {
+        "date": "2023-01-30T00:00:00.000Z",
+        "score": 67.46,
+        "rating": "greed"
+      },
+      {
+        "date": "2023-01-31T00:00:00.000Z",
+        "score": 70.34,
+        "rating": "greed"
+      },
+      {
+        "date": "2023-02-01T00:00:00.000Z",
+        "score": 82.17,
+        "rating": "extreme greed"
+      },
+      {
+        "date": "2023-02-02T00:00:00.000Z",
+        "score": 75.2,
+        "rating": "extreme greed"
+      },
+      {
+        "date": "2023-02-03T00:00:00.000Z",
+        "score": 76.14,
+        "rating": "extreme greed"
+      },
+      {
+        "date": "2023-02-06T00:00:00.000Z",
+        "score": 75.91,
+        "rating": "extreme greed"
+      },
+      {
+        "date": "2023-02-07T00:00:00.000Z",
+        "score": 76.34,
+        "rating": "extreme greed"
+      },
+      {
+        "date": "2023-02-08T00:00:00.000Z",
+        "score": 74.63,
+        "rating": "greed"
+      },
+      {
+        "date": "2023-02-09T00:00:00.000Z",
+        "score": 72.63,
+        "rating": "greed"
+      },
+      {
+        "date": "2023-02-10T00:00:00.000Z",
+        "score": 72.49,
+        "rating": "greed"
+      },
+      {
+        "date": "2023-02-13T00:00:00.000Z",
+        "score": 71.83,
+        "rating": "greed"
+      },
+      {
+        "date": "2023-02-14T00:00:00.000Z",
+        "score": 73.26,
+        "rating": "greed"
+      },
+      {
+        "date": "2023-02-15T00:00:00.000Z",
+        "score": 73.66,
+        "rating": "greed"
+      },
+      {
+        "date": "2023-02-16T00:00:00.000Z",
+        "score": 70.71,
+        "rating": "greed"
+      },
+      {
+        "date": "2023-02-17T00:00:00.000Z",
+        "score": 69.49,
+        "rating": "greed"
+      },
+      {
+        "date": "2023-02-21T00:00:00.000Z",
+        "score": 65.91,
+        "rating": "greed"
+      },
+      {
+        "date": "2023-02-22T00:00:00.000Z",
+        "score": 64.17,
+        "rating": "greed"
+      },
+      {
+        "date": "2023-02-23T00:00:00.000Z",
+        "score": 62.66,
+        "rating": "greed"
+      },
+      {
+        "date": "2023-02-24T00:00:00.000Z",
+        "score": 60.66,
+        "rating": "greed"
+      },
+      {
+        "date": "2023-02-27T00:00:00.000Z",
+        "score": 61.23,
+        "rating": "greed"
+      },
+      {
+        "date": "2023-02-28T00:00:00.000Z",
+        "score": 61.2,
+        "rating": "greed"
+      },
+      {
+        "date": "2023-03-01T00:00:00.000Z",
+        "score": 65.91,
+        "rating": "greed"
+      },
+      {
+        "date": "2023-03-02T00:00:00.000Z",
+        "score": 52.46,
+        "rating": "neutral"
+      },
+      {
+        "date": "2023-03-03T00:00:00.000Z",
+        "score": 55.69,
+        "rating": "greed"
+      },
+      {
+        "date": "2023-03-06T00:00:00.000Z",
+        "score": 55.26,
+        "rating": "greed"
+      },
+      {
+        "date": "2023-03-07T00:00:00.000Z",
+        "score": 48.51,
+        "rating": "neutral"
+      },
+      {
+        "date": "2023-03-08T00:00:00.000Z",
+        "score": 49.83,
+        "rating": "neutral"
+      },
+      {
+        "date": "2023-03-09T00:00:00.000Z",
+        "score": 37.54,
+        "rating": "fear"
+      },
+      {
+        "date": "2023-03-10T00:00:00.000Z",
+        "score": 26.89,
+        "rating": "fear"
+      },
+      {
+        "date": "2023-03-13T00:00:00.000Z",
+        "score": 23.36,
+        "rating": "extreme fear"
+      },
+      {
+        "date": "2023-03-14T00:00:00.000Z",
+        "score": 25.09,
+        "rating": "fear"
+      },
+      {
+        "date": "2023-03-15T00:00:00.000Z",
+        "score": 22.69,
+        "rating": "extreme fear"
+      },
+      {
+        "date": "2023-03-16T00:00:00.000Z",
+        "score": 32.57,
+        "rating": "fear"
+      },
+      {
+        "date": "2023-03-17T00:00:00.000Z",
+        "score": 27,
+        "rating": "fear"
+      },
+      {
+        "date": "2023-03-20T00:00:00.000Z",
+        "score": 30.43,
+        "rating": "fear"
+      },
+      {
+        "date": "2023-03-21T00:00:00.000Z",
+        "score": 43.49,
+        "rating": "fear"
+      },
+      {
+        "date": "2023-03-22T00:00:00.000Z",
+        "score": 41.03,
+        "rating": "fear"
+      },
+      {
+        "date": "2023-03-23T00:00:00.000Z",
+        "score": 38.34,
+        "rating": "fear"
+      },
+      {
+        "date": "2023-03-24T00:00:00.000Z",
+        "score": 37.71,
+        "rating": "fear"
+      },
+      {
+        "date": "2023-03-27T00:00:00.000Z",
+        "score": 40.2,
+        "rating": "fear"
+      },
+      {
+        "date": "2023-03-28T00:00:00.000Z",
+        "score": 39.6,
+        "rating": "fear"
+      },
+      {
+        "date": "2023-03-29T00:00:00.000Z",
+        "score": 41.46,
+        "rating": "fear"
+      },
+      {
+        "date": "2023-03-30T00:00:00.000Z",
+        "score": 45.23,
+        "rating": "neutral"
+      },
+      {
+        "date": "2023-03-31T00:00:00.000Z",
+        "score": 49.49,
+        "rating": "neutral"
+      },
+      {
+        "date": "2023-04-03T00:00:00.000Z",
+        "score": 61.49,
+        "rating": "greed"
+      },
+      {
+        "date": "2023-04-04T00:00:00.000Z",
+        "score": 50.23,
+        "rating": "neutral"
+      },
+      {
+        "date": "2023-04-05T00:00:00.000Z",
+        "score": 52.63,
+        "rating": "neutral"
+      },
+      {
+        "date": "2023-04-06T00:00:00.000Z",
+        "score": 55.26,
+        "rating": "greed"
+      },
+      {
+        "date": "2023-04-10T00:00:00.000Z",
+        "score": 57.91,
+        "rating": "greed"
+      },
+      {
+        "date": "2023-04-11T00:00:00.000Z",
+        "score": 58.49,
+        "rating": "greed"
+      },
+      {
+        "date": "2023-04-12T00:00:00.000Z",
+        "score": 60.74,
+        "rating": "greed"
+      },
+      {
+        "date": "2023-04-13T00:00:00.000Z",
+        "score": 63.17,
+        "rating": "greed"
+      },
+      {
+        "date": "2023-04-14T00:00:00.000Z",
+        "score": 65.71,
+        "rating": "greed"
+      },
+      {
+        "date": "2023-04-17T00:00:00.000Z",
+        "score": 67.09,
+        "rating": "greed"
+      },
+      {
+        "date": "2023-04-18T00:00:00.000Z",
+        "score": 65.49,
+        "rating": "greed"
+      },
+      {
+        "date": "2023-04-19T00:00:00.000Z",
+        "score": 67.26,
+        "rating": "greed"
+      },
+      {
+        "date": "2023-04-20T00:00:00.000Z",
+        "score": 64.06,
+        "rating": "greed"
+      },
+      {
+        "date": "2023-04-21T00:00:00.000Z",
+        "score": 63.51,
+        "rating": "greed"
+      },
+      {
+        "date": "2023-04-24T00:00:00.000Z",
+        "score": 63.49,
+        "rating": "greed"
+      },
+      {
+        "date": "2023-04-25T00:00:00.000Z",
+        "score": 57.06,
+        "rating": "greed"
+      },
+      {
+        "date": "2023-04-26T00:00:00.000Z",
+        "score": 52.4,
+        "rating": "neutral"
+      },
+      {
+        "date": "2023-04-27T00:00:00.000Z",
+        "score": 58.31,
+        "rating": "greed"
+      },
+      {
+        "date": "2023-04-28T00:00:00.000Z",
+        "score": 59.43,
+        "rating": "greed"
+      },
+      {
+        "date": "2023-05-01T00:00:00.000Z",
+        "score": 59.43,
+        "rating": "greed"
+      },
+      {
+        "date": "2023-05-02T00:00:00.000Z",
+        "score": 55.51,
+        "rating": "greed"
+      },
+      {
+        "date": "2023-05-03T00:00:00.000Z",
+        "score": 54.63,
+        "rating": "neutral"
+      },
+      {
+        "date": "2023-05-04T00:00:00.000Z",
+        "score": 49.6,
+        "rating": "neutral"
+      },
+      {
+        "date": "2023-05-05T00:00:00.000Z",
+        "score": 53.89,
+        "rating": "neutral"
+      },
+      {
+        "date": "2023-05-08T00:00:00.000Z",
+        "score": 57.14,
+        "rating": "greed"
+      },
+      {
+        "date": "2023-05-09T00:00:00.000Z",
+        "score": 59.57,
+        "rating": "greed"
+      },
+      {
+        "date": "2023-05-10T00:00:00.000Z",
+        "score": 59.97,
+        "rating": "greed"
+      },
+      {
+        "date": "2023-05-11T00:00:00.000Z",
+        "score": 59.06,
+        "rating": "greed"
+      },
+      {
+        "date": "2023-05-12T00:00:00.000Z",
+        "score": 57.34,
+        "rating": "greed"
+      },
+      {
+        "date": "2023-05-15T00:00:00.000Z",
+        "score": 57.26,
+        "rating": "greed"
+      },
+      {
+        "date": "2023-05-16T00:00:00.000Z",
+        "score": 55.29,
+        "rating": "greed"
+      },
+      {
+        "date": "2023-05-17T00:00:00.000Z",
+        "score": 60.26,
+        "rating": "greed"
+      },
+      {
+        "date": "2023-05-18T00:00:00.000Z",
+        "score": 64.91,
+        "rating": "greed"
+      },
+      {
+        "date": "2023-05-19T00:00:00.000Z",
+        "score": 65.46,
+        "rating": "greed"
+      },
+      {
+        "date": "2023-05-22T00:00:00.000Z",
+        "score": 67.86,
+        "rating": "greed"
+      },
+      {
+        "date": "2023-05-23T00:00:00.000Z",
+        "score": 65.8,
+        "rating": "greed"
+      },
+      {
+        "date": "2023-05-24T00:00:00.000Z",
+        "score": 61.83,
+        "rating": "greed"
+      },
+      {
+        "date": "2023-05-25T00:00:00.000Z",
+        "score": 62.69,
+        "rating": "greed"
+      },
+      {
+        "date": "2023-05-26T00:00:00.000Z",
+        "score": 65.71,
+        "rating": "greed"
+      },
+      {
+        "date": "2023-05-30T00:00:00.000Z",
+        "score": 66.09,
+        "rating": "greed"
+      },
+      {
+        "date": "2023-05-31T00:00:00.000Z",
+        "score": 64.17,
+        "rating": "greed"
+      },
+      {
+        "date": "2023-06-01T00:00:00.000Z",
+        "score": 68.06,
+        "rating": "greed"
+      },
+      {
+        "date": "2023-06-02T00:00:00.000Z",
+        "score": 75.43,
+        "rating": "extreme greed"
+      },
+      {
+        "date": "2023-06-05T00:00:00.000Z",
+        "score": 69.49,
+        "rating": "greed"
+      },
+      {
+        "date": "2023-06-06T00:00:00.000Z",
+        "score": 73.51,
+        "rating": "greed"
+      },
+      {
+        "date": "2023-06-07T00:00:00.000Z",
+        "score": 74.46,
+        "rating": "greed"
+      },
+      {
+        "date": "2023-06-08T00:00:00.000Z",
+        "score": 75.77,
+        "rating": "extreme greed"
+      },
+      {
+        "date": "2023-06-09T00:00:00.000Z",
+        "score": 76.97,
+        "rating": "extreme greed"
+      },
+      {
+        "date": "2023-06-12T00:00:00.000Z",
+        "score": 78.06,
+        "rating": "extreme greed"
+      },
+      {
+        "date": "2023-06-13T00:00:00.000Z",
+        "score": 79.63,
+        "rating": "extreme greed"
+      },
+      {
+        "date": "2023-06-14T00:00:00.000Z",
+        "score": 79.63,
+        "rating": "extreme greed"
+      },
+      {
+        "date": "2023-06-15T00:00:00.000Z",
+        "score": 80.89,
+        "rating": "extreme greed"
+      },
+      {
+        "date": "2023-06-16T00:00:00.000Z",
+        "score": 81.26,
+        "rating": "extreme greed"
+      },
+      {
+        "date": "2023-06-20T00:00:00.000Z",
+        "score": 80.11,
+        "rating": "extreme greed"
+      },
+      {
+        "date": "2023-06-21T00:00:00.000Z",
+        "score": 80.11,
+        "rating": "extreme greed"
+      },
+      {
+        "date": "2023-06-22T00:00:00.000Z",
+        "score": 80.06,
+        "rating": "extreme greed"
+      },
+      {
+        "date": "2023-06-23T00:00:00.000Z",
+        "score": 75.71,
+        "rating": "extreme greed"
+      },
+      {
+        "date": "2023-06-26T00:00:00.000Z",
+        "score": 73.46,
+        "rating": "greed"
+      },
+      {
+        "date": "2023-06-27T00:00:00.000Z",
+        "score": 75.49,
+        "rating": "extreme greed"
+      },
+      {
+        "date": "2023-06-28T00:00:00.000Z",
+        "score": 76.51,
+        "rating": "extreme greed"
+      },
+      {
+        "date": "2023-06-29T00:00:00.000Z",
+        "score": 79.2,
+        "rating": "extreme greed"
+      },
+      {
+        "date": "2023-06-30T00:00:00.000Z",
+        "score": 79.49,
+        "rating": "extreme greed"
+      },
+      {
+        "date": "2023-07-03T00:00:00.000Z",
+        "score": 82.23,
+        "rating": "extreme greed"
+      },
+      {
+        "date": "2023-07-05T00:00:00.000Z",
+        "score": 79.26,
+        "rating": "extreme greed"
+      },
+      {
+        "date": "2023-07-06T00:00:00.000Z",
+        "score": 77.91,
+        "rating": "extreme greed"
+      },
+      {
+        "date": "2023-07-07T00:00:00.000Z",
+        "score": 77.69,
+        "rating": "extreme greed"
+      },
+      {
+        "date": "2023-07-10T00:00:00.000Z",
+        "score": 76.69,
+        "rating": "extreme greed"
+      },
+      {
+        "date": "2023-07-11T00:00:00.000Z",
+        "score": 78.29,
+        "rating": "extreme greed"
+      },
+      {
+        "date": "2023-07-12T00:00:00.000Z",
+        "score": 78.17,
+        "rating": "extreme greed"
+      },
+      {
+        "date": "2023-07-13T00:00:00.000Z",
+        "score": 79.4,
+        "rating": "extreme greed"
+      },
+      {
+        "date": "2023-07-14T00:00:00.000Z",
+        "score": 79.8,
+        "rating": "extreme greed"
+      },
+      {
+        "date": "2023-07-17T00:00:00.000Z",
+        "score": 80.03,
+        "rating": "extreme greed"
+      },
+      {
+        "date": "2023-07-18T00:00:00.000Z",
+        "score": 81.69,
+        "rating": "extreme greed"
+      },
+      {
+        "date": "2023-07-19T00:00:00.000Z",
+        "score": 82.34,
+        "rating": "extreme greed"
+      },
+      {
+        "date": "2023-07-20T00:00:00.000Z",
+        "score": 80.86,
+        "rating": "extreme greed"
+      },
+      {
+        "date": "2023-07-21T00:00:00.000Z",
+        "score": 81.03,
+        "rating": "extreme greed"
+      },
+      {
+        "date": "2023-07-24T00:00:00.000Z",
+        "score": 82.51,
+        "rating": "extreme greed"
+      },
+      {
+        "date": "2023-07-25T00:00:00.000Z",
+        "score": 81.23,
+        "rating": "extreme greed"
+      },
+      {
+        "date": "2023-07-26T00:00:00.000Z",
+        "score": 80.6,
+        "rating": "extreme greed"
+      },
+      {
+        "date": "2023-07-27T00:00:00.000Z",
+        "score": 77.66,
+        "rating": "extreme greed"
+      },
+      {
+        "date": "2023-07-28T00:00:00.000Z",
+        "score": 76.91,
+        "rating": "extreme greed"
+      },
+      {
+        "date": "2023-07-31T00:00:00.000Z",
+        "score": 77.63,
+        "rating": "extreme greed"
+      },
+      {
+        "date": "2023-08-01T00:00:00.000Z",
+        "score": 77.34,
+        "rating": "extreme greed"
+      },
+      {
+        "date": "2023-08-02T00:00:00.000Z",
+        "score": 77.34,
+        "rating": "extreme greed"
+      },
+      {
+        "date": "2023-08-03T00:00:00.000Z",
+        "score": 73.63,
+        "rating": "greed"
+      },
+      {
+        "date": "2023-08-04T00:00:00.000Z",
+        "score": 64.5,
+        "rating": "greed"
+      },
+      {
+        "date": "2023-08-07T00:00:00.000Z",
+        "score": 72.06,
+        "rating": "greed"
+      },
+      {
+        "date": "2023-08-08T00:00:00.000Z",
+        "score": 69.2,
+        "rating": "greed"
+      },
+      {
+        "date": "2023-08-09T00:00:00.000Z",
+        "score": 67.31,
+        "rating": "greed"
+      },
+      {
+        "date": "2023-08-10T00:00:00.000Z",
+        "score": 66.34,
+        "rating": "greed"
+      },
+      {
+        "date": "2023-08-11T00:00:00.000Z",
+        "score": 65.03,
+        "rating": "greed"
+      },
+      {
+        "date": "2023-08-14T00:00:00.000Z",
+        "score": 66.29,
+        "rating": "greed"
+      },
+      {
+        "date": "2023-08-15T00:00:00.000Z",
+        "score": 54.5,
+        "rating": "neutral"
+      },
+      {
+        "date": "2023-08-16T00:00:00.000Z",
+        "score": 49.49,
+        "rating": "neutral"
+      },
+      {
+        "date": "2023-08-17T00:00:00.000Z",
+        "score": 46.14,
+        "rating": "neutral"
+      },
+      {
+        "date": "2023-08-18T00:00:00.000Z",
+        "score": 43.66,
+        "rating": "fear"
+      },
+      {
+        "date": "2023-08-21T00:00:00.000Z",
+        "score": 43.49,
+        "rating": "fear"
+      },
+      {
+        "date": "2023-08-22T00:00:00.000Z",
+        "score": 43.44,
+        "rating": "fear"
+      },
+      {
+        "date": "2023-08-23T00:00:00.000Z",
+        "score": 50.17,
+        "rating": "neutral"
+      },
+      {
+        "date": "2023-08-24T00:00:00.000Z",
+        "score": 40.59,
+        "rating": "fear"
+      },
+      {
+        "date": "2023-08-25T00:00:00.000Z",
+        "score": 47.03,
+        "rating": "neutral"
+      },
+      {
+        "date": "2023-08-28T00:00:00.000Z",
+        "score": 45.29,
+        "rating": "neutral"
+      },
+      {
+        "date": "2023-08-29T00:00:00.000Z",
+        "score": 49.17,
+        "rating": "neutral"
+      },
+      {
+        "date": "2023-08-30T00:00:00.000Z",
+        "score": 50.43,
+        "rating": "neutral"
+      },
+      {
+        "date": "2023-08-31T00:00:00.000Z",
+        "score": 52.94,
+        "rating": "neutral"
+      },
+      {
+        "date": "2023-09-01T00:00:00.000Z",
+        "score": 55.03,
+        "rating": "greed"
+      },
+      {
+        "date": "2023-09-05T00:00:00.000Z",
+        "score": 59.09,
+        "rating": "greed"
+      },
+      {
+        "date": "2023-09-06T00:00:00.000Z",
+        "score": 56.71,
+        "rating": "greed"
+      },
+      {
+        "date": "2023-09-07T00:00:00.000Z",
+        "score": 53.63,
+        "rating": "neutral"
+      },
+      {
+        "date": "2023-09-08T00:00:00.000Z",
+        "score": 51.91,
+        "rating": "neutral"
+      },
+      {
+        "date": "2023-09-11T00:00:00.000Z",
+        "score": 52.2,
+        "rating": "neutral"
+      },
+      {
+        "date": "2023-09-12T00:00:00.000Z",
+        "score": 51.4,
+        "rating": "neutral"
+      },
+      {
+        "date": "2023-09-13T00:00:00.000Z",
+        "score": 51.4,
+        "rating": "neutral"
+      },
+      {
+        "date": "2023-09-14T00:00:00.000Z",
+        "score": 54.43,
+        "rating": "neutral"
+      },
+      {
+        "date": "2023-09-15T00:00:00.000Z",
+        "score": 52.03,
+        "rating": "neutral"
+      },
+      {
+        "date": "2023-09-18T00:00:00.000Z",
+        "score": 49.49,
+        "rating": "neutral"
+      },
+      {
+        "date": "2023-09-19T00:00:00.000Z",
+        "score": 49.94,
+        "rating": "neutral"
+      },
+      {
+        "date": "2023-09-20T00:00:00.000Z",
+        "score": 48.29,
+        "rating": "neutral"
+      },
+      {
+        "date": "2023-09-21T00:00:00.000Z",
+        "score": 37.16,
+        "rating": "fear"
+      },
+      {
+        "date": "2023-09-22T00:00:00.000Z",
+        "score": 33.16,
+        "rating": "fear"
+      },
+      {
+        "date": "2023-09-25T00:00:00.000Z",
+        "score": 38.43,
+        "rating": "fear"
+      },
+      {
+        "date": "2023-09-26T00:00:00.000Z",
+        "score": 24.23,
+        "rating": "extreme fear"
+      },
+      {
+        "date": "2023-09-27T00:00:00.000Z",
+        "score": 22.83,
+        "rating": "extreme fear"
+      },
+      {
+        "date": "2023-09-28T00:00:00.000Z",
+        "score": 29,
+        "rating": "fear"
+      },
+      {
+        "date": "2023-09-29T00:00:00.000Z",
+        "score": 28.4,
+        "rating": "fear"
+      },
+      {
+        "date": "2023-10-02T00:00:00.000Z",
+        "score": 28.31,
+        "rating": "fear"
+      },
+      {
+        "date": "2023-10-03T00:00:00.000Z",
+        "score": 20.53,
+        "rating": "extreme fear"
+      },
+      {
+        "date": "2023-10-04T00:00:00.000Z",
+        "score": 20.99,
+        "rating": "extreme fear"
+      },
+      {
+        "date": "2023-10-05T00:00:00.000Z",
+        "score": 20.33,
+        "rating": "extreme fear"
+      },
+      {
+        "date": "2023-10-06T00:00:00.000Z",
+        "score": 27.71,
+        "rating": "fear"
+      },
+      {
+        "date": "2023-10-09T00:00:00.000Z",
+        "score": 29.26,
+        "rating": "fear"
+      },
+      {
+        "date": "2023-10-10T00:00:00.000Z",
+        "score": 32.31,
+        "rating": "fear"
+      },
+      {
+        "date": "2023-10-11T00:00:00.000Z",
+        "score": 34.34,
+        "rating": "fear"
+      },
+      {
+        "date": "2023-10-12T00:00:00.000Z",
+        "score": 35.69,
+        "rating": "fear"
+      },
+      {
+        "date": "2023-10-13T00:00:00.000Z",
+        "score": 26.27,
+        "rating": "fear"
+      },
+      {
+        "date": "2023-10-16T00:00:00.000Z",
+        "score": 35.74,
+        "rating": "fear"
+      },
+      {
+        "date": "2023-10-17T00:00:00.000Z",
+        "score": 39.14,
+        "rating": "fear"
+      },
+      {
+        "date": "2023-10-18T00:00:00.000Z",
+        "score": 30.57,
+        "rating": "fear"
+      },
+      {
+        "date": "2023-10-19T00:00:00.000Z",
+        "score": 29.54,
+        "rating": "fear"
+      },
+      {
+        "date": "2023-10-20T00:00:00.000Z",
+        "score": 22.86,
+        "rating": "extreme fear"
+      },
+      {
+        "date": "2023-10-23T00:00:00.000Z",
+        "score": 25.84,
+        "rating": "fear"
+      },
+      {
+        "date": "2023-10-24T00:00:00.000Z",
+        "score": 33.49,
+        "rating": "fear"
+      },
+      {
+        "date": "2023-10-25T00:00:00.000Z",
+        "score": 25.21,
+        "rating": "fear"
+      },
+      {
+        "date": "2023-10-26T00:00:00.000Z",
+        "score": 22.71,
+        "rating": "extreme fear"
+      },
+      {
+        "date": "2023-10-27T00:00:00.000Z",
+        "score": 21.61,
+        "rating": "extreme fear"
+      },
+      {
+        "date": "2023-10-30T00:00:00.000Z",
+        "score": 29.2,
+        "rating": "fear"
+      },
+      {
+        "date": "2023-10-31T00:00:00.000Z",
+        "score": 30.14,
+        "rating": "fear"
+      },
+      {
+        "date": "2023-11-01T00:00:00.000Z",
+        "score": 32.17,
+        "rating": "fear"
+      },
+      {
+        "date": "2023-11-02T00:00:00.000Z",
+        "score": 37.69,
+        "rating": "fear"
+      },
+      {
+        "date": "2023-11-03T00:00:00.000Z",
+        "score": 36.11,
+        "rating": "fear"
+      },
+      {
+        "date": "2023-11-06T00:00:00.000Z",
+        "score": 38.91,
+        "rating": "fear"
+      },
+      {
+        "date": "2023-11-07T00:00:00.000Z",
+        "score": 39.63,
+        "rating": "fear"
+      },
+      {
+        "date": "2023-11-08T00:00:00.000Z",
+        "score": 39.77,
+        "rating": "fear"
+      },
+      {
+        "date": "2023-11-09T00:00:00.000Z",
+        "score": 41,
+        "rating": "fear"
+      },
+      {
+        "date": "2023-11-10T00:00:00.000Z",
+        "score": 41.46,
+        "rating": "fear"
+      },
+      {
+        "date": "2023-11-13T00:00:00.000Z",
+        "score": 39.89,
+        "rating": "fear"
+      },
+      {
+        "date": "2023-11-14T00:00:00.000Z",
+        "score": 46.6,
+        "rating": "neutral"
+      },
+      {
+        "date": "2023-11-15T00:00:00.000Z",
+        "score": 52.54,
+        "rating": "neutral"
+      },
+      {
+        "date": "2023-11-16T00:00:00.000Z",
+        "score": 55.06,
+        "rating": "greed"
+      },
+      {
+        "date": "2023-11-17T00:00:00.000Z",
+        "score": 58.86,
+        "rating": "greed"
+      },
+      {
+        "date": "2023-11-20T00:00:00.000Z",
+        "score": 61.29,
+        "rating": "greed"
+      },
+      {
+        "date": "2023-11-21T00:00:00.000Z",
+        "score": 61.17,
+        "rating": "greed"
+      },
+      {
+        "date": "2023-11-22T00:00:00.000Z",
+        "score": 65.06,
+        "rating": "greed"
+      },
+      {
+        "date": "2023-11-24T00:00:00.000Z",
+        "score": 66.86,
+        "rating": "greed"
+      },
+      {
+        "date": "2023-11-27T00:00:00.000Z",
+        "score": 65.31,
+        "rating": "greed"
+      },
+      {
+        "date": "2023-11-28T00:00:00.000Z",
+        "score": 65.09,
+        "rating": "greed"
+      },
+      {
+        "date": "2023-11-29T00:00:00.000Z",
+        "score": 63.29,
+        "rating": "greed"
+      },
+      {
+        "date": "2023-11-30T00:00:00.000Z",
+        "score": 64.37,
+        "rating": "greed"
+      },
+      {
+        "date": "2023-12-01T00:00:00.000Z",
+        "score": 64.51,
+        "rating": "greed"
+      },
+      {
+        "date": "2023-12-04T00:00:00.000Z",
+        "score": 63.71,
+        "rating": "greed"
+      },
+      {
+        "date": "2023-12-05T00:00:00.000Z",
+        "score": 65.14,
+        "rating": "greed"
+      },
+      {
+        "date": "2023-12-06T00:00:00.000Z",
+        "score": 63.97,
+        "rating": "greed"
+      },
+      {
+        "date": "2023-12-07T00:00:00.000Z",
+        "score": 66.14,
+        "rating": "greed"
+      },
+      {
+        "date": "2023-12-08T00:00:00.000Z",
+        "score": 65.94,
+        "rating": "greed"
+      },
+      {
+        "date": "2023-12-11T00:00:00.000Z",
+        "score": 67.29,
+        "rating": "greed"
+      },
+      {
+        "date": "2023-12-12T00:00:00.000Z",
+        "score": 67.89,
+        "rating": "greed"
+      },
+      {
+        "date": "2023-12-13T00:00:00.000Z",
+        "score": 67.54,
+        "rating": "greed"
+      },
+      {
+        "date": "2023-12-14T00:00:00.000Z",
+        "score": 70.54,
+        "rating": "greed"
+      },
+      {
+        "date": "2023-12-15T00:00:00.000Z",
+        "score": 69.46,
+        "rating": "greed"
+      },
+      {
+        "date": "2023-12-18T00:00:00.000Z",
+        "score": 70.49,
+        "rating": "greed"
+      },
+      {
+        "date": "2023-12-19T00:00:00.000Z",
+        "score": 82.97,
+        "rating": "extreme greed"
+      },
+      {
+        "date": "2023-12-20T00:00:00.000Z",
+        "score": 75.57,
+        "rating": "extreme greed"
+      },
+      {
+        "date": "2023-12-21T00:00:00.000Z",
+        "score": 77,
+        "rating": "extreme greed"
+      },
+      {
+        "date": "2023-12-22T00:00:00.000Z",
+        "score": 79.74,
+        "rating": "extreme greed"
+      },
+      {
+        "date": "2023-12-26T00:00:00.000Z",
+        "score": 81.94,
+        "rating": "extreme greed"
+      },
+      {
+        "date": "2023-12-27T00:00:00.000Z",
+        "score": 81.17,
+        "rating": "extreme greed"
+      },
+      {
+        "date": "2023-12-28T00:00:00.000Z",
+        "score": 81.26,
+        "rating": "extreme greed"
+      },
+      {
+        "date": "2023-12-29T00:00:00.000Z",
+        "score": 80.71,
+        "rating": "extreme greed"
+      },
+      {
+        "date": "2024-01-02T00:00:00.000Z",
+        "score": 79.71,
+        "rating": "extreme greed"
+      },
+      {
+        "date": "2024-01-03T00:00:00.000Z",
+        "score": 76.71,
+        "rating": "extreme greed"
+      },
+      {
+        "date": "2024-01-04T00:00:00.000Z",
+        "score": 78.69,
+        "rating": "extreme greed"
+      },
+      {
+        "date": "2024-01-05T00:00:00.000Z",
+        "score": 75.77,
+        "rating": "extreme greed"
+      },
+      {
+        "date": "2024-01-08T00:00:00.000Z",
+        "score": 76.17,
+        "rating": "extreme greed"
+      },
+      {
+        "date": "2024-01-09T00:00:00.000Z",
+        "score": 75.69,
+        "rating": "extreme greed"
+      },
+      {
+        "date": "2024-01-10T00:00:00.000Z",
+        "score": 76.37,
+        "rating": "extreme greed"
+      },
+      {
+        "date": "2024-01-11T00:00:00.000Z",
+        "score": 74.66,
+        "rating": "greed"
+      },
+      {
+        "date": "2024-01-12T00:00:00.000Z",
+        "score": 73.09,
+        "rating": "greed"
+      },
+      {
+        "date": "2024-01-16T00:00:00.000Z",
+        "score": 72.29,
+        "rating": "greed"
+      },
+      {
+        "date": "2024-01-17T00:00:00.000Z",
+        "score": 57.21,
+        "rating": "greed"
+      },
+      {
+        "date": "2024-01-18T00:00:00.000Z",
+        "score": 66.46,
+        "rating": "greed"
+      },
+      {
+        "date": "2024-01-19T00:00:00.000Z",
+        "score": 72.83,
+        "rating": "greed"
+      },
+      {
+        "date": "2024-01-22T00:00:00.000Z",
+        "score": 72.86,
+        "rating": "greed"
+      },
+      {
+        "date": "2024-01-23T00:00:00.000Z",
+        "score": 70.26,
+        "rating": "greed"
+      },
+      {
+        "date": "2024-01-24T00:00:00.000Z",
+        "score": 72.49,
+        "rating": "greed"
+      },
+      {
+        "date": "2024-01-25T00:00:00.000Z",
+        "score": 73.23,
+        "rating": "greed"
+      },
+      {
+        "date": "2024-01-26T00:00:00.000Z",
+        "score": 73.8,
+        "rating": "greed"
+      },
+      {
+        "date": "2024-01-29T00:00:00.000Z",
+        "score": 74.11,
+        "rating": "greed"
+      },
+      {
+        "date": "2024-01-30T00:00:00.000Z",
+        "score": 74.23,
+        "rating": "greed"
+      },
+      {
+        "date": "2024-01-31T00:00:00.000Z",
+        "score": 64.11,
+        "rating": "greed"
+      },
+      {
+        "date": "2024-02-01T00:00:00.000Z",
+        "score": 72.34,
+        "rating": "greed"
+      },
+      {
+        "date": "2024-02-02T00:00:00.000Z",
+        "score": 74.6,
+        "rating": "greed"
+      },
+      {
+        "date": "2024-02-05T00:00:00.000Z",
+        "score": 73.31,
+        "rating": "greed"
+      },
+      {
+        "date": "2024-02-06T00:00:00.000Z",
+        "score": 73.2,
+        "rating": "greed"
+      },
+      {
+        "date": "2024-02-07T00:00:00.000Z",
+        "score": 73.77,
+        "rating": "greed"
+      },
+      {
+        "date": "2024-02-08T00:00:00.000Z",
+        "score": 74.6,
+        "rating": "greed"
+      },
+      {
+        "date": "2024-02-09T00:00:00.000Z",
+        "score": 75.43,
+        "rating": "extreme greed"
+      },
+      {
+        "date": "2024-02-12T00:00:00.000Z",
+        "score": 75.83,
+        "rating": "extreme greed"
+      },
+      {
+        "date": "2024-02-13T00:00:00.000Z",
+        "score": 66.74,
+        "rating": "greed"
+      },
+      {
+        "date": "2024-02-14T00:00:00.000Z",
+        "score": 67.51,
+        "rating": "greed"
+      },
+      {
+        "date": "2024-02-15T00:00:00.000Z",
+        "score": 73.86,
+        "rating": "greed"
+      },
+      {
+        "date": "2024-02-16T00:00:00.000Z",
+        "score": 73.49,
+        "rating": "greed"
+      },
+      {
+        "date": "2024-02-20T00:00:00.000Z",
+        "score": 63.74,
+        "rating": "greed"
+      },
+      {
+        "date": "2024-02-21T00:00:00.000Z",
+        "score": 63.7,
+        "rating": "greed"
+      },
+      {
+        "date": "2024-02-22T00:00:00.000Z",
+        "score": 73.94,
+        "rating": "greed"
+      },
+      {
+        "date": "2024-02-23T00:00:00.000Z",
+        "score": 73.34,
+        "rating": "greed"
+      },
+      {
+        "date": "2024-02-26T00:00:00.000Z",
+        "score": 71.91,
+        "rating": "greed"
+      },
+      {
+        "date": "2024-02-27T00:00:00.000Z",
+        "score": 75.77,
+        "rating": "extreme greed"
+      },
+      {
+        "date": "2024-02-28T00:00:00.000Z",
+        "score": 76.77,
+        "rating": "extreme greed"
+      },
+      {
+        "date": "2024-02-29T00:00:00.000Z",
+        "score": 77.46,
+        "rating": "extreme greed"
+      },
+      {
+        "date": "2024-03-01T00:00:00.000Z",
+        "score": 76.83,
+        "rating": "extreme greed"
+      },
+      {
+        "date": "2024-03-04T00:00:00.000Z",
+        "score": 79.23,
+        "rating": "extreme greed"
+      },
+      {
+        "date": "2024-03-05T00:00:00.000Z",
+        "score": 76.11,
+        "rating": "extreme greed"
+      },
+      {
+        "date": "2024-03-06T00:00:00.000Z",
+        "score": 72.54,
+        "rating": "greed"
+      },
+      {
+        "date": "2024-03-07T00:00:00.000Z",
+        "score": 73.86,
+        "rating": "greed"
+      },
+      {
+        "date": "2024-03-08T00:00:00.000Z",
+        "score": 70.03,
+        "rating": "greed"
+      },
+      {
+        "date": "2024-03-11T00:00:00.000Z",
+        "score": 62.77,
+        "rating": "greed"
+      },
+      {
+        "date": "2024-03-12T00:00:00.000Z",
+        "score": 72.2,
+        "rating": "greed"
+      },
+      {
+        "date": "2024-03-13T00:00:00.000Z",
+        "score": 71.77,
+        "rating": "greed"
+      },
+      {
+        "date": "2024-03-14T00:00:00.000Z",
+        "score": 70.4,
+        "rating": "greed"
+      },
+      {
+        "date": "2024-03-15T00:00:00.000Z",
+        "score": 68.63,
+        "rating": "greed"
+      },
+      {
+        "date": "2024-03-18T00:00:00.000Z",
+        "score": 70.74,
+        "rating": "greed"
+      },
+      {
+        "date": "2024-03-19T00:00:00.000Z",
+        "score": 70.86,
+        "rating": "greed"
+      },
+      {
+        "date": "2024-03-20T00:00:00.000Z",
+        "score": 69.63,
+        "rating": "greed"
+      },
+      {
+        "date": "2024-03-21T00:00:00.000Z",
+        "score": 71.37,
+        "rating": "greed"
+      },
+      {
+        "date": "2024-03-22T00:00:00.000Z",
+        "score": 69.51,
+        "rating": "greed"
+      },
+      {
+        "date": "2024-03-25T00:00:00.000Z",
+        "score": 67.43,
+        "rating": "greed"
+      },
+      {
+        "date": "2024-03-26T00:00:00.000Z",
+        "score": 67.91,
+        "rating": "greed"
+      },
+      {
+        "date": "2024-03-27T00:00:00.000Z",
+        "score": 69.77,
+        "rating": "greed"
+      },
+      {
+        "date": "2024-03-28T00:00:00.000Z",
+        "score": 68.77,
+        "rating": "greed"
+      },
+      {
+        "date": "2024-04-01T00:00:00.000Z",
+        "score": 71.26,
+        "rating": "greed"
+      },
+      {
+        "date": "2024-04-02T00:00:00.000Z",
+        "score": 71.14,
+        "rating": "greed"
+      },
+      {
+        "date": "2024-04-03T00:00:00.000Z",
+        "score": 69.4,
+        "rating": "greed"
+      },
+      {
+        "date": "2024-04-04T00:00:00.000Z",
+        "score": 53.8,
+        "rating": "neutral"
+      },
+      {
+        "date": "2024-04-05T00:00:00.000Z",
+        "score": 58.1,
+        "rating": "greed"
+      },
+      {
+        "date": "2024-04-08T00:00:00.000Z",
+        "score": 64.03,
+        "rating": "greed"
+      },
+      {
+        "date": "2024-04-09T00:00:00.000Z",
+        "score": 59.63,
+        "rating": "greed"
+      },
+      {
+        "date": "2024-04-10T00:00:00.000Z",
+        "score": 49.67,
+        "rating": "neutral"
+      },
+      {
+        "date": "2024-04-11T00:00:00.000Z",
+        "score": 56.66,
+        "rating": "greed"
+      },
+      {
+        "date": "2024-04-12T00:00:00.000Z",
+        "score": 45.01,
+        "rating": "neutral"
+      },
+      {
+        "date": "2024-04-15T00:00:00.000Z",
+        "score": 38.4,
+        "rating": "fear"
+      },
+      {
+        "date": "2024-04-16T00:00:00.000Z",
+        "score": 35.11,
+        "rating": "fear"
+      },
+      {
+        "date": "2024-04-17T00:00:00.000Z",
+        "score": 31.16,
+        "rating": "fear"
+      },
+      {
+        "date": "2024-04-18T00:00:00.000Z",
+        "score": 30.4,
+        "rating": "fear"
+      },
+      {
+        "date": "2024-04-19T00:00:00.000Z",
+        "score": 27.67,
+        "rating": "fear"
+      },
+      {
+        "date": "2024-04-22T00:00:00.000Z",
+        "score": 34.17,
+        "rating": "fear"
+      },
+      {
+        "date": "2024-04-23T00:00:00.000Z",
+        "score": 36.57,
+        "rating": "fear"
+      },
+      {
+        "date": "2024-04-24T00:00:00.000Z",
+        "score": 37.49,
+        "rating": "fear"
+      },
+      {
+        "date": "2024-04-25T00:00:00.000Z",
+        "score": 39.09,
+        "rating": "fear"
+      },
+      {
+        "date": "2024-04-26T00:00:00.000Z",
+        "score": 40.51,
+        "rating": "fear"
+      },
+      {
+        "date": "2024-04-29T00:00:00.000Z",
+        "score": 42.43,
+        "rating": "fear"
+      },
+      {
+        "date": "2024-04-30T00:00:00.000Z",
+        "score": 40.54,
+        "rating": "fear"
+      },
+      {
+        "date": "2024-05-01T00:00:00.000Z",
+        "score": 40.51,
+        "rating": "fear"
+      },
+      {
+        "date": "2024-05-02T00:00:00.000Z",
+        "score": 42.23,
+        "rating": "fear"
+      },
+      {
+        "date": "2024-05-03T00:00:00.000Z",
+        "score": 43.26,
+        "rating": "fear"
+      },
+      {
+        "date": "2024-05-06T00:00:00.000Z",
+        "score": 39,
+        "rating": "fear"
+      },
+      {
+        "date": "2024-05-07T00:00:00.000Z",
+        "score": 37.17,
+        "rating": "fear"
+      },
+      {
+        "date": "2024-05-08T00:00:00.000Z",
+        "score": 38.17,
+        "rating": "fear"
+      },
+      {
+        "date": "2024-05-09T00:00:00.000Z",
+        "score": 42.23,
+        "rating": "fear"
+      },
+      {
+        "date": "2024-05-10T00:00:00.000Z",
+        "score": 46.03,
+        "rating": "neutral"
+      },
+      {
+        "date": "2024-05-13T00:00:00.000Z",
+        "score": 48.11,
+        "rating": "neutral"
+      },
+      {
+        "date": "2024-05-14T00:00:00.000Z",
+        "score": 55.29,
+        "rating": "greed"
+      },
+      {
+        "date": "2024-05-15T00:00:00.000Z",
+        "score": 59.37,
+        "rating": "greed"
+      },
+      {
+        "date": "2024-05-16T00:00:00.000Z",
+        "score": 62.31,
+        "rating": "greed"
+      },
+      {
+        "date": "2024-05-17T00:00:00.000Z",
+        "score": 62.8,
+        "rating": "greed"
+      },
+      {
+        "date": "2024-05-20T00:00:00.000Z",
+        "score": 60.43,
+        "rating": "greed"
+      },
+      {
+        "date": "2024-05-21T00:00:00.000Z",
+        "score": 59.43,
+        "rating": "greed"
+      },
+      {
+        "date": "2024-05-22T00:00:00.000Z",
+        "score": 58.51,
+        "rating": "greed"
+      },
+      {
+        "date": "2024-05-23T00:00:00.000Z",
+        "score": 52.37,
+        "rating": "neutral"
+      },
+      {
+        "date": "2024-05-24T00:00:00.000Z",
+        "score": 51.74,
+        "rating": "neutral"
+      },
+      {
+        "date": "2024-05-28T00:00:00.000Z",
+        "score": 54.69,
+        "rating": "neutral"
+      },
+      {
+        "date": "2024-05-29T00:00:00.000Z",
+        "score": 49.97,
+        "rating": "neutral"
+      },
+      {
+        "date": "2024-05-30T00:00:00.000Z",
+        "score": 45.09,
+        "rating": "neutral"
+      },
+      {
+        "date": "2024-05-31T00:00:00.000Z",
+        "score": 48.43,
+        "rating": "neutral"
+      },
+      {
+        "date": "2024-06-03T00:00:00.000Z",
+        "score": 45.49,
+        "rating": "neutral"
+      },
+      {
+        "date": "2024-06-04T00:00:00.000Z",
+        "score": 47.63,
+        "rating": "neutral"
+      },
+      {
+        "date": "2024-06-05T00:00:00.000Z",
+        "score": 51.14,
+        "rating": "neutral"
+      },
+      {
+        "date": "2024-06-06T00:00:00.000Z",
+        "score": 45.31,
+        "rating": "neutral"
+      },
+      {
+        "date": "2024-06-07T00:00:00.000Z",
+        "score": 43.4,
+        "rating": "fear"
+      },
+      {
+        "date": "2024-06-10T00:00:00.000Z",
+        "score": 44.74,
+        "rating": "fear"
+      },
+      {
+        "date": "2024-06-11T00:00:00.000Z",
+        "score": 44.4,
+        "rating": "fear"
+      },
+      {
+        "date": "2024-06-12T00:00:00.000Z",
+        "score": 46.57,
+        "rating": "neutral"
+      },
+      {
+        "date": "2024-06-13T00:00:00.000Z",
+        "score": 44.57,
+        "rating": "fear"
+      },
+      {
+        "date": "2024-06-14T00:00:00.000Z",
+        "score": 41.11,
+        "rating": "fear"
+      },
+      {
+        "date": "2024-06-17T00:00:00.000Z",
+        "score": 43.29,
+        "rating": "fear"
+      },
+      {
+        "date": "2024-06-18T00:00:00.000Z",
+        "score": 41.29,
+        "rating": "fear"
+      },
+      {
+        "date": "2024-06-20T00:00:00.000Z",
+        "score": 38.71,
+        "rating": "fear"
+      },
+      {
+        "date": "2024-06-21T00:00:00.000Z",
+        "score": 39.06,
+        "rating": "fear"
+      },
+      {
+        "date": "2024-06-24T00:00:00.000Z",
+        "score": 37.77,
+        "rating": "fear"
+      },
+      {
+        "date": "2024-06-25T00:00:00.000Z",
+        "score": 37.29,
+        "rating": "fear"
+      },
+      {
+        "date": "2024-06-26T00:00:00.000Z",
+        "score": 40.89,
+        "rating": "fear"
+      },
+      {
+        "date": "2024-06-27T00:00:00.000Z",
+        "score": 45.51,
+        "rating": "neutral"
+      },
+      {
+        "date": "2024-06-28T00:00:00.000Z",
+        "score": 44.31,
+        "rating": "fear"
+      },
+      {
+        "date": "2024-07-01T00:00:00.000Z",
+        "score": 47.94,
+        "rating": "neutral"
+      },
+      {
+        "date": "2024-07-02T00:00:00.000Z",
+        "score": 49.74,
+        "rating": "neutral"
+      },
+      {
+        "date": "2024-07-03T00:00:00.000Z",
+        "score": 48.37,
+        "rating": "neutral"
+      },
+      {
+        "date": "2024-07-05T00:00:00.000Z",
+        "score": 49.71,
+        "rating": "neutral"
+      },
+      {
+        "date": "2024-07-08T00:00:00.000Z",
+        "score": 51.06,
+        "rating": "neutral"
+      },
+      {
+        "date": "2024-07-09T00:00:00.000Z",
+        "score": 50.57,
+        "rating": "neutral"
+      },
+      {
+        "date": "2024-07-10T00:00:00.000Z",
+        "score": 54.6,
+        "rating": "neutral"
+      },
+      {
+        "date": "2024-07-11T00:00:00.000Z",
+        "score": 49.4,
+        "rating": "neutral"
+      },
+      {
+        "date": "2024-07-12T00:00:00.000Z",
+        "score": 54.37,
+        "rating": "neutral"
+      },
+      {
+        "date": "2024-07-15T00:00:00.000Z",
+        "score": 57.74,
+        "rating": "greed"
+      },
+      {
+        "date": "2024-07-16T00:00:00.000Z",
+        "score": 57.03,
+        "rating": "greed"
+      },
+      {
+        "date": "2024-07-17T00:00:00.000Z",
+        "score": 46.11,
+        "rating": "neutral"
+      },
+      {
+        "date": "2024-07-18T00:00:00.000Z",
+        "score": 45.94,
+        "rating": "neutral"
+      },
+      {
+        "date": "2024-07-19T00:00:00.000Z",
+        "score": 43,
+        "rating": "fear"
+      },
+      {
+        "date": "2024-07-22T00:00:00.000Z",
+        "score": 48.43,
+        "rating": "neutral"
+      },
+      {
+        "date": "2024-07-23T00:00:00.000Z",
+        "score": 46.86,
+        "rating": "neutral"
+      },
+      {
+        "date": "2024-07-24T00:00:00.000Z",
+        "score": 38.61,
+        "rating": "fear"
+      },
+      {
+        "date": "2024-07-25T00:00:00.000Z",
+        "score": 39.07,
+        "rating": "fear"
+      },
+      {
+        "date": "2024-07-26T00:00:00.000Z",
+        "score": 42.54,
+        "rating": "fear"
+      },
+      {
+        "date": "2024-07-29T00:00:00.000Z",
+        "score": 42.07,
+        "rating": "fear"
+      },
+      {
+        "date": "2024-07-30T00:00:00.000Z",
+        "score": 40.8,
+        "rating": "fear"
+      },
+      {
+        "date": "2024-07-31T00:00:00.000Z",
+        "score": 46.89,
+        "rating": "neutral"
+      },
+      {
+        "date": "2024-08-01T00:00:00.000Z",
+        "score": 42.69,
+        "rating": "fear"
+      },
+      {
+        "date": "2024-08-02T00:00:00.000Z",
+        "score": 41.39,
+        "rating": "fear"
+      },
+      {
+        "date": "2024-08-05T00:00:00.000Z",
+        "score": 33.06,
+        "rating": "fear"
+      },
+      {
+        "date": "2024-08-06T00:00:00.000Z",
+        "score": 19.01,
+        "rating": "extreme fear"
+      },
+      {
+        "date": "2024-08-07T00:00:00.000Z",
+        "score": 16.56,
+        "rating": "extreme fear"
+      },
+      {
+        "date": "2024-08-08T00:00:00.000Z",
+        "score": 17.66,
+        "rating": "extreme fear"
+      },
+      {
+        "date": "2024-08-09T00:00:00.000Z",
+        "score": 24.09,
+        "rating": "extreme fear"
+      },
+      {
+        "date": "2024-08-12T00:00:00.000Z",
+        "score": 23.8,
+        "rating": "extreme fear"
+      },
+      {
+        "date": "2024-08-13T00:00:00.000Z",
+        "score": 25.51,
+        "rating": "fear"
+      },
+      {
+        "date": "2024-08-14T00:00:00.000Z",
+        "score": 26.43,
+        "rating": "fear"
+      },
+      {
+        "date": "2024-08-15T00:00:00.000Z",
+        "score": 32.37,
+        "rating": "fear"
+      },
+      {
+        "date": "2024-08-16T00:00:00.000Z",
+        "score": 33.74,
+        "rating": "fear"
+      },
+      {
+        "date": "2024-08-19T00:00:00.000Z",
+        "score": 39.89,
+        "rating": "fear"
+      },
+      {
+        "date": "2024-08-20T00:00:00.000Z",
+        "score": 44.69,
+        "rating": "fear"
+      },
+      {
+        "date": "2024-08-21T00:00:00.000Z",
+        "score": 50.23,
+        "rating": "neutral"
+      },
+      {
+        "date": "2024-08-22T00:00:00.000Z",
+        "score": 46.77,
+        "rating": "neutral"
+      },
+      {
+        "date": "2024-08-23T00:00:00.000Z",
+        "score": 51.57,
+        "rating": "neutral"
+      },
+      {
+        "date": "2024-08-26T00:00:00.000Z",
+        "score": 52.94,
+        "rating": "neutral"
+      },
+      {
+        "date": "2024-08-27T00:00:00.000Z",
+        "score": 52.29,
+        "rating": "neutral"
+      },
+      {
+        "date": "2024-08-28T00:00:00.000Z",
+        "score": 51.09,
+        "rating": "neutral"
+      },
+      {
+        "date": "2024-08-29T00:00:00.000Z",
+        "score": 56.06,
+        "rating": "greed"
+      },
+      {
+        "date": "2024-08-30T00:00:00.000Z",
+        "score": 60.31,
+        "rating": "greed"
+      },
+      {
+        "date": "2024-09-03T00:00:00.000Z",
+        "score": 56.34,
+        "rating": "greed"
+      },
+      {
+        "date": "2024-09-04T00:00:00.000Z",
+        "score": 56.63,
+        "rating": "greed"
+      },
+      {
+        "date": "2024-09-05T00:00:00.000Z",
+        "score": 50.63,
+        "rating": "neutral"
+      },
+      {
+        "date": "2024-09-06T00:00:00.000Z",
+        "score": 39.34,
+        "rating": "fear"
+      },
+      {
+        "date": "2024-09-09T00:00:00.000Z",
+        "score": 41.97,
+        "rating": "fear"
+      },
+      {
+        "date": "2024-09-10T00:00:00.000Z",
+        "score": 39.69,
+        "rating": "fear"
+      },
+      {
+        "date": "2024-09-11T00:00:00.000Z",
+        "score": 43.09,
+        "rating": "fear"
+      },
+      {
+        "date": "2024-09-12T00:00:00.000Z",
+        "score": 42.97,
+        "rating": "fear"
+      },
+      {
+        "date": "2024-09-13T00:00:00.000Z",
+        "score": 48.63,
+        "rating": "neutral"
+      },
+      {
+        "date": "2024-09-16T00:00:00.000Z",
+        "score": 50.31,
+        "rating": "neutral"
+      },
+      {
+        "date": "2024-09-17T00:00:00.000Z",
+        "score": 54.63,
+        "rating": "neutral"
+      },
+      {
+        "date": "2024-09-18T00:00:00.000Z",
+        "score": 55.17,
+        "rating": "greed"
+      },
+      {
+        "date": "2024-09-19T00:00:00.000Z",
+        "score": 63.8,
+        "rating": "greed"
+      },
+      {
+        "date": "2024-09-20T00:00:00.000Z",
+        "score": 61.2,
+        "rating": "greed"
+      },
+      {
+        "date": "2024-09-23T00:00:00.000Z",
+        "score": 63.86,
+        "rating": "greed"
+      },
+      {
+        "date": "2024-09-24T00:00:00.000Z",
+        "score": 66.43,
+        "rating": "greed"
+      },
+      {
+        "date": "2024-09-25T00:00:00.000Z",
+        "score": 65.74,
+        "rating": "greed"
+      },
+      {
+        "date": "2024-09-26T00:00:00.000Z",
+        "score": 70.74,
+        "rating": "greed"
+      },
+      {
+        "date": "2024-09-27T00:00:00.000Z",
+        "score": 67.31,
+        "rating": "greed"
+      },
+      {
+        "date": "2024-09-30T00:00:00.000Z",
+        "score": 73.69,
+        "rating": "greed"
+      },
+      {
+        "date": "2024-10-01T00:00:00.000Z",
+        "score": 70.31,
+        "rating": "greed"
+      },
+      {
+        "date": "2024-10-02T00:00:00.000Z",
+        "score": 70.57,
+        "rating": "greed"
+      },
+      {
+        "date": "2024-10-03T00:00:00.000Z",
+        "score": 69.43,
+        "rating": "greed"
+      },
+      {
+        "date": "2024-10-04T00:00:00.000Z",
+        "score": 71.4,
+        "rating": "greed"
+      },
+      {
+        "date": "2024-10-07T00:00:00.000Z",
+        "score": 70.83,
+        "rating": "greed"
+      },
+      {
+        "date": "2024-10-08T00:00:00.000Z",
+        "score": 71.17,
+        "rating": "greed"
+      },
+      {
+        "date": "2024-10-09T00:00:00.000Z",
+        "score": 71.14,
+        "rating": "greed"
+      },
+      {
+        "date": "2024-10-10T00:00:00.000Z",
+        "score": 70.29,
+        "rating": "greed"
+      },
+      {
+        "date": "2024-10-11T00:00:00.000Z",
+        "score": 71.66,
+        "rating": "greed"
+      },
+      {
+        "date": "2024-10-14T00:00:00.000Z",
+        "score": 74.23,
+        "rating": "greed"
+      },
+      {
+        "date": "2024-10-15T00:00:00.000Z",
+        "score": 71.14,
+        "rating": "greed"
+      },
+      {
+        "date": "2024-10-16T00:00:00.000Z",
+        "score": 69.03,
+        "rating": "greed"
+      },
+      {
+        "date": "2024-10-17T00:00:00.000Z",
+        "score": 68.57,
+        "rating": "greed"
+      },
+      {
+        "date": "2024-10-18T00:00:00.000Z",
+        "score": 72.43,
+        "rating": "greed"
+      },
+      {
+        "date": "2024-10-21T00:00:00.000Z",
+        "score": 69.8,
+        "rating": "greed"
+      },
+      {
+        "date": "2024-10-22T00:00:00.000Z",
+        "score": 70.37,
+        "rating": "greed"
+      },
+      {
+        "date": "2024-10-23T00:00:00.000Z",
+        "score": 63.2,
+        "rating": "greed"
+      },
+      {
+        "date": "2024-10-24T00:00:00.000Z",
+        "score": 62.94,
+        "rating": "greed"
+      },
+      {
+        "date": "2024-10-25T00:00:00.000Z",
+        "score": 58.74,
+        "rating": "greed"
+      },
+      {
+        "date": "2024-10-28T00:00:00.000Z",
+        "score": 60.86,
+        "rating": "greed"
+      },
+      {
+        "date": "2024-10-29T00:00:00.000Z",
+        "score": 60.06,
+        "rating": "greed"
+      },
+      {
+        "date": "2024-10-30T00:00:00.000Z",
+        "score": 57.2,
+        "rating": "greed"
+      },
+      {
+        "date": "2024-10-31T00:00:00.000Z",
+        "score": 40.46,
+        "rating": "fear"
+      },
+      {
+        "date": "2024-11-01T00:00:00.000Z",
+        "score": 50.49,
+        "rating": "neutral"
+      },
+      {
+        "date": "2024-11-04T00:00:00.000Z",
+        "score": 42.43,
+        "rating": "fear"
+      },
+      {
+        "date": "2024-11-05T00:00:00.000Z",
+        "score": 43.54,
+        "rating": "fear"
+      },
+      {
+        "date": "2024-11-06T00:00:00.000Z",
+        "score": 44,
+        "rating": "fear"
+      },
+      {
+        "date": "2024-11-07T00:00:00.000Z",
+        "score": 59.06,
+        "rating": "greed"
+      },
+      {
+        "date": "2024-11-08T00:00:00.000Z",
+        "score": 59.43,
+        "rating": "greed"
+      },
+      {
+        "date": "2024-11-11T00:00:00.000Z",
+        "score": 66.6,
+        "rating": "greed"
+      },
+      {
+        "date": "2024-11-12T00:00:00.000Z",
+        "score": 66.71,
+        "rating": "greed"
+      },
+      {
+        "date": "2024-11-13T00:00:00.000Z",
+        "score": 66.31,
+        "rating": "greed"
+      },
+      {
+        "date": "2024-11-14T00:00:00.000Z",
+        "score": 60.31,
+        "rating": "greed"
+      },
+      {
+        "date": "2024-11-15T00:00:00.000Z",
+        "score": 51.2,
+        "rating": "neutral"
+      },
+      {
+        "date": "2024-11-18T00:00:00.000Z",
+        "score": 50.29,
+        "rating": "neutral"
+      },
+      {
+        "date": "2024-11-19T00:00:00.000Z",
+        "score": 49.51,
+        "rating": "neutral"
+      },
+      {
+        "date": "2024-11-20T00:00:00.000Z",
+        "score": 49.51,
+        "rating": "neutral"
+      },
+      {
+        "date": "2024-11-21T00:00:00.000Z",
+        "score": 56.6,
+        "rating": "greed"
+      },
+      {
+        "date": "2024-11-22T00:00:00.000Z",
+        "score": 60.71,
+        "rating": "greed"
+      },
+      {
+        "date": "2024-11-25T00:00:00.000Z",
+        "score": 62.89,
+        "rating": "greed"
+      },
+      {
+        "date": "2024-11-26T00:00:00.000Z",
+        "score": 65.91,
+        "rating": "greed"
+      },
+      {
+        "date": "2024-11-27T00:00:00.000Z",
+        "score": 64.4,
+        "rating": "greed"
+      },
+      {
+        "date": "2024-11-29T00:00:00.000Z",
+        "score": 65,
+        "rating": "greed"
+      },
+      {
+        "date": "2024-12-02T00:00:00.000Z",
+        "score": 65.31,
+        "rating": "greed"
+      },
+      {
+        "date": "2024-12-03T00:00:00.000Z",
+        "score": 59.57,
+        "rating": "greed"
+      },
+      {
+        "date": "2024-12-04T00:00:00.000Z",
+        "score": 57.49,
+        "rating": "greed"
+      },
+      {
+        "date": "2024-12-05T00:00:00.000Z",
+        "score": 54.91,
+        "rating": "neutral"
+      },
+      {
+        "date": "2024-12-06T00:00:00.000Z",
+        "score": 52.14,
+        "rating": "neutral"
+      },
+      {
+        "date": "2024-12-09T00:00:00.000Z",
+        "score": 49.26,
+        "rating": "neutral"
+      },
+      {
+        "date": "2024-12-10T00:00:00.000Z",
+        "score": 46.97,
+        "rating": "neutral"
+      },
+      {
+        "date": "2024-12-11T00:00:00.000Z",
+        "score": 49.2,
+        "rating": "neutral"
+      },
+      {
+        "date": "2024-12-12T00:00:00.000Z",
+        "score": 47.11,
+        "rating": "neutral"
+      },
+      {
+        "date": "2024-12-13T00:00:00.000Z",
+        "score": 49.11,
+        "rating": "neutral"
+      },
+      {
+        "date": "2024-12-16T00:00:00.000Z",
+        "score": 56.06,
+        "rating": "greed"
+      },
+      {
+        "date": "2024-12-17T00:00:00.000Z",
+        "score": 51.4,
+        "rating": "neutral"
+      },
+      {
+        "date": "2024-12-18T00:00:00.000Z",
+        "score": 33.13,
+        "rating": "fear"
+      },
+      {
+        "date": "2024-12-19T00:00:00.000Z",
+        "score": 19.51,
+        "rating": "extreme fear"
+      },
+      {
+        "date": "2024-12-20T00:00:00.000Z",
+        "score": 27.6,
+        "rating": "fear"
+      },
+      {
+        "date": "2024-12-23T00:00:00.000Z",
+        "score": 30.14,
+        "rating": "fear"
+      },
+      {
+        "date": "2024-12-24T00:00:00.000Z",
+        "score": 34.51,
+        "rating": "fear"
+      },
+      {
+        "date": "2024-12-26T00:00:00.000Z",
+        "score": 34.17,
+        "rating": "fear"
+      },
+      {
+        "date": "2024-12-27T00:00:00.000Z",
+        "score": 33.83,
+        "rating": "fear"
+      },
+      {
+        "date": "2024-12-30T00:00:00.000Z",
+        "score": 28.6,
+        "rating": "fear"
+      },
+      {
+        "date": "2024-12-31T00:00:00.000Z",
+        "score": 26.31,
+        "rating": "fear"
+      },
+      {
+        "date": "2025-01-02T00:00:00.000Z",
+        "score": 24.31,
+        "rating": "extreme fear"
+      },
+      {
+        "date": "2025-01-03T00:00:00.000Z",
+        "score": 28.89,
+        "rating": "fear"
+      },
+      {
+        "date": "2025-01-06T00:00:00.000Z",
+        "score": 33.77,
+        "rating": "fear"
+      },
+      {
+        "date": "2025-01-07T00:00:00.000Z",
+        "score": 34.31,
+        "rating": "fear"
+      },
+      {
+        "date": "2025-01-08T00:00:00.000Z",
+        "score": 31.91,
+        "rating": "fear"
+      },
+      {
+        "date": "2025-01-10T00:00:00.000Z",
+        "score": 25.63,
+        "rating": "fear"
+      },
+      {
+        "date": "2025-01-13T00:00:00.000Z",
+        "score": 25.34,
+        "rating": "fear"
+      },
+      {
+        "date": "2025-01-14T00:00:00.000Z",
+        "score": 25.14,
+        "rating": "fear"
+      },
+      {
+        "date": "2025-01-15T00:00:00.000Z",
+        "score": 27.43,
+        "rating": "fear"
+      },
+      {
+        "date": "2025-01-16T00:00:00.000Z",
+        "score": 27.34,
+        "rating": "fear"
+      },
+      {
+        "date": "2025-01-17T00:00:00.000Z",
+        "score": 36.03,
+        "rating": "fear"
+      },
+      {
+        "date": "2025-01-21T00:00:00.000Z",
+        "score": 39.91,
+        "rating": "fear"
+      },
+      {
+        "date": "2025-01-22T00:00:00.000Z",
+        "score": 41.63,
+        "rating": "fear"
+      },
+      {
+        "date": "2025-01-23T00:00:00.000Z",
+        "score": 43.69,
+        "rating": "fear"
+      },
+      {
+        "date": "2025-01-24T00:00:00.000Z",
+        "score": 45.8,
+        "rating": "neutral"
+      },
+      {
+        "date": "2025-01-27T00:00:00.000Z",
+        "score": 37.97,
+        "rating": "fear"
+      },
+      {
+        "date": "2025-01-28T00:00:00.000Z",
+        "score": 40.63,
+        "rating": "fear"
+      },
+      {
+        "date": "2025-01-29T00:00:00.000Z",
+        "score": 42.4,
+        "rating": "fear"
+      },
+      {
+        "date": "2025-01-30T00:00:00.000Z",
+        "score": 45.91,
+        "rating": "neutral"
+      },
+      {
+        "date": "2025-01-31T00:00:00.000Z",
+        "score": 43.77,
+        "rating": "fear"
+      },
+      {
+        "date": "2025-02-03T00:00:00.000Z",
+        "score": 37.4,
+        "rating": "fear"
+      },
+      {
+        "date": "2025-02-04T00:00:00.000Z",
+        "score": 37.14,
+        "rating": "fear"
+      },
+      {
+        "date": "2025-02-05T00:00:00.000Z",
+        "score": 38.63,
+        "rating": "fear"
+      },
+      {
+        "date": "2025-02-06T00:00:00.000Z",
+        "score": 39.69,
+        "rating": "fear"
+      },
+      {
+        "date": "2025-02-07T00:00:00.000Z",
+        "score": 38.37,
+        "rating": "fear"
+      },
+      {
+        "date": "2025-02-10T00:00:00.000Z",
+        "score": 44.71,
+        "rating": "fear"
+      },
+      {
+        "date": "2025-02-11T00:00:00.000Z",
+        "score": 45.4,
+        "rating": "neutral"
+      },
+      {
+        "date": "2025-02-12T00:00:00.000Z",
+        "score": 41.37,
+        "rating": "fear"
+      },
+      {
+        "date": "2025-02-13T00:00:00.000Z",
+        "score": 46.6,
+        "rating": "neutral"
+      },
+      {
+        "date": "2025-02-14T00:00:00.000Z",
+        "score": 43.69,
+        "rating": "fear"
+      },
+      {
+        "date": "2025-02-18T00:00:00.000Z",
+        "score": 46.8,
+        "rating": "neutral"
+      },
+      {
+        "date": "2025-02-19T00:00:00.000Z",
+        "score": 47.63,
+        "rating": "neutral"
+      },
+      {
+        "date": "2025-02-20T00:00:00.000Z",
+        "score": 44.23,
+        "rating": "fear"
+      },
+      {
+        "date": "2025-02-21T00:00:00.000Z",
+        "score": 36.97,
+        "rating": "fear"
+      },
+      {
+        "date": "2025-02-24T00:00:00.000Z",
+        "score": 29.54,
+        "rating": "fear"
+      },
+      {
+        "date": "2025-02-25T00:00:00.000Z",
+        "score": 24.2,
+        "rating": "extreme fear"
+      },
+      {
+        "date": "2025-02-26T00:00:00.000Z",
+        "score": 21.26,
+        "rating": "extreme fear"
+      },
+      {
+        "date": "2025-02-27T00:00:00.000Z",
+        "score": 12.76,
+        "rating": "extreme fear"
+      },
+      {
+        "date": "2025-02-28T00:00:00.000Z",
+        "score": 20.66,
+        "rating": "extreme fear"
+      },
+      {
+        "date": "2025-03-03T00:00:00.000Z",
+        "score": 12.34,
+        "rating": "extreme fear"
+      },
+      {
+        "date": "2025-03-04T00:00:00.000Z",
+        "score": 11.04,
+        "rating": "extreme fear"
+      },
+      {
+        "date": "2025-03-05T00:00:00.000Z",
+        "score": 11.51,
+        "rating": "extreme fear"
+      },
+      {
+        "date": "2025-03-06T00:00:00.000Z",
+        "score": 17.2,
+        "rating": "extreme fear"
+      },
+      {
+        "date": "2025-03-07T00:00:00.000Z",
+        "score": 17.64,
+        "rating": "extreme fear"
+      },
+      {
+        "date": "2025-03-10T00:00:00.000Z",
+        "score": 17.07,
+        "rating": "extreme fear"
+      },
+      {
+        "date": "2025-03-11T00:00:00.000Z",
+        "score": 15.11,
+        "rating": "extreme fear"
+      },
+      {
+        "date": "2025-03-12T00:00:00.000Z",
+        "score": 15.91,
+        "rating": "extreme fear"
+      },
+      {
+        "date": "2025-03-13T00:00:00.000Z",
+        "score": 15.19,
+        "rating": "extreme fear"
+      },
+      {
+        "date": "2025-03-14T00:00:00.000Z",
+        "score": 22.06,
+        "rating": "extreme fear"
+      },
+      {
+        "date": "2025-03-17T00:00:00.000Z",
+        "score": 22.57,
+        "rating": "extreme fear"
+      },
+      {
+        "date": "2025-03-18T00:00:00.000Z",
+        "score": 22.23,
+        "rating": "extreme fear"
+      },
+      {
+        "date": "2025-03-19T00:00:00.000Z",
+        "score": 21.6,
+        "rating": "extreme fear"
+      },
+      {
+        "date": "2025-03-20T00:00:00.000Z",
+        "score": 21.69,
+        "rating": "extreme fear"
+      },
+      {
+        "date": "2025-03-21T00:00:00.000Z",
+        "score": 22.69,
+        "rating": "extreme fear"
+      },
+      {
+        "date": "2025-03-24T00:00:00.000Z",
+        "score": 25.4,
+        "rating": "fear"
+      },
+      {
+        "date": "2025-03-25T00:00:00.000Z",
+        "score": 29.29,
+        "rating": "fear"
+      },
+      {
+        "date": "2025-03-26T00:00:00.000Z",
+        "score": 28.89,
+        "rating": "fear"
+      },
+      {
+        "date": "2025-03-27T00:00:00.000Z",
+        "score": 28.34,
+        "rating": "fear"
+      },
+      {
+        "date": "2025-03-28T00:00:00.000Z",
+        "score": 26.37,
+        "rating": "fear"
+      },
+      {
+        "date": "2025-03-31T00:00:00.000Z",
+        "score": 21.11,
+        "rating": "extreme fear"
+      },
+      {
+        "date": "2025-04-01T00:00:00.000Z",
+        "score": 19.57,
+        "rating": "extreme fear"
+      },
+      {
+        "date": "2025-04-02T00:00:00.000Z",
+        "score": 22.6,
+        "rating": "extreme fear"
+      },
+      {
+        "date": "2025-04-03T00:00:00.000Z",
+        "score": 12.14,
+        "rating": "extreme fear"
+      },
+      {
+        "date": "2025-04-04T00:00:00.000Z",
+        "score": 5.39,
+        "rating": "extreme fear"
+      },
+      {
+        "date": "2025-04-07T00:00:00.000Z",
+        "score": 4,
+        "rating": "extreme fear"
+      },
+      {
+        "date": "2025-04-08T00:00:00.000Z",
+        "score": 2.9,
+        "rating": "extreme fear"
+      },
+      {
+        "date": "2025-04-09T00:00:00.000Z",
+        "score": 9.5,
+        "rating": "extreme fear"
+      },
+      {
+        "date": "2025-04-10T00:00:00.000Z",
+        "score": 5.61,
+        "rating": "extreme fear"
+      },
+      {
+        "date": "2025-04-11T00:00:00.000Z",
+        "score": 8.39,
+        "rating": "extreme fear"
+      },
+      {
+        "date": "2025-04-14T00:00:00.000Z",
+        "score": 12.34,
+        "rating": "extreme fear"
+      },
+      {
+        "date": "2025-04-15T00:00:00.000Z",
+        "score": 13.11,
+        "rating": "extreme fear"
+      },
+      {
+        "date": "2025-04-16T00:00:00.000Z",
+        "score": 11.14,
+        "rating": "extreme fear"
+      },
+      {
+        "date": "2025-04-17T00:00:00.000Z",
+        "score": 16.06,
+        "rating": "extreme fear"
+      },
+      {
+        "date": "2025-04-21T00:00:00.000Z",
+        "score": 12.37,
+        "rating": "extreme fear"
+      },
+      {
+        "date": "2025-04-22T00:00:00.000Z",
+        "score": 13.6,
+        "rating": "extreme fear"
+      },
+      {
+        "date": "2025-04-23T00:00:00.000Z",
+        "score": 21.54,
+        "rating": "extreme fear"
+      },
+      {
+        "date": "2025-04-24T00:00:00.000Z",
+        "score": 24.09,
+        "rating": "extreme fear"
+      },
+      {
+        "date": "2025-04-25T00:00:00.000Z",
+        "score": 34.51,
+        "rating": "fear"
+      },
+      {
+        "date": "2025-04-28T00:00:00.000Z",
+        "score": 32.14,
+        "rating": "fear"
+      },
+      {
+        "date": "2025-04-29T00:00:00.000Z",
+        "score": 32.74,
+        "rating": "fear"
+      },
+      {
+        "date": "2025-04-30T00:00:00.000Z",
+        "score": 32.37,
+        "rating": "fear"
+      },
+      {
+        "date": "2025-05-01T00:00:00.000Z",
+        "score": 41.26,
+        "rating": "fear"
+      },
+      {
+        "date": "2025-05-02T00:00:00.000Z",
+        "score": 38.29,
+        "rating": "fear"
+      },
+      {
+        "date": "2025-05-05T00:00:00.000Z",
+        "score": 53.06,
+        "rating": "neutral"
+      },
+      {
+        "date": "2025-05-06T00:00:00.000Z",
+        "score": 54.66,
+        "rating": "neutral"
+      },
+      {
+        "date": "2025-05-07T00:00:00.000Z",
+        "score": 54.14,
+        "rating": "neutral"
+      },
+      {
+        "date": "2025-05-08T00:00:00.000Z",
+        "score": 57.66,
+        "rating": "greed"
+      },
+      {
+        "date": "2025-05-09T00:00:00.000Z",
+        "score": 60.03,
+        "rating": "greed"
+      },
+      {
+        "date": "2025-05-12T00:00:00.000Z",
+        "score": 64.49,
+        "rating": "greed"
+      },
+      {
+        "date": "2025-05-13T00:00:00.000Z",
+        "score": 68.2,
+        "rating": "greed"
+      },
+      {
+        "date": "2025-05-14T00:00:00.000Z",
+        "score": 70.4,
+        "rating": "greed"
+      },
+      {
+        "date": "2025-05-15T00:00:00.000Z",
+        "score": 69.14,
+        "rating": "greed"
+      },
+      {
+        "date": "2025-05-16T00:00:00.000Z",
+        "score": 70.6,
+        "rating": "greed"
+      },
+      {
+        "date": "2025-05-19T00:00:00.000Z",
+        "score": 69.74,
+        "rating": "greed"
+      },
+      {
+        "date": "2025-05-20T00:00:00.000Z",
+        "score": 69.17,
+        "rating": "greed"
+      },
+      {
+        "date": "2025-05-21T00:00:00.000Z",
+        "score": 66.23,
+        "rating": "greed"
+      },
+      {
+        "date": "2025-05-22T00:00:00.000Z",
+        "score": 66.8,
+        "rating": "greed"
+      },
+      {
+        "date": "2025-05-23T00:00:00.000Z",
+        "score": 64.09,
+        "rating": "greed"
+      },
+      {
+        "date": "2025-05-27T00:00:00.000Z",
+        "score": 65.74,
+        "rating": "greed"
+      },
+      {
+        "date": "2025-05-28T00:00:00.000Z",
+        "score": 64.74,
+        "rating": "greed"
+      },
+      {
+        "date": "2025-05-29T00:00:00.000Z",
+        "score": 64.46,
+        "rating": "greed"
+      },
+      {
+        "date": "2025-05-30T00:00:00.000Z",
+        "score": 61.91,
+        "rating": "greed"
+      },
+      {
+        "date": "2025-06-02T00:00:00.000Z",
+        "score": 62.43,
+        "rating": "greed"
+      },
+      {
+        "date": "2025-06-03T00:00:00.000Z",
+        "score": 54.57,
+        "rating": "neutral"
+      },
+      {
+        "date": "2025-06-04T00:00:00.000Z",
+        "score": 54.89,
+        "rating": "neutral"
+      },
+      {
+        "date": "2025-06-05T00:00:00.000Z",
+        "score": 57.97,
+        "rating": "greed"
+      },
+      {
+        "date": "2025-06-06T00:00:00.000Z",
+        "score": 61.77,
+        "rating": "greed"
+      },
+      {
+        "date": "2025-06-09T00:00:00.000Z",
+        "score": 63.43,
+        "rating": "greed"
+      },
+      {
+        "date": "2025-06-10T00:00:00.000Z",
+        "score": 64,
+        "rating": "greed"
+      },
+      {
+        "date": "2025-06-11T00:00:00.000Z",
+        "score": 64.2,
+        "rating": "greed"
+      },
+      {
+        "date": "2025-06-12T00:00:00.000Z",
+        "score": 64.6,
+        "rating": "greed"
+      },
+      {
+        "date": "2025-06-13T00:00:00.000Z",
+        "score": 59.54,
+        "rating": "greed"
+      },
+      {
+        "date": "2025-06-16T00:00:00.000Z",
+        "score": 61.11,
+        "rating": "greed"
+      },
+      {
+        "date": "2025-06-17T00:00:00.000Z",
+        "score": 57.43,
+        "rating": "greed"
+      },
+      {
+        "date": "2025-06-18T00:00:00.000Z",
+        "score": 54.29,
+        "rating": "neutral"
+      },
+      {
+        "date": "2025-06-20T00:00:00.000Z",
+        "score": 54.51,
+        "rating": "neutral"
+      },
+      {
+        "date": "2025-06-23T00:00:00.000Z",
+        "score": 56.6,
+        "rating": "greed"
+      },
+      {
+        "date": "2025-06-24T00:00:00.000Z",
+        "score": 57.89,
+        "rating": "greed"
+      },
+      {
+        "date": "2025-06-25T00:00:00.000Z",
+        "score": 59.26,
+        "rating": "greed"
+      },
+      {
+        "date": "2025-06-26T00:00:00.000Z",
+        "score": 63,
+        "rating": "greed"
+      },
+      {
+        "date": "2025-06-27T00:00:00.000Z",
+        "score": 64.8,
+        "rating": "greed"
+      },
+      {
+        "date": "2025-06-30T00:00:00.000Z",
+        "score": 69.23,
+        "rating": "greed"
+      },
+      {
+        "date": "2025-07-01T00:00:00.000Z",
+        "score": 67.54,
+        "rating": "greed"
+      },
+      {
+        "date": "2025-07-02T00:00:00.000Z",
+        "score": 63.71,
+        "rating": "greed"
+      },
+      {
+        "date": "2025-07-03T00:00:00.000Z",
+        "score": 77.63,
+        "rating": "extreme greed"
+      },
+      {
+        "date": "2025-07-07T00:00:00.000Z",
+        "score": 75.09,
+        "rating": "extreme greed"
+      },
+      {
+        "date": "2025-07-08T00:00:00.000Z",
+        "score": 74.63,
+        "rating": "greed"
+      },
+      {
+        "date": "2025-07-09T00:00:00.000Z",
+        "score": 75.91,
+        "rating": "extreme greed"
+      },
+      {
+        "date": "2025-07-10T00:00:00.000Z",
+        "score": 76.97,
+        "rating": "extreme greed"
+      },
+      {
+        "date": "2025-07-11T00:00:00.000Z",
+        "score": 75.26,
+        "rating": "extreme greed"
+      },
+      {
+        "date": "2025-07-14T00:00:00.000Z",
+        "score": 76.11,
+        "rating": "extreme greed"
+      },
+      {
+        "date": "2025-07-15T00:00:00.000Z",
+        "score": 73.49,
+        "rating": "greed"
+      },
+      {
+        "date": "2025-07-16T00:00:00.000Z",
+        "score": 72.94,
+        "rating": "greed"
+      },
+      {
+        "date": "2025-07-17T00:00:00.000Z",
+        "score": 74.17,
+        "rating": "greed"
+      },
+      {
+        "date": "2025-07-18T00:00:00.000Z",
+        "score": 73.94,
+        "rating": "greed"
+      },
+      {
+        "date": "2025-07-21T00:00:00.000Z",
+        "score": 73.29,
+        "rating": "greed"
+      },
+      {
+        "date": "2025-07-22T00:00:00.000Z",
+        "score": 73.89,
+        "rating": "greed"
+      },
+      {
+        "date": "2025-07-23T00:00:00.000Z",
+        "score": 76.37,
+        "rating": "extreme greed"
+      },
+      {
+        "date": "2025-07-24T00:00:00.000Z",
+        "score": 75.26,
+        "rating": "extreme greed"
+      },
+      {
+        "date": "2025-07-25T00:00:00.000Z",
+        "score": 74.66,
+        "rating": "greed"
+      },
+      {
+        "date": "2025-07-28T00:00:00.000Z",
+        "score": 73.8,
+        "rating": "greed"
+      },
+      {
+        "date": "2025-07-29T00:00:00.000Z",
+        "score": 70.63,
+        "rating": "greed"
+      },
+      {
+        "date": "2025-07-30T00:00:00.000Z",
+        "score": 68.03,
+        "rating": "greed"
+      },
+      {
+        "date": "2025-07-31T00:00:00.000Z",
+        "score": 63.71,
+        "rating": "greed"
+      },
+      {
+        "date": "2025-08-01T00:00:00.000Z",
+        "score": 49.8,
+        "rating": "neutral"
+      },
+      {
+        "date": "2025-08-04T00:00:00.000Z",
+        "score": 56.89,
+        "rating": "greed"
+      },
+      {
+        "date": "2025-08-05T00:00:00.000Z",
+        "score": 55.03,
+        "rating": "greed"
+      },
+      {
+        "date": "2025-08-06T00:00:00.000Z",
+        "score": 55.31,
+        "rating": "greed"
+      },
+      {
+        "date": "2025-08-07T00:00:00.000Z",
+        "score": 54.71,
+        "rating": "neutral"
+      },
+      {
+        "date": "2025-08-08T00:00:00.000Z",
+        "score": 58.37,
+        "rating": "greed"
+      },
+      {
+        "date": "2025-08-11T00:00:00.000Z",
+        "score": 57.63,
+        "rating": "greed"
+      },
       {
         "date": "2025-08-12T00:00:00.000Z",
         "score": 62.26,
@@ -1260,7 +6945,7 @@
         "rating": "greed"
       },
       {
-        "date": "2026-08-12T22:51:31.000Z",
+        "date": "2026-08-12T23:51:41.000Z",
         "score": 62.14,
         "rating": "greed"
       }
