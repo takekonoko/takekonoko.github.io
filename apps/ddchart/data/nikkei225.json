@@ -2,7 +2,7 @@
   "fund": "Nikkei 225",
   "symbol": "^N225",
   "source": "Yahoo Finance chart API (close)",
-  "generated_at": "2026-08-18T08:02:22.208Z",
+  "generated_at": "2026-08-18T22:50:03.487Z",
   "count": 6520,
   "records": [
     {
@@ -65196,14 +65196,14 @@
       "runup": 34.5648
     },
     {
-      "date": "2026-08-18",
-      "price": 67460.7266,
+      "date": "2026-08-17",
+      "price": 69220.25,
       "year": 2026,
       "business_day": 151,
       "running_min": 51063.7188,
       "running_max": 72366.3438,
-      "drawdown": -6.7789,
-      "runup": 32.1109
+      "drawdown": -4.3475,
+      "runup": 35.5566
     }
   ]
 }
