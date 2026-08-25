@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-08-24T22:54:49.471Z",
+  "generatedAt": "2026-08-25T22:56:37.145Z",
   "fearAndGreed": {
-    "score": 55.03,
+    "score": 58.8,
     "rating": "greed",
-    "timestamp": "2026-08-24T22:33:40+00:00",
-    "previousClose": 55.17,
-    "previousWeek": 58.4,
+    "timestamp": "2026-08-25T22:38:37+00:00",
+    "previousClose": 55.03,
+    "previousWeek": 55.09,
     "previousMonth": 41.34,
-    "previousYear": 55.54,
+    "previousYear": 53.94,
     "history": [
       {
         "date": "2021-02-01T00:00:00.000Z",
@@ -6981,12 +6981,17 @@
       },
       {
         "date": "2026-08-24T00:00:00.000Z",
-        "score": 55.03,
+        "score": 56.09,
         "rating": "greed"
       },
       {
-        "date": "2026-08-24T22:33:40.000Z",
-        "score": 55.03,
+        "date": "2026-08-25T00:00:00.000Z",
+        "score": 58.8,
+        "rating": "greed"
+      },
+      {
+        "date": "2026-08-25T22:38:37.000Z",
+        "score": 58.8,
         "rating": "greed"
       }
     ],
@@ -6999,11 +7004,11 @@
       "symbol": "^VIX",
       "label": "VIX Index",
       "official": "https://www.cboe.com/tradable-products/vix/",
-      "value": 15.85,
-      "previous": 15.13,
-      "change": 0.72,
-      "changePercent": 4.76,
-      "date": "2026-08-24",
+      "value": 15.45,
+      "previous": 15.85,
+      "change": -0.4,
+      "changePercent": -2.52,
+      "date": "2026-08-25",
       "records": [
         [
           "2025-08-25",
@@ -8012,6 +8017,10 @@
         [
           "2026-08-24",
           15.85
+        ],
+        [
+          "2026-08-25",
+          15.45
         ]
       ],
       "source": "Yahoo Finance"
@@ -8021,15 +8030,15 @@
       "symbol": "^VIX9D",
       "label": "VIX9D Index",
       "official": "https://www.cboe.com/us/indices/dashboard/vix9d/",
-      "value": 14.07,
-      "previous": 14.07,
+      "value": 13.45,
+      "previous": 13.45,
       "change": 0,
       "changePercent": 0,
-      "date": "2026-08-24",
+      "date": "2026-08-25",
       "records": [
         [
-          "2026-08-24",
-          14.07
+          "2026-08-25",
+          13.45
         ]
       ],
       "source": "Yahoo Finance"
@@ -8039,15 +8048,15 @@
       "symbol": "^VIX3M",
       "label": "VIX3M Index",
       "official": "https://www.cboe.com/us/indices/dashboard/vix3m/",
-      "value": 18.56,
-      "previous": 18.56,
+      "value": 18.21,
+      "previous": 18.21,
       "change": 0,
       "changePercent": 0,
-      "date": "2026-08-24",
+      "date": "2026-08-25",
       "records": [
         [
-          "2026-08-24",
-          18.56
+          "2026-08-25",
+          18.21
         ]
       ],
       "source": "Yahoo Finance"
@@ -8057,16 +8066,12 @@
       "symbol": "^VVIX",
       "label": "VVIX Index",
       "official": "https://www.cboe.com/us/indices/dashboard/vvix/",
-      "value": 88.64,
-      "previous": 86.27,
-      "change": 2.37,
-      "changePercent": 2.75,
-      "date": "2026-08-24",
+      "value": 85.67,
+      "previous": 88.64,
+      "change": -2.97,
+      "changePercent": -3.35,
+      "date": "2026-08-25",
       "records": [
-        [
-          "2025-08-25",
-          92.3
-        ],
         [
           "2025-08-26",
           91.65
@@ -9066,6 +9071,10 @@
         [
           "2026-08-24",
           88.64
+        ],
+        [
+          "2026-08-25",
+          85.67
         ]
       ],
       "source": "Yahoo Finance"
@@ -9075,16 +9084,12 @@
       "symbol": "^SKEW",
       "label": "SKEW Index",
       "official": "https://www.cboe.com/us/indices/dashboard/skew/",
-      "value": 145.64,
-      "previous": 143.9,
-      "change": 1.74,
-      "changePercent": 1.21,
-      "date": "2026-08-24",
+      "value": 143.27,
+      "previous": 145.64,
+      "change": -2.37,
+      "changePercent": -1.63,
+      "date": "2026-08-25",
       "records": [
-        [
-          "2025-08-25",
-          149.99
-        ],
         [
           "2025-08-26",
           156.53
@@ -10084,6 +10089,10 @@
         [
           "2026-08-24",
           145.64
+        ],
+        [
+          "2026-08-25",
+          143.27
         ]
       ],
       "source": "Yahoo Finance"
