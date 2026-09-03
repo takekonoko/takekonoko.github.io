@@ -2,8 +2,8 @@
   "fund": "Nikkei 225",
   "symbol": "^N225",
   "source": "Yahoo Finance chart API (close)",
-  "generated_at": "2026-09-02T12:13:09.932Z",
-  "count": 6532,
+  "generated_at": "2026-09-03T00:29:11.698Z",
+  "count": 6531,
   "records": [
     {
       "date": "2000-01-04",
@@ -65286,20 +65286,10 @@
       "runup": 29.5087
     },
     {
-      "date": "2026-08-28",
-      "price": 66405.5625,
-      "year": 2026,
-      "business_day": 160,
-      "running_min": 51063.7188,
-      "running_max": 72366.3438,
-      "drawdown": -8.237,
-      "runup": 30.0445
-    },
-    {
       "date": "2026-08-31",
       "price": 66311.9297,
       "year": 2026,
-      "business_day": 161,
+      "business_day": 160,
       "running_min": 51063.7188,
       "running_max": 72366.3438,
       "drawdown": -8.3663,
@@ -65309,21 +65299,21 @@
       "date": "2026-09-01",
       "price": 66215.3438,
       "year": 2026,
-      "business_day": 162,
+      "business_day": 161,
       "running_min": 51063.7188,
       "running_max": 72366.3438,
       "drawdown": -8.4998,
       "runup": 29.672
     },
     {
-      "date": "2026-09-02",
-      "price": 64325.6406,
+      "date": "2026-09-03",
+      "price": 64428.3203,
       "year": 2026,
-      "business_day": 163,
+      "business_day": 162,
       "running_min": 51063.7188,
       "running_max": 72366.3438,
-      "drawdown": -11.1111,
-      "runup": 25.9713
+      "drawdown": -10.9692,
+      "runup": 26.1724
     }
   ]
 }
