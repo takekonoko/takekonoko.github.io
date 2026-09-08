@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-05T00:17:44.455Z",
+  "generatedAt": "2026-09-08T00:37:15.535Z",
   "fearAndGreed": {
     "score": 41.86,
     "rating": "fear",
@@ -7044,20 +7044,12 @@
       "symbol": "^VIX",
       "label": "VIX Index",
       "official": "https://www.cboe.com/tradable-products/vix/",
-      "value": 14.53,
-      "previous": 14.32,
-      "change": 0.21,
-      "changePercent": 1.47,
-      "date": "2026-09-04",
+      "value": 15.3,
+      "previous": 14.53,
+      "change": 0.77,
+      "changePercent": 5.3,
+      "date": "2026-09-07",
       "records": [
-        [
-          "2025-09-04",
-          15.3
-        ],
-        [
-          "2025-09-05",
-          15.18
-        ],
         [
           "2025-09-08",
           15.11
@@ -8065,6 +8057,10 @@
         [
           "2026-09-04",
           14.53
+        ],
+        [
+          "2026-09-07",
+          15.3
         ]
       ],
       "source": "Yahoo Finance"
@@ -8074,11 +8070,11 @@
       "symbol": "^VIX9D",
       "label": "VIX9D Index",
       "official": "https://www.cboe.com/us/indices/dashboard/vix9d/",
-      "value": 11.97,
-      "previous": 16.85,
-      "change": -4.88,
-      "changePercent": -28.96,
-      "date": "2026-09-04",
+      "value": 16.85,
+      "previous": 13.98,
+      "change": 2.87,
+      "changePercent": 20.53,
+      "date": "2026-07-17",
       "records": [
         [
           "2025-09-05",
@@ -8947,10 +8943,6 @@
         [
           "2026-07-17",
           16.85
-        ],
-        [
-          "2026-09-04",
-          11.97
         ]
       ],
       "source": "Yahoo Finance"
@@ -8960,11 +8952,11 @@
       "symbol": "^VIX3M",
       "label": "VIX3M Index",
       "official": "https://www.cboe.com/us/indices/dashboard/vix3m/",
-      "value": 17.61,
-      "previous": 20.54,
-      "change": -2.93,
-      "changePercent": -14.26,
-      "date": "2026-09-04",
+      "value": 20.54,
+      "previous": 19.5,
+      "change": 1.04,
+      "changePercent": 5.33,
+      "date": "2026-07-17",
       "records": [
         [
           "2025-09-05",
@@ -9833,10 +9825,6 @@
         [
           "2026-07-17",
           20.54
-        ],
-        [
-          "2026-09-04",
-          17.61
         ]
       ],
       "source": "Yahoo Finance"

@@ -2,7 +2,7 @@
   "fund": "S&P 500",
   "symbol": "^GSPC",
   "source": "Yahoo Finance chart API (close)",
-  "generated_at": "2026-09-05T00:15:43.859Z",
+  "generated_at": "2026-09-08T00:35:15.296Z",
   "count": 6709,
   "records": [
     {
