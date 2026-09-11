@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-09-10T00:26:51.460Z",
+  "generatedAt": "2026-09-11T00:22:41.846Z",
   "fearAndGreed": {
-    "score": 39.03,
+    "score": 33.26,
     "rating": "fear",
-    "timestamp": "2026-09-09T23:59:55+00:00",
-    "previousClose": 40.63,
-    "previousWeek": 32.97,
-    "previousMonth": 64.43,
+    "timestamp": "2026-09-10T23:59:55+00:00",
+    "previousClose": 38.2,
+    "previousWeek": 47.51,
+    "previousMonth": 64.37,
     "previousYear": 57.94,
     "history": [
       {
@@ -6845,148 +6845,153 @@
         "rating": "fear"
       },
       {
+        "date": "2026-07-15T00:00:00.000Z",
+        "score": 44.43,
+        "rating": "fear"
+      },
+      {
         "date": "2026-07-16T00:00:00.000Z",
-        "score": 41.2,
+        "score": 41.86,
         "rating": "fear"
       },
       {
         "date": "2026-07-17T00:00:00.000Z",
-        "score": 37.23,
+        "score": 37,
         "rating": "fear"
       },
       {
         "date": "2026-07-20T00:00:00.000Z",
-        "score": 37.94,
+        "score": 36,
         "rating": "fear"
       },
       {
         "date": "2026-07-21T00:00:00.000Z",
-        "score": 43.37,
+        "score": 42.77,
         "rating": "fear"
       },
       {
         "date": "2026-07-22T00:00:00.000Z",
-        "score": 43.31,
+        "score": 44.43,
         "rating": "fear"
       },
       {
         "date": "2026-07-23T00:00:00.000Z",
-        "score": 38.91,
+        "score": 40.86,
         "rating": "fear"
       },
       {
         "date": "2026-07-24T00:00:00.000Z",
-        "score": 41.34,
+        "score": 40.77,
         "rating": "fear"
       },
       {
         "date": "2026-07-27T00:00:00.000Z",
-        "score": 37.63,
+        "score": 38.23,
         "rating": "fear"
       },
       {
         "date": "2026-07-28T00:00:00.000Z",
-        "score": 37.89,
+        "score": 37.14,
         "rating": "fear"
       },
       {
         "date": "2026-07-29T00:00:00.000Z",
-        "score": 34.66,
+        "score": 25.56,
         "rating": "fear"
       },
       {
         "date": "2026-07-30T00:00:00.000Z",
-        "score": 40.71,
+        "score": 38.11,
         "rating": "fear"
       },
       {
         "date": "2026-07-31T00:00:00.000Z",
-        "score": 45.23,
-        "rating": "neutral"
+        "score": 39.57,
+        "rating": "fear"
       },
       {
         "date": "2026-08-03T00:00:00.000Z",
-        "score": 50.74,
+        "score": 46.14,
         "rating": "neutral"
       },
       {
         "date": "2026-08-04T00:00:00.000Z",
-        "score": 59.97,
+        "score": 58.97,
         "rating": "greed"
       },
       {
         "date": "2026-08-05T00:00:00.000Z",
-        "score": 59.83,
+        "score": 60.23,
         "rating": "greed"
       },
       {
         "date": "2026-08-06T00:00:00.000Z",
-        "score": 58.86,
+        "score": 59.69,
         "rating": "greed"
       },
       {
         "date": "2026-08-07T00:00:00.000Z",
-        "score": 64.43,
+        "score": 65.14,
         "rating": "greed"
       },
       {
         "date": "2026-08-10T00:00:00.000Z",
-        "score": 64.69,
+        "score": 64.37,
         "rating": "greed"
       },
       {
         "date": "2026-08-11T00:00:00.000Z",
-        "score": 61.43,
+        "score": 60.09,
         "rating": "greed"
       },
       {
         "date": "2026-08-12T00:00:00.000Z",
-        "score": 62.94,
+        "score": 61.69,
         "rating": "greed"
       },
       {
         "date": "2026-08-13T00:00:00.000Z",
-        "score": 66.63,
+        "score": 66.11,
         "rating": "greed"
       },
       {
         "date": "2026-08-14T00:00:00.000Z",
-        "score": 63.97,
+        "score": 64.31,
         "rating": "greed"
       },
       {
         "date": "2026-08-17T00:00:00.000Z",
-        "score": 58.4,
+        "score": 59.14,
         "rating": "greed"
       },
       {
         "date": "2026-08-18T00:00:00.000Z",
-        "score": 55.09,
-        "rating": "greed"
+        "score": 54.63,
+        "rating": "neutral"
       },
       {
         "date": "2026-08-19T00:00:00.000Z",
-        "score": 57.2,
+        "score": 56.63,
         "rating": "greed"
       },
       {
         "date": "2026-08-20T00:00:00.000Z",
-        "score": 53.06,
+        "score": 51.37,
         "rating": "neutral"
       },
       {
         "date": "2026-08-21T00:00:00.000Z",
-        "score": 54.51,
+        "score": 54.66,
         "rating": "neutral"
       },
       {
         "date": "2026-08-24T00:00:00.000Z",
-        "score": 56.09,
-        "rating": "greed"
+        "score": 54.97,
+        "rating": "neutral"
       },
       {
         "date": "2026-08-25T00:00:00.000Z",
-        "score": 56.77,
+        "score": 59.6,
         "rating": "greed"
       },
       {
@@ -6996,52 +7001,57 @@
       },
       {
         "date": "2026-08-27T00:00:00.000Z",
-        "score": 55.4,
+        "score": 57.31,
         "rating": "greed"
       },
       {
         "date": "2026-08-28T00:00:00.000Z",
-        "score": 52.31,
+        "score": 53.74,
         "rating": "neutral"
       },
       {
         "date": "2026-08-31T00:00:00.000Z",
-        "score": 47.51,
+        "score": 49.2,
         "rating": "neutral"
       },
       {
         "date": "2026-09-01T00:00:00.000Z",
-        "score": 30.91,
+        "score": 44.86,
         "rating": "fear"
       },
       {
         "date": "2026-09-02T00:00:00.000Z",
-        "score": 32.97,
-        "rating": "fear"
+        "score": 46.06,
+        "rating": "neutral"
       },
       {
         "date": "2026-09-03T00:00:00.000Z",
-        "score": 43.91,
-        "rating": "fear"
+        "score": 47.51,
+        "rating": "neutral"
       },
       {
         "date": "2026-09-04T00:00:00.000Z",
-        "score": 42.26,
-        "rating": "fear"
+        "score": 45.23,
+        "rating": "neutral"
       },
       {
         "date": "2026-09-08T00:00:00.000Z",
-        "score": 38.86,
+        "score": 39.14,
         "rating": "fear"
       },
       {
         "date": "2026-09-09T00:00:00.000Z",
-        "score": 39.03,
+        "score": 38.2,
         "rating": "fear"
       },
       {
-        "date": "2026-09-09T23:59:55.000Z",
-        "score": 39.03,
+        "date": "2026-09-10T00:00:00.000Z",
+        "score": 33.26,
+        "rating": "fear"
+      },
+      {
+        "date": "2026-09-10T23:59:55.000Z",
+        "score": 33.26,
         "rating": "fear"
       }
     ],
@@ -7054,16 +7064,12 @@
       "symbol": "^VIX",
       "label": "VIX Index",
       "official": "https://www.cboe.com/tradable-products/vix/",
-      "value": 16.46,
-      "previous": 15.72,
-      "change": 0.74,
-      "changePercent": 4.71,
-      "date": "2026-09-09",
+      "value": 17.84,
+      "previous": 16.46,
+      "change": 1.38,
+      "changePercent": 8.38,
+      "date": "2026-09-10",
       "records": [
-        [
-          "2025-09-09",
-          15.04
-        ],
         [
           "2025-09-10",
           15.35
@@ -8075,6 +8081,10 @@
         [
           "2026-09-09",
           16.46
+        ],
+        [
+          "2026-09-10",
+          17.84
         ]
       ],
       "source": "Yahoo Finance"
@@ -8084,16 +8094,12 @@
       "symbol": "^VIX9D",
       "label": "VIX9D Index",
       "official": "https://www.cboe.com/us/indices/dashboard/vix9d/",
-      "value": 15.59,
+      "value": 17.7,
       "previous": 16.85,
-      "change": -1.26,
-      "changePercent": -7.48,
-      "date": "2026-09-09",
+      "change": 0.85,
+      "changePercent": 5.04,
+      "date": "2026-09-10",
       "records": [
-        [
-          "2025-09-10",
-          14.29
-        ],
         [
           "2025-09-11",
           12.99
@@ -8947,8 +8953,8 @@
           16.85
         ],
         [
-          "2026-09-09",
-          15.59
+          "2026-09-10",
+          17.7
         ]
       ],
       "source": "Yahoo Finance"
@@ -8958,16 +8964,12 @@
       "symbol": "^VIX3M",
       "label": "VIX3M Index",
       "official": "https://www.cboe.com/us/indices/dashboard/vix3m/",
-      "value": 18.87,
+      "value": 19.73,
       "previous": 20.54,
-      "change": -1.67,
-      "changePercent": -8.13,
-      "date": "2026-09-09",
+      "change": -0.81,
+      "changePercent": -3.94,
+      "date": "2026-09-10",
       "records": [
-        [
-          "2025-09-10",
-          18.44
-        ],
         [
           "2025-09-11",
           18.03
@@ -9821,8 +9823,8 @@
           20.54
         ],
         [
-          "2026-09-09",
-          18.87
+          "2026-09-10",
+          19.73
         ]
       ],
       "source": "Yahoo Finance"
@@ -9832,16 +9834,12 @@
       "symbol": "^VVIX",
       "label": "VVIX Index",
       "official": "https://www.cboe.com/us/indices/dashboard/vvix/",
-      "value": 94.5,
-      "previous": 88.69,
-      "change": 5.81,
-      "changePercent": 6.55,
-      "date": "2026-09-09",
+      "value": 102.66,
+      "previous": 94.5,
+      "change": 8.16,
+      "changePercent": 8.63,
+      "date": "2026-09-10",
       "records": [
-        [
-          "2025-09-10",
-          100.53
-        ],
         [
           "2025-09-11",
           96.32
@@ -10841,6 +10839,10 @@
         [
           "2026-09-09",
           94.5
+        ],
+        [
+          "2026-09-10",
+          102.66
         ]
       ],
       "source": "Yahoo Finance"
@@ -10850,16 +10852,12 @@
       "symbol": "^SKEW",
       "label": "SKEW Index",
       "official": "https://www.cboe.com/us/indices/dashboard/skew/",
-      "value": 149.25,
-      "previous": 148.86,
-      "change": 0.39,
-      "changePercent": 0.26,
-      "date": "2026-09-09",
+      "value": 147.02,
+      "previous": 149.25,
+      "change": -2.23,
+      "changePercent": -1.49,
+      "date": "2026-09-10",
       "records": [
-        [
-          "2025-09-10",
-          151.92
-        ],
         [
           "2025-09-11",
           147.63
@@ -11859,6 +11857,10 @@
         [
           "2026-09-09",
           149.25
+        ],
+        [
+          "2026-09-10",
+          147.02
         ]
       ],
       "source": "Yahoo Finance"
