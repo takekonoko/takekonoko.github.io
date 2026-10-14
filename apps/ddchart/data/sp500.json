@@ -2,8 +2,8 @@
   "fund": "S&P 500",
   "symbol": "^GSPC",
   "source": "Yahoo Finance chart API (close)",
-  "generated_at": "2026-10-13T03:06:18.881Z",
-  "count": 6734,
+  "generated_at": "2026-10-14T01:19:03.861Z",
+  "count": 6735,
   "records": [
     {
       "date": "2000-01-03",
@@ -67344,6 +67344,16 @@
       "running_max": 7818.9302,
       "drawdown": -0.1495,
       "runup": 23.0704
+    },
+    {
+      "date": "2026-10-13",
+      "price": 7805.4502,
+      "year": 2026,
+      "business_day": 196,
+      "running_min": 6343.7202,
+      "running_max": 7818.9302,
+      "drawdown": -0.1724,
+      "runup": 23.0422
     }
   ]
 }
