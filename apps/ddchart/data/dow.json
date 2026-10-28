@@ -2,8 +2,8 @@
   "fund": "Dow Jones Industrial Average",
   "symbol": "^DJI",
   "source": "Yahoo Finance chart API (close)",
-  "generated_at": "2026-10-27T01:33:58.959Z",
-  "count": 6744,
+  "generated_at": "2026-10-28T01:31:30.609Z",
+  "count": 6745,
   "records": [
     {
       "date": "2000-01-03",
@@ -67444,6 +67444,16 @@
       "running_max": 54349.1211,
       "drawdown": -3.657,
       "runup": 15.9298
+    },
+    {
+      "date": "2026-10-27",
+      "price": 52377.5703,
+      "year": 2026,
+      "business_day": 206,
+      "running_min": 45166.6406,
+      "running_max": 54349.1211,
+      "drawdown": -3.6276,
+      "runup": 15.9652
     }
   ]
 }
