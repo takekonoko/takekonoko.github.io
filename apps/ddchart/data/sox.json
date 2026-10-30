@@ -2,7 +2,7 @@
   "fund": "PHLX Semiconductor Sector",
   "symbol": "^SOX",
   "source": "Yahoo Finance chart API (close)",
-  "generated_at": "2026-10-29T18:37:55.438Z",
+  "generated_at": "2026-10-30T02:20:08.690Z",
   "count": 6747,
   "records": [
     {
@@ -67467,13 +67467,13 @@
     },
     {
       "date": "2026-10-29",
-      "price": 11428.3057,
+      "price": 11518.1992,
       "year": 2026,
       "business_day": 208,
       "running_min": 7142.3301,
       "running_max": 14634.7197,
-      "drawdown": -21.9096,
-      "runup": 60.0081
+      "drawdown": -21.2954,
+      "runup": 61.2667
     }
   ]
 }

@@ -2,7 +2,7 @@
   "fund": "NASDAQ 100",
   "symbol": "^NDX",
   "source": "Yahoo Finance chart API (close)",
-  "generated_at": "2026-10-30T02:04:43.936Z",
+  "generated_at": "2026-10-30T02:20:06.434Z",
   "count": 6747,
   "records": [
     {
