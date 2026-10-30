@@ -14,7 +14,7 @@
                         "image":  "ddchart",
                         "tag":  "投資・資産形成",
                         "title":  "指数ドローダウン比較",
-                        "description":  "S\u0026P500・NASDAQ100・NYダウ・日経225などを、1〜10年のドローダウン／ランアップで比較。"
+                        "description":  "S\u0026P500・NASDAQ100・SOX・NYダウ・日経225などを、1〜10年のドローダウン／ランアップで比較。"
                     },
                     {
                         "id":  "market-sentiment",

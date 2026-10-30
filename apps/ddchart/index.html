@@ -305,7 +305,7 @@ h1{
 
 <section class="guide" aria-labelledby="guide-title">
   <h2 id="guide-title">このチャートで分かること</h2>
-  <p>S&amp;P500、NYダウ、NASDAQ100、オルカン、日経225、TOPIX目安について、同じ長さの期間を横に並べて比較するツールです。通常の時系列チャートでは離れた年の下落を重ねて見にくいため、各年を同じ起点から表示できる形にしました。</p>
+  <p>S&amp;P500、NYダウ、NASDAQ100、SOX、オルカン、日経225、TOPIX目安について、同じ長さの期間を横に並べて比較するツールです。通常の時系列チャートでは離れた年の下落を重ねて見にくいため、各年を同じ起点から表示できる形にしました。</p>
 
   <div class="guide-grid">
     <div class="guide-box">
@@ -345,11 +345,12 @@ h1{
 <script>
 const DATA_BASE_URL = './data';
 
-const FUND_IDS = ['sp500', 'dow', 'nasdaq100', 'allcountry', 'nikkei225', 'topix'];
+const FUND_IDS = ['sp500', 'dow', 'nasdaq100', 'sox', 'allcountry', 'nikkei225', 'topix'];
 const fundsMeta = {
   sp500:      { label: 'S&P500' },
   dow:        { label: 'NYダウ' },
   nasdaq100:  { label: 'NASDAQ100' },
+  sox:        { label: 'SOX' },
   allcountry: { label: 'オルカン' },
   nikkei225:  { label: '日経225' },
   topix:      { label: 'TOPIX目安' },
