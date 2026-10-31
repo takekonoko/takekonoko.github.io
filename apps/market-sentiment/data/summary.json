@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-10-30T02:22:06.349Z",
+  "generatedAt": "2026-10-31T01:45:36.201Z",
   "fearAndGreed": {
-    "score": 34.6,
+    "score": 26.24,
     "rating": "fear",
-    "timestamp": "2026-10-29T23:59:48+00:00",
-    "previousClose": 35.86,
-    "previousWeek": 19.99,
-    "previousMonth": 31.06,
-    "previousYear": 42.11,
+    "timestamp": "2026-10-30T23:59:48+00:00",
+    "previousClose": 34.6,
+    "previousWeek": 16.69,
+    "previousMonth": 30.31,
+    "previousYear": 37.06,
     "history": [
       {
         "date": "2021-02-01T00:00:00.000Z",
@@ -7221,12 +7221,17 @@
       },
       {
         "date": "2026-10-29T00:00:00.000Z",
-        "score": 34.6,
+        "score": 30.77,
         "rating": "fear"
       },
       {
-        "date": "2026-10-29T23:59:48.000Z",
-        "score": 34.6,
+        "date": "2026-10-30T00:00:00.000Z",
+        "score": 26.24,
+        "rating": "fear"
+      },
+      {
+        "date": "2026-10-30T23:59:48.000Z",
+        "score": 26.24,
         "rating": "fear"
       }
     ],
@@ -7239,16 +7244,12 @@
       "symbol": "^VIX",
       "label": "VIX Index",
       "official": "https://www.cboe.com/tradable-products/vix/",
-      "value": 17.2,
-      "previous": 16.91,
-      "change": 0.29,
-      "changePercent": 1.71,
-      "date": "2026-10-29",
+      "value": 19.42,
+      "previous": 17.2,
+      "change": 2.22,
+      "changePercent": 12.91,
+      "date": "2026-10-30",
       "records": [
-        [
-          "2025-10-29",
-          16.92
-        ],
         [
           "2025-10-30",
           16.91
@@ -8260,6 +8261,10 @@
         [
           "2026-10-29",
           17.2
+        ],
+        [
+          "2026-10-30",
+          19.42
         ]
       ],
       "source": "Yahoo Finance"
@@ -8269,16 +8274,12 @@
       "symbol": "^VIX9D",
       "label": "VIX9D Index",
       "official": "https://www.cboe.com/us/indices/dashboard/vix9d/",
-      "value": 15.87,
-      "previous": 15.6,
-      "change": 0.27,
-      "changePercent": 1.73,
-      "date": "2026-10-29",
+      "value": 19.25,
+      "previous": 15.87,
+      "change": 3.38,
+      "changePercent": 21.3,
+      "date": "2026-10-30",
       "records": [
-        [
-          "2025-10-30",
-          14.9
-        ],
         [
           "2025-10-31",
           14.71
@@ -9278,6 +9279,10 @@
         [
           "2026-10-29",
           15.87
+        ],
+        [
+          "2026-10-30",
+          19.25
         ]
       ],
       "source": "Yahoo Finance"
@@ -9287,16 +9292,12 @@
       "symbol": "^VIX3M",
       "label": "VIX3M Index",
       "official": "https://www.cboe.com/us/indices/dashboard/vix3m/",
-      "value": 19.37,
-      "previous": 19.22,
-      "change": 0.15,
-      "changePercent": 0.78,
-      "date": "2026-10-29",
+      "value": 20.78,
+      "previous": 19.37,
+      "change": 1.41,
+      "changePercent": 7.28,
+      "date": "2026-10-30",
       "records": [
-        [
-          "2025-10-30",
-          19.98
-        ],
         [
           "2025-10-31",
           20.49
@@ -10296,6 +10297,10 @@
         [
           "2026-10-29",
           19.37
+        ],
+        [
+          "2026-10-30",
+          20.78
         ]
       ],
       "source": "Yahoo Finance"
@@ -10305,16 +10310,12 @@
       "symbol": "^VVIX",
       "label": "VVIX Index",
       "official": "https://www.cboe.com/us/indices/dashboard/vvix/",
-      "value": 98.01,
-      "previous": 96.61,
-      "change": 1.4,
-      "changePercent": 1.45,
-      "date": "2026-10-29",
+      "value": 106.43,
+      "previous": 98.01,
+      "change": 8.42,
+      "changePercent": 8.59,
+      "date": "2026-10-30",
       "records": [
-        [
-          "2025-10-30",
-          102.84
-        ],
         [
           "2025-10-31",
           104.46
@@ -11314,6 +11315,10 @@
         [
           "2026-10-29",
           98.01
+        ],
+        [
+          "2026-10-30",
+          106.43
         ]
       ],
       "source": "Yahoo Finance"
@@ -11323,16 +11328,12 @@
       "symbol": "^SKEW",
       "label": "SKEW Index",
       "official": "https://www.cboe.com/us/indices/dashboard/skew/",
-      "value": 151.03,
-      "previous": 148.74,
-      "change": 2.29,
-      "changePercent": 1.54,
-      "date": "2026-10-29",
+      "value": 149.76,
+      "previous": 151.03,
+      "change": -1.27,
+      "changePercent": -0.84,
+      "date": "2026-10-30",
       "records": [
-        [
-          "2025-10-30",
-          141.15
-        ],
         [
           "2025-10-31",
           142.78
@@ -12332,6 +12333,10 @@
         [
           "2026-10-29",
           151.03
+        ],
+        [
+          "2026-10-30",
+          149.76
         ]
       ],
       "source": "Yahoo Finance"
